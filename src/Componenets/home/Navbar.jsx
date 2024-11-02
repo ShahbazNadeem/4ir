@@ -13,7 +13,7 @@ export default function Navbar(){
                     <FontAwesomeIcon icon={faBars} style={{color: "black"}} />
                 </span>
             </button>
-            <a href="">
+            <a>
                 <Image src={Logo} class="img-fluid" id="logo-img" alt="logo"/>
             </a>
             <nav class="header-nav-middle">
