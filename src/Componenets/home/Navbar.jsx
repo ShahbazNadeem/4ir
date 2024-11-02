@@ -27,7 +27,7 @@ export default function Navbar(){
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="">Home</a>
+                                    <a class="nav-link" >Home</a>
                                 </li>
 
                                 <li class="nav-item">
