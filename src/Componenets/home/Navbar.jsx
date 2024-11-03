@@ -3,6 +3,7 @@ import Image from "next/image"
 import Logo from "@/images/4IRLogomain.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import Link from "next/link"
 export default function Navbar(){
     return(
         <>
@@ -27,42 +28,42 @@ export default function Navbar(){
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                    <a class="nav-link" >Home</a>
+                                    <Link class="nav-link" href=""  >Home</Link>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">About Us</a>
+                                    <Link class="nav-link" href="/about">About Us</Link>
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link" href="" id="servicesLink">
+                                    <Link class="nav-link" href="" id="servicesLink">
                                         Services
-                                    </a>
+                                    </Link>
                                     <button class="dropdown-toggle dropdown-arrow" id="servicesDropdown"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                                         <li>
-                                            <a class="dropdown-item" href="./html/strategic_counselling.html">Strategic
-                                                Counseling</a>
+                                            <Link class="dropdown-item" href="">Strategic
+                                                Counseling</Link>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="./html/ai-talk-assist.html">AITalkAssist</a>
+                                            <Link class="dropdown-item" href="">AITalkAssist</Link>
                                         </li>
                                         <li>
-                                            <a class="dropdown-item" href="/html/training_and_education.html">Training &
-                                                Education</a>
+                                            <Link class="dropdown-item" href="">Training &
+                                                Education</Link>
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/html/blog-grid.html">Blog</a>
+                                    <Link class="nav-link" href="/html/blog-grid.html">Blog</Link>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/html/contact-us.html">Contact us</a>
+                                    <Link class="nav-link" href="/html/contact-us.html">Contact us</Link>
                                 </li>
                             </ul>
                         </div>
