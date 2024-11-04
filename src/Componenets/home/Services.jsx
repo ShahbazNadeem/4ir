@@ -7,6 +7,7 @@ import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import Link from "next/link";
 import LearnBtn from "../button/LearnMorebtn";
+
 export default function Service({
   main,
   heading,
@@ -67,6 +68,8 @@ export default function Service({
                   className="btn-arrow mt-5 btn-hover"
                   link=""
                   iconClass="icon-arrow"
+                  width="47%"
+                  icon={faArrowUp}
                 />
               </div>
             </div>

@@ -1,43 +1,62 @@
 import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-export default function Team({heading,img1, img2,personimg1,personimg2,icon, nameBarry, nameShane , Barrydes, Shanedes}){
+export default function Team({heading,img1, img2,personimg1,personimg2,icon, nameBarry, nameShane , Barrydes, Shanedes, layout}){
     return(
         <>
-         <section class="team-section section-b-space">
-        <div class="bg-effect">
-            <Image src={img1} class="img-fluid feature-left" alt="" />
-            <Image src={img1} class="img-fluid feature-right" alt="" />
-            <Image src={img2} class="img-fluid feature-bg" alt="" />
-            <span class="round-effect"></span>
+         <section className="team-section section-b-space">
+        <div className="bg-effect">
+            <Image src={img1} className="img-fluid feature-left" alt="" />
+            <Image src={img1} className="img-fluid feature-right" alt="" />
+            <Image src={img2} className="img-fluid feature-bg" alt="" />
+            <span className="round-effect"></span>
         </div>
-        <div class="container">
-            <h2 class="text-center text-white">Our <span style={{color: "#ffce00"}}>Expert</span> Team</h2>
-            <div class="title-basic">
+        <div className="container">
+            {layout?(
+ <div className="service-info">
+ <div>
+     <div className="title">
+         <h4 style={{color: "#00BDFF", marginBottom: "1rem"}}>Leadership That Drives Transformation</h4>
+         <h2>Our <span style={{color: "#ffce00"}}>Expert</span> Team</h2>
+     </div>
+     <p className="service_paragraph" style={{marginBottom: "2rem"}}>Our team of AI and digital transformation
+         experts is dedicated to guiding your business through the complexities of the
+         Fourth Industrial Revolution. With deep industry knowledge and innovative strategies, we help
+         you achieve sustainable growth
+         and success.
+     </p>
+ </div>
+</div>
+            ):(
+                <div className="title-basic text-center">
+                <h2 className="text-white">
+                    Our <span style={{ color: "#ffce00" }}>Expert</span> Team
+                </h2>
                 <h2>{heading}</h2>
             </div>
-            <div class="row d-flex justify-content-evenly align-items-center gap-3 feature_container"
+            )}
+            <div className="row d-flex justify-content-evenly align-items-center gap-3 feature_container"
                 style={{marginLeft: "-12%"}}>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="team-box">
+                <div className="col-xl-3 col-lg-4 col-sm-6">
+                    <div className="team-box">
                         <Image src={personimg1} alt="" />
-                        <div class="feature-top mt-4">
+                        <div className="feature-top mt-4">
                             <h3>{nameBarry}</h3>
                         </div>
                         <h4 style={{textAlign: "start", marginLeft: "1rem", marginTop: "1rem"}}>{Barrydes}
                         </h4>
-                        <div data-cursor="pointer" class="link-overflow"><a href="">Read more <FontAwesomeIcon icon={icon} style={{color: "grey", paddingTop: "4px"}} /></a>
+                        <div data-cursor="pointer" className="link-overflow"><a href="">Read more <FontAwesomeIcon icon={icon} style={{color: "grey", paddingTop: "4px"}} /></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="team-box">
+                <div className="col-xl-3 col-lg-4 col-sm-6">
+                    <div className="team-box">
                         <Image style={{left: "-4%"}} src={personimg2} alt="" />
-                        <div class="feature-top mt-4">
+                        <div className="feature-top mt-4">
                             <h3>{nameShane}</h3>
                         </div>
                         <h4 style={{textAlign: "start", marginLeft: "1rem", marginTop: "1rem"}}>{Shanedes}
                         </h4>
-                        <div data-cursor="pointer" class="link-overflow"><a
+                        <div data-cursor="pointer" className="link-overflow"><a
                                 href="" target="_blank">Read more <FontAwesomeIcon icon={icon} style={{color: "grey", paddingTop: "4px"}} /></a>
                         </div>
                     </div>

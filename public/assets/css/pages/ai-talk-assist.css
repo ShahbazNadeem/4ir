@@ -169,7 +169,6 @@ html {
     content: '•';
     position: absolute;
     left: -15px;
-    top: 50% !important;
     transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -571,7 +570,7 @@ header,
     justify-content: space-between;
     /* Ensure content is spaced evenly */
     border: 1px solid #00BDFF;
-    /* box-shadow: 0 0 10px 0 #00BDFF; */
+    box-shadow: 0 0 10px 0 #00BDFF;
     padding: 2rem;
     width: 350px;
     height: 100%;

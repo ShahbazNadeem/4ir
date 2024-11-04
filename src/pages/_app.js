@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import "@/css/pages/about.css"
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({

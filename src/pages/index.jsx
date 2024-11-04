@@ -32,9 +32,6 @@ import Feature from "@/images/feature.gif";
 import Featurebg from "@/images/feature-bg.png";
 import Person1 from "@/images/team/BarryKrevoy.png";
 import Person2 from "@/images/team/ShaneKrevoy.png";
-import Blog1 from "@/images/home/blog1.png"
-import Blog2 from "@/images/home/blog2.jpg"
-import Blog3 from "@/images/home/blog3.png"
 import BlogApi from "./blogapi.json"
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
@@ -284,7 +281,7 @@ export default function Page() {
                       Cutting-Edge Technology
                     </h3>
                     <p>
-                      Access tailored AI products for staying ahead in today's
+                      Access tailored AI products for staying ahead in todays
                       landscape.
                     </p>
                   </div>
@@ -385,6 +382,7 @@ export default function Page() {
         nameShane="Shane Krevoy"
         Barrydes="CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor"
         Shanedes="4IR Transformative Leadership Advisor/Consultant"
+        layout={false}
       />
       <LatestNews heading="LATEST NEWS" title1="Innovation" title2="Insight" Blogapi={BlogApi} icon={faArrowRight} />
       <Testimonial />
