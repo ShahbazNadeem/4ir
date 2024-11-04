@@ -2,6 +2,7 @@ import Image from "next/image"
 import MainLogo from "@/images/main-logo.png"
 import Facebook from "../../../public/assets/svg/social/fb.svg"
 import Youtube from "../../../public/assets/svg/youtube.svg"
+import Linkedin from "../../../public/assets/svg/social/linkedin.svg"
 import Star from "../../../public/assets/svg/star.svg"
 import Link from "next/link"
 export default function Footer() {
