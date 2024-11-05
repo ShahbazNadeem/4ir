@@ -381,7 +381,7 @@ header .navbar-nav .nav-item:before {
 
 
 #home-header {
-    background-image: url('/assets/images/landing/ai_talk_assist/4IR-Home-banner.png');
+    background-image: url(/assets/images/landing/ai_talk_assist/4IR-Home-banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -394,7 +394,15 @@ header .navbar-nav .nav-item:before {
 
 header,
 #home {
-    background: none;
+    background-image: url(../../images//new-home-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    min-height: max-content;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .ai-features-section {

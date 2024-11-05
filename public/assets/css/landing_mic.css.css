@@ -265,7 +265,7 @@ li {
     2.2 Breadcrumb Scss start
 ==========================*/
 .breadcrumb-section {
-  background-image: url("../images/breadcrumb-bg.png");
+  background-image: url(../images/breadcrumb-bg.png);
   background-position: bottom;
   background-size: cover;
   padding-top: 180px;
@@ -1706,6 +1706,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
+  background: transparent ;
   width: 100%;
   z-index: 2;
   -webkit-transition: all 0.5s ease;
@@ -4834,7 +4835,7 @@ header .offcanvas-backdrop {
   position: absolute;
   left: 50%;
   top: 25px;
-  background-image: url("../svg/404/404-background.svg");
+  background-image: url(../svg/404/404-background.svg);
   width: 100%;
   height: 100%;
   -webkit-transform: translateX(-50%);
@@ -5025,7 +5026,7 @@ header .offcanvas-backdrop {
   }
 }
 .home-section .home-content h1 .title-effect span {
-  background: url("../images/title-bg.jpg");
+  background: url(../images/title-bg.jpg);
   background-position: bottom;
   -webkit-background-clip: text;
   color: transparent;
@@ -5330,7 +5331,7 @@ header .offcanvas-backdrop {
 .service-section:after {
   content: "";
   position: absolute;
-  background-image: url("../images/service-bg.png");
+  background-image: url(../images/service-bg.png);
   left: 0;
   top: 0;
   width: 100%;
@@ -6097,7 +6098,7 @@ header .offcanvas-backdrop {
 }
 
 .testimonial-section {
-  background-image: url("../images/testimonial-bg.png");
+  background-image: url(../images/testimonial-bg.png);
   background-size: cover;
   position: relative;
 }
@@ -6327,7 +6328,7 @@ header .offcanvas-backdrop {
 }
 .info-section .info-box {
   text-align: center;
-  background-image: url("../images/info-bg.jpg");
+  background-image: url(../images/info-bg.jpg);
   background-size: cover;
   border-radius: 8px;
   padding: 50px;
@@ -6444,7 +6445,7 @@ header .offcanvas-backdrop {
   4.6 Login Page scss
 ==========================**/
 .login-section {
-  background-image: url("../images/login-bg.jpg");
+  background-image: url(../images/login-bg.jpg);
   background-size: cover;
   height: 100%;
   padding-left: calc(40px + 120 * (100vw - 991px) / 929);

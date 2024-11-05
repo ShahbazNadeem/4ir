@@ -9,7 +9,11 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import "@/css/pages/about.css"
+import "@/css/pages/about.css";
+import "@/css/pages/services.css";
+import "@/css/pages/startegic-counselling.css";
+import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({

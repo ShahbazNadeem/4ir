@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
+import Link from "next/link"
 export default function LatestNews ({heading, title1, title2, Blogapi, icon}){
     return(
         <>
@@ -17,10 +18,10 @@ export default function LatestNews ({heading, title1, title2, Blogapi, icon}){
                         <Image src={items.image} alt="" width={1000} height={1000} />
                     </div>
                     <div className="news_content">
-                        <h3><a href="blog-details.html">{items.blogtitle}</a></h3>
+                        <h3><Link href="blog-details.html">{items.blogtitle}</Link></h3>
                         <p>{items.description}</p>
-                        <div data-cursor="pointer" className="link-overflow"><a href="/html/blog-details.html?index=0">Read
-                                more <FontAwesomeIcon icon={icon} /></a>
+                        <div data-cursor="pointer" className="link-overflow"><Link href="">Read
+                                more <FontAwesomeIcon icon={icon} /></Link>
                         </div>
                     </div>
                 </div>

@@ -516,6 +516,12 @@ li {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+.aitalkassist{
+  background-image: url(../images/landing/ai_talk_assist/4IR-Home-banner.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
 
 .btn-solid {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
@@ -533,7 +539,7 @@ li {
 }
 
 #home-header {
-  background-image: url('/assets/images/new-home-bg.png');
+  background-image: url(../images/new-home-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2205,21 +2211,6 @@ header {
   background-repeat: no-repeat;
 } */
 
-#home-header {
-  background-image: url('../images/new-home-bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* min-height: max-content; */
-  width: 100%;
-  position: relative;
-}
-
-header,
-#home {
-  background: none;
-}
 /* .calendly-inline-widget{
   bac
 } */
@@ -2228,7 +2219,7 @@ header,
 }
 
 #home-header {
-  background-image: url('../images/new-home-bg.png');
+  background-image: url(../images/new-home-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

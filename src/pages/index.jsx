@@ -1,4 +1,4 @@
-import Navbar from "@/Componenets/home/Navbar";
+import Navbar from "@/Componenets/home/Header";
 import Service from "@/Componenets/home/Services";
 import Expertise from "@/Componenets/home/Expertise";
 import Team from "@/Componenets/home/Team";

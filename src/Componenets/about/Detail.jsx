@@ -3,6 +3,7 @@ import Strategic from "@/images/services/strategicconsulting.png";
 import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Headingh4 from "../typography/h4/H4";
 
 export default function Detail({ layout, heading, title1, title2, paragraph, white , spancontent1 , spancontent2, Box}) {
     return (
@@ -13,9 +14,7 @@ export default function Detail({ layout, heading, title1, title2, paragraph, whi
                         <div className="service-info">
                             <div>
                                 <div className="title">
-                                    <h4 style={{ color: "#00BDFF", marginBottom: "1rem" }}>
-                                       {heading}
-                                    </h4>
+                              
                                     <h2>
                                         <span style={{ color: "#ffce00" }}>{title1}</span> {title2}
                                     </h2>
