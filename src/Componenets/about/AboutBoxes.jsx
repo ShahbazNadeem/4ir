@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import Link from "next/link"
 import LearnBtn from "../button/LearnMorebtn"
-export default function AboutBoxes({Box, icon}){
+export default function AboutBoxes({Box, icon, showbutton}){
 return(
     <>
      <section class="section-b-space services_section">
@@ -19,7 +19,9 @@ return(
                             <h4 class="box_text">{items.title}</h4>
                             <p>{items.para}
                             </p>
-                            <LearnBtn datacursor="pointer" className="btn-arrow mt-5 btn-hover" iconClass="icon-arrow" link="" icon={icon} />
+                            {showbutton &&(
+                            <LearnBtn datacursor="pointer" className="btn-arrow mt-5 btn-hover" style={{display: display}} iconClass="icon-arrow" link="" icon={icon} />
+                            )}
                         </div>
                     </div>
                 </Link>
