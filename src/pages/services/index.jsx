@@ -97,7 +97,7 @@ export default function Services() {
                   style={{ fontSize: "0.90rem", color: "rgb(156 157 159)" }}
                 >
                   No matter where you are in your digital transformation
-                  journey, we're here to guide you every step of the way.
+                  journey, we are here to guide you every step of the way.
                   Contact us today to learn how we can help your business thrive
                   in the Fourth Industrial Revolution.
                 </span>
