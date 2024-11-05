@@ -28,50 +28,50 @@ const AitalkAssist = () => {
     const handleCloseModal = () => {
       setShowModal(false);
     };
-    const Box = [
-        {
-            id: 1,
-            image: Live,
-            heading: "Live Transfers",
-            title: "Seamlessly connect your customers with the right team members in real-time.",
-            para: "Our AI-powered system transfers calls directly to your staff, ensuring high-priority calls are handled by the appropriate agents. Enhances customer experience and operational efficiency."
-        },
-        {
-            id: 2,
-            image: Appointment,
-            heading: "Appointment Scheduling",
-            title: "Automate your appointment setting with precision and ease.",
-            para: "AI Talk Assist helps avoid scheduling conflicts by synchronizing with your existing calendar system. Your team remains organized and efficient."
-        },
-        {
-            id: 3,
-            image: Lead,
-            heading: "Lead Qualification",
-            title: "Identify and prioritize high-quality leads.",
-            para: "Our AI identifies qualified leads quickly, allowing your team to focus on potential clients who are most likely to convert, boosting your sales pipeline."
-        },
-        {
-            id: 4,
-            image: Customer,
-            heading: "Customer Support (Q&A)",
-            title: "Provide instant answers to common questions.",
-            para: "Automate responses to frequently asked questions, reducing the workload on support teams and giving customers the information they need fast."
-        },
-        {
-            id: 5,
-            image: Communication,
-            heading: "Off-Hours Communication Handling",
-            title: "Never miss a customer interaction.",
-            para: "AI manages customer interactions outside business hours, ensuring that all customer inquiries are acknowledged, improving engagement."
-        },
-        {
-            id: 6,
-            image: Training,
-            heading: "Staff Training",
-            title: "Streamline training processes with AI insights.",
-            para: "AI-based training tools provide staff with personalized learning experiences, speeding up onboarding and skill development."
-        },
-    ];
+    // const Box = [
+    //     {
+    //         id: 1,
+    //         image: Live,
+    //         heading: "Live Transfers",
+    //         title: "Seamlessly connect your customers with the right team members in real-time.",
+    //         para: "Our AI-powered system transfers calls directly to your staff, ensuring high-priority calls are handled by the appropriate agents. Enhances customer experience and operational efficiency."
+    //     },
+    //     {
+    //         id: 2,
+    //         image: Appointment,
+    //         heading: "Appointment Scheduling",
+    //         title: "Automate your appointment setting with precision and ease.",
+    //         para: "AI Talk Assist helps avoid scheduling conflicts by synchronizing with your existing calendar system. Your team remains organized and efficient."
+    //     },
+    //     {
+    //         id: 3,
+    //         image: Lead,
+    //         heading: "Lead Qualification",
+    //         title: "Identify and prioritize high-quality leads.",
+    //         para: "Our AI identifies qualified leads quickly, allowing your team to focus on potential clients who are most likely to convert, boosting your sales pipeline."
+    //     },
+    //     {
+    //         id: 4,
+    //         image: Customer,
+    //         heading: "Customer Support (Q&A)",
+    //         title: "Provide instant answers to common questions.",
+    //         para: "Automate responses to frequently asked questions, reducing the workload on support teams and giving customers the information they need fast."
+    //     },
+    //     {
+    //         id: 5,
+    //         image: Communication,
+    //         heading: "Off-Hours Communication Handling",
+    //         title: "Never miss a customer interaction.",
+    //         para: "AI manages customer interactions outside business hours, ensuring that all customer inquiries are acknowledged, improving engagement."
+    //     },
+    //     {
+    //         id: 6,
+    //         image: Training,
+    //         heading: "Staff Training",
+    //         title: "Streamline training processes with AI insights.",
+    //         para: "AI-based training tools provide staff with personalized learning experiences, speeding up onboarding and skill development."
+    //     },
+    // ];
   return (
     <>
       <header>
@@ -171,7 +171,7 @@ const AitalkAssist = () => {
                 </div>
             </div>
         </section>
-    <AboutBoxes />
+    {/* <AboutBoxes /> */}
     </>
   )
 }
