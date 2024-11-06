@@ -1,7 +1,7 @@
-export default function Headingh4({heading}){
+export default function Headingh4({heading, style}){
     return(
         <>
-         <h4 style={{ color: "#00BDFF", marginBottom: "1rem" }}>
+         <h4 style={style}>
                                        {heading}
                                     </h4>
         </>

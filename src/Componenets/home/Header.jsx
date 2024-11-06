@@ -4,21 +4,18 @@ import Logo from "@/images/4IRLogomain.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Demobtn from "../book a demo button/Demobtn";
+import Button from "../typography/button/Button";
+import Heading5 from "../typography/h5/Heading5";
+import Model from "../model/Model";
+import { useRouter } from "next/router";
 
-export default function Navbar() {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleOpenModal = () => {
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
+export default function Navbar({ showModal, handleOpenModal, handleCloseModal }) {
+  const router = useRouter(); 
 
   return (
     <>
+      {showModal && <Model close={handleCloseModal} />}
+      <div id="home-header" >
       <header>
         <button
           className="navbar-toggler d-xl-none d-inline navbar-menu-button"
@@ -30,26 +27,40 @@ export default function Navbar() {
             <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
           </span>
         </button>
-        <Link href="/" style={{cursor:"pointer"}}>
+        <Link href="/" style={{ cursor: "pointer" }}>
           <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" />
         </Link>
         <nav className="header-nav-middle">
           <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
             <div className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
               <div className="offcanvas-header navbar-shadow">
-                <h5 className="mb-0">Back</h5>
-                <button className="btn-close lead" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <Heading5 title="Back" className="mb-0" />
+                <button
+                  className="btn-close lead"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
               </div>
               <div className="offcanvas-body">
                 <ul className="navbar-nav">
-                  <li className="nav-item active">
-                    <Link className="nav-link" href="/">Home</Link>
+                  <li className={`nav-item ${router.pathname === '/' ? 'active' : ''}`}>
+                    <Link className="nav-link" href="/">
+                      Home
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/about">About Us</Link>
+                  <li className={`nav-item ${router.pathname === '/about' ? 'active' : ''}`}>
+                    <Link className="nav-link" href="/about">
+                      About Us
+                    </Link>
                   </li>
-                  <li className="nav-item dropdown">
-                    <Link className="nav-link" href="/services" id="servicesLink">
+                  <li className={`nav-item dropdown ${router.pathname.startsWith('/services') ? 'active' : ''}`}>
+                    <Link
+                      className="nav-link"
+                      href="/services"
+                      id="servicesLink"
+                      
+                    >
                       Services
                     </Link>
                     <button
@@ -62,29 +73,61 @@ export default function Navbar() {
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                       <li>
-                        <Link className="dropdown-item" href="/services/StrategicCounseling">Strategic Counseling</Link>
+                        <Link
+                          className="dropdown-item"
+                          href="/services/StrategicCounseling"
+                          
+                        >
+                          Strategic Counseling
+                        </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" href="/services/AitalkAssist">AITalkAssist</Link>
+                        <Link
+                          className="dropdown-item"
+                          href="/services/AitalkAssist"
+                        
+                        >
+                          AITalkAssist
+                        </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item" href="/services/TrainingEducation">Training & Education</Link>
+                        <Link
+                          className="dropdown-item"
+                          href="/services/TrainingEducation"
+                         
+                        >
+                          Training & Education
+                        </Link>
                       </li>
                     </ul>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/html/blog-grid.html">Blog</Link>
+                  <li className={`nav-item ${router.pathname === '/blog' ? 'active' : ''}`}>
+                    <Link className="nav-link" href="/blog" >
+                      Blog
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/html/contact-us.html">Contact us</Link>
+                  <li className={`nav-item ${router.pathname === '/html/contact-us.html' ? 'active' : ''}`}>
+                    <Link className="nav-link" href="/html/contact-us.html">
+                      Contact us
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
-        <Demobtn showModal={showModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} />
+        <Button
+          style={{
+            position: "relative",
+            marginTop: "-1.5rem",
+            padding: "13px 32px",
+          }}
+          click={handleOpenModal}
+          title="Book a Demo"
+          className="btn btn-theme d-sm-inline-block d-none"
+        />
       </header>
+      </div>
     </>
   );
 }

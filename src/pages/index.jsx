@@ -32,7 +32,16 @@ import Feature from "@/images/feature.gif";
 import Featurebg from "@/images/feature-bg.png";
 import Person1 from "@/images/team/BarryKrevoy.png";
 import Person2 from "@/images/team/ShaneKrevoy.png";
-import BlogApi from "./blogapi.json"
+import BlogApi from "./blogapi.json";
+import Model from "@/Componenets/model/Model";
+import Para from "@/Componenets/typography/paragrapgh/paragraph";
+import Headingh2 from "@/Componenets/typography/h2/H2";
+import Headingh3 from "@/Componenets/typography/h3/Headingh3";
+import Heading1 from "@/Componenets/typography/h1/Heading1";
+import MainBox from "@/Componenets/mainbox/MainBox";
+import Button from "@/Componenets/typography/button/Button";
+import Mic from "@/Componenets/mic/Mic";
+
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
   const [audio, setAudio] = useState(null); // Initialize audio as null
@@ -69,39 +78,165 @@ export default function Page() {
       setIsAnimating(false); // Reset animation state
     }, 200); // Match the duration of the CSS transition
   };
+  const [showModal, setShowModal] = useState(false);
 
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const ServiceBox = [
+    {
+      id: 1,
+      image1: ExpertGuide,
+      image2: ExpertGuideBold,
+      image3: ServiceTitle,
+      title: "Expert Guidance:",
+      para: "Unlock unparalleled insights and guidance for AI consulting and product solutions.",
+      columnclass:"col-sm-6",
+      firstChildClass:"service-box",
+      secondChildClass:"service-icon",
+      firstimageclass:"img-fluid outline-icon",
+      secondimageClass:"img-fluid bold-icon",
+   contentclass: "service-content"
+    },
+    {
+      id: 2,
+      image1: CuttingEdge,
+      image2: CuttingEdgeBold,
+      image3: ServiceTitle,
+      title: "Cutting-Edge Technology",
+      para: "Access tailored AI products for staying ahead in todays landscape.",
+      columnclass:"col-sm-6",
+      firstChildClass:"service-box",
+      secondChildClass:"service-icon",
+      firstimageclass:"img-fluid outline-icon",
+      secondimageClass:"img-fluid bold-icon",
+      contentclass: "service-content"
+    },
+    {
+      id: 3,
+      image1: StreamLine,
+      image2: StreamLineBold,
+      image3: ServiceTitle,
+      title: "Streamlined Training",
+      para: "Equip your team with AI expertise for confident navigation.",
+      columnclass:"col-sm-6",
+      firstChildClass:"service-box",
+      secondChildClass:"service-icon",
+      firstimageclass:"img-fluid outline-icon",
+      secondimageClass:"img-fluid bold-icon",
+       contentclass: "service-content"
+    },
+  ];
+  const TeamBox = [
+    {
+      id: 1,
+      personimg:Person1,
+      name: "Barry Krevoy",
+      description: "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
+      columnclass:"col-xl-3 col-lg-4 col-sm-6",
+      firstChildClass:"team-box",
+      secondChildClass:"feature-top mt-4",
+      contentclass: "link-overflow",
+      layout:true,
+      icon: faArrowRight,
+      
+    },
+    {
+      id: 2,
+      personimg:Person2,
+      name: "Shane Krevoy",
+      description: "4IR Transformative Leadership Advisor/Consultant",
+      columnclass:"col-xl-3 col-lg-4 col-sm-6",
+      firstChildClass:"team-box",
+      secondChildClass:"feature-top mt-4",
+      layout:true,
+      contentclass: "link-overflow",
+      icon: faArrowRight,
+    },
+  ];
+  const Services = [
+    {
+      id: 1,
+      main: "about-section section-b-space section-mb-space",
+      heading: "Strategic Consulting.",
+      number: "01.",
+      paragraph:
+        "Crafting influential content requires a deep understanding of your target audience. Pinpoint your ideal demographic and familiarise yourself with their needs, passions, and sources of concern.",
+    ticktitle:["Attract your audience with captivating facts in your commercials" ,"Let’s engage with the customers effectively" ,"Brighten up your content with appealing graphics: pictures, clips, and graphs that will fascinate your users!" ,],
+      image: Strategic,
+      imgWidth: "100%",
+      imgHeight: "80%",
+      aos: "fade-left",
+      link:"/services/StrategicCounseling",
+      layout: false,
+    },
+    {
+      id: 2,
+      main: "about-section right-version section-b-space section-mb-space",
+      heading: "AI Talk Assist",
+      number: "02.",
+      aos: "fade-right",
+      paragraph:
+        "Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle.",
+      ticktitle:["AI Talk Assist – AI-driven tool for personalized" ,"24/7 customer service." ,"CRM Integration – Connects with your CRM for valuable insights." ,"Automates Tasks – Manages lead generation, appointment scheduling, and support." ,],
+      image: AiSolution,
+      imgWidth: "100%",
+      imgHeight: "80%",
+      link:"/services/AitalkAssist",
+      layout: true,
+    },
+    {
+      id: 3,
+      main: "about-section section-b-space",
+      heading: "Training & Education",
+      aos: "fade-left",
+      number: "03.",
+      paragraph:
+        "Experience the power of 4irinc AI and revolutionise your social media presence. Say goodbye to writer's block and hello to compelling hashtags, captivating captions, and endless content possibilities.",
+        ticktitle:["Curate endless content possibilities that make your website shine." ,"Generates compelling hashtags that skyrocket your reach" ,"Unlock a world of unlimited content ideas that keep your followers hooked." ,],
+link: "/services/TrainingEducation",
+      image: Training,
+      imgWidth: "100%",
+      imgHeight: "80%",
+      layout: false,
+    },
+  ];
+  
   return (
     <>
-      <Navbar />
+      <Navbar showModal={showModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal}  />
+      {showModal && <Model close={handleCloseModal} />}
       <section id="home" className="section-b-space home-section">
         <div className="container-fluid">
           <div className="home-sec">
             <div className="home-content">
               <div className="home-contents">
                 <div>
-                  <h2 style={{ fontSize: "20px" }}>
-                    FOURTH INDUSTRIAL REVOLUTION INC
-                  </h2>
+                  <Headingh2
+                    title="FOURTH INDUSTRIAL REVOLUTION INC"
+                    headingstyle={{
+                      fontSize: "20px",
+                      fontFamily: "'Play', sans-serif",
+                    }}
+                  />
                 </div>
-
-                <h1>
-                  {" "}
-                  <span style={{ color: "#ffce00" }}>
-                    EMPOWER YOUR BUSINESS
-                  </span>{" "}
-                  <br />
-                  WITH AI-DRIVEN SUCCESS
-                </h1>
+                <Heading1
+                  spantitle="EMPOWER YOUR BUSINESS"
+                  spanstyle={{ color: "#ffce00" }}
+                  title="WITH AI-DRIVEN SUCCESS"
+                  breakpoint={true}
+                />
                 <div className="d-flex flex-row gap-3 home_links">
-                  <div
+                  <Button
+                    click={handleOpenModal}
                     className="btn-solid"
-                    data-bs-toggle="modal"
-                    data-bs-target="#demo-modal"
-                  >
-                    Book a Demo
-                    <FontAwesomeIcon icon={faArrowRight} />
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
+                    title="Book a Demo"
+                    icon={faArrowRight}
+                  />
                 </div>
               </div>
             </div>
@@ -168,203 +303,64 @@ export default function Page() {
       </section>
       <div className="service-section section-b-space">
         <div className="container">
-          <p
-            style={{ fontSize: "40px", position: "relative", bottom: "1rem" }}
+          <Headingh2
+            title="About Us"
+            headingstyle={{
+              fontSize: "40px",
+              position: "relative",
+              bottom: "2rem",
+            }}
             className="text-white"
-          >
-            About Us
-          </p>
+          />
           <div className="row g-5">
             <div className="col-lg-6">
               <div className="service-info">
                 <div>
                   <div className="title">
-                    <h2 style={{ color: "#fff" }}>
-                      <span style={{ color: "#ffce00" }}>
-                        Empowering Your Business
-                      </span>{" "}
-                      In With AI Consulting And Product Solutions
-                    </h2>
-                    <h3 style={{ color: "#00BDFF" }}>
-                      In the digital world, our AI Writer supports a variety of
-                      artists
-                    </h3>
+                    <Headingh2
+                      headingstyle={{ color: "#fff" }}
+                      spanstyle={{ color: "#ffce00" }}
+                      title=" Empowering Your Business"
+                      secondtitle=" In With AI Consulting And Product Solutions"
+                    />
+                    <Headingh3
+                      showimage={false}
+                      title="In the digital world, our AI Writer supports a variety of
+                      artists"
+                      style={{ color: "#00BDFF" }}
+                    />
                   </div>
-                  <p style={{ textAlign: "justify" }}>
-                    At Fourth Industrial Revolution Inc., we are dedicated to
+                  <Para
+                    paragraph="At Fourth Industrial Revolution Inc., we are dedicated to
                     guiding businesses through the transformative power of
                     artificial intelligence. With a team of seasoned experts at
                     the helm, specializing in AI consulting and product
                     solutions, we provide tailored AI solutions that propel your
                     business into the future. Our mission is simple yet
                     ambitious: to empower organizations to thrive in the dynamic
-                    landscape of the Fourth Industrial Revolution.
-                  </p>
+                    landscape of the Fourth Industrial Revolution."
+                    style={{ textAlign: "justify" }}
+                  />
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6">
-              <div className="mic-sec">
-                <div className="mic-div">
-                  <button
-                    type="button"
-                    className={`mic ${isAnimating ? "animating" : ""} ${
-                      isListening ? "listening" : ""
-                    }`}
-                    onClick={handleMicClick}
-                  >
-                    <FontAwesomeIcon
-                      icon={faMicrophone}
-                      style={{ color: "#65bada" }}
-                    />
-                    <canvas className="visualizer"></canvas>
-                  </button>
-                  <div className="mic_text">Give it a try!</div>
-                </div>
-              </div>
+              <Mic
+                isListening={isListening}
+                isAnimating={isAnimating}
+                handleMicClick={handleMicClick}
+              />
             </div>
           </div>
           <div className="col-lg-6">
             <div className="service_boxes_div">
-              <div className="col-sm-6">
-                <div className="service-box">
-                  <div className="service-icon">
-                    <Image
-                      src={ExpertGuide}
-                      className="img-fluid outline-icon"
-                      alt=""
-                    />
-                    <Image
-                      src={ExpertGuideBold}
-                      className="img-fluid bold-icon"
-                      alt=""
-                    />
-                  </div>
-                  <div className="service-content">
-                    <h3>
-                      <Image
-                        src={ServiceTitle}
-                        alt="effect"
-                        className="img-fluid"
-                      />
-                      Expert Guidance:
-                    </h3>
-                    <p>
-                      Unlock unparalleled insights and guidance for AI
-                      consulting and product solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="service-box">
-                  <div className="service-icon">
-                    <Image
-                      src={CuttingEdge}
-                      className="img-fluid outline-icon"
-                      alt=""
-                    />
-                    <Image
-                      src={CuttingEdgeBold}
-                      className="img-fluid bold-icon"
-                      alt=""
-                    />
-                  </div>
-                  <div className="service-content">
-                    <h3>
-                      <Image
-                        src={ServiceTitle}
-                        alt="effect"
-                        className="img-fluid"
-                      />
-                      Cutting-Edge Technology
-                    </h3>
-                    <p>
-                      Access tailored AI products for staying ahead in todays
-                      landscape.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6">
-                <div className="service-box">
-                  <div className="service-icon">
-                    <Image
-                      src={StreamLine}
-                      className="img-fluid outline-icon"
-                      alt=""
-                    />
-                    <Image
-                      src={StreamLineBold}
-                      className="img-fluid bold-icon"
-                      alt=""
-                    />
-                  </div>
-                  <div className="service-content">
-                    <h3>
-                      <Image
-                        src={ServiceTitle}
-                        alt="effect"
-                        className="img-fluid"
-                      />
-                      Streamlined Training
-                    </h3>
-                    <p>
-                      Equip your team with AI expertise for confident
-                      navigation.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <MainBox ServiceBox={ServiceBox} />
             </div>
           </div>
         </div>
       </div>
-      <Service
-        main="about-section section-b-space section-mb-space"
-        heading="Strategic Consulting."
-        number="01."
-        paragraph="Crafting influential content requires a deep understanding of your target audience.
-                                Pinpoint your ideal demographic and familiarise yourself with their needs, passions, and
-                                sources of concern."
-        ticktitle1="Attract your audience with captivating facts in your commercials"
-        ticktitle2="Let’s engage with the customers effectively"
-        ticktitle3="Brighten up your content with appealing graphics: pictures, clips, and graphs that will fascinate your users!"
-        image={Strategic}
-        imgWidth="100%"
-        imgHeight="80%"
-        layout={false}
-      />
-      <Service
-        main="about-section right-version section-b-space section-mb-space"
-        heading="AI Talk Assist"
-        number="02."
-        paragraph="Experience the convenience of AI-driven calls. Let technology handle your communication
-                                needs effortlessly, saving you time and hassle."
-        ticktitle1="AI Talk Assist – AI-driven tool for personalized"
-        ticktitle2=" 24/7 customer service."
-        ticktitle3="CRM Integration – Connects with your CRM for valuable insights."
-        ticktitle4="Automates Tasks – Manages lead generation, appointment scheduling, and support."
-        image={AiSolution}
-        imgWidth="100%"
-        imgHeight="80%"
-        layout={true}
-      />
-      <Service
-        main="about-section section-b-space"
-        heading="Training & Education"
-        number="03."
-        paragraph="Experience the power of 4irinc AI and revolutionise your social media presence. Say goodbye to writer's block and hello to compelling hashtags, captivating captions, and endless content possibilities."
-        ticktitle1="Curate endless content possibilities that make your website shine."
-        ticktitle2="Generates compelling hashtags that skyrocket your reach"
-        ticktitle3="Unlock a world of unlimited content ideas that keep your followers hooked."
-        image={Training}
-        imgWidth="100%"
-        imgHeight="80%"
-        layout={false}
-      />
+      <Service Services={Services} />
       <Expertise
         expertise="Our Expertise"
         heading1="Driving Innovation"
@@ -375,16 +371,16 @@ export default function Page() {
         heading="Innovative Minds Behind The Vision"
         img1={Feature}
         img2={Featurebg}
-        personimg1={Person1}
-        personimg2={Person2}
-        icon={faArrowRight}
-        nameBarry="Barry Krevoy"
-        nameShane="Shane Krevoy"
-        Barrydes="CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor"
-        Shanedes="4IR Transformative Leadership Advisor/Consultant"
+        ServiceBox={TeamBox}
         layout={false}
       />
-      <LatestNews heading="LATEST NEWS" title1="Innovation" title2="Insight" Blogapi={BlogApi} icon={faArrowRight} />
+      <LatestNews
+        heading="LATEST NEWS"
+        title1="Innovation"
+        title2="Insight"
+        Blogapi={BlogApi}
+        icon={faArrowRight}
+      />
       <Testimonial />
       <Footer />
     </>

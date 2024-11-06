@@ -12,7 +12,7 @@ import Healthcare from "@/images/blue service icon/Healthcare.png";
 import Education from "@/images/blue service icon/Education.png";
 import Retail from "@/images/blue service icon/Healthcare.png";
 import Image from "next/image";
-import Headingh2 from "@/Componenets/typography/H2/H2";
+import Headingh2 from "@/Componenets/typography/h2/H2";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Strategic from "@/images/services/strategicconsulting.png";
@@ -20,9 +20,10 @@ import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import LearnBtn from "@/Componenets/button/LearnMorebtn";
 import AboutBoxes from "@/Componenets/about/AboutBoxes";
+import { useState } from "react";
 export default function Services() {
+
   const Box = [
     {
       id: 1,
@@ -68,7 +69,7 @@ export default function Services() {
                 </div>
                 <Para paragraph="Transform your business with cutting-edge AI technologies and strategic expertise. We offer a range of services designed to drive growth, streamline operations, and empower your team for success in the AI-driven future." />
 
-                <AboutBoxes Box={Box} icon={faArrowRight} />
+                <AboutBoxes Box={Box} icon={faArrowRight} showbutton={true} />
               </div>
             </div>
           </div>

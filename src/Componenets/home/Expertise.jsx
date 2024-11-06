@@ -1,3 +1,5 @@
+import Para from "../typography/paragrapgh/paragraph";
+
 export default function Expertise ({expertise, heading1, heading2, para}){
     return(
         <>
@@ -7,11 +9,11 @@ export default function Expertise ({expertise, heading1, heading2, para}){
                 <div className="col-lg-6">
                     <div className="service-info">
                         <div>
-                            <p style={{fontSize: "38px", position: "relative", bottom: "1rem"}} className="text-white">{expertise}</p>
+                            <Para paragraph={expertise} style={{fontSize: "38px", position: "relative", bottom: "1rem"}} className="text-white" />
                             <div className="title">
                                 <h2>{heading1} <span style={{color: "#ffce00"}}>{heading2}</span></h2>
                             </div>
-                            <p>{para}</p>
+                            <Para paragraph={para} />
                         </div>
                     </div>
                 </div>

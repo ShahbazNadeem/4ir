@@ -1,17 +1,15 @@
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Headingh4 from "../typography/h4/H4";
+import Para from "../typography/paragrapgh/paragraph";
+import Headingh2 from "../typography/h2/H2";
+import MainBox from "../mainbox/MainBox";
 export default function Team({
   heading,
   img1,
   img2,
-  personimg1,
-  personimg2,
-  icon,
-  nameBarry,
-  nameShane,
-  Barrydes,
-  Shanedes,
+  ServiceBox,
   layout,
 }) {
   return (
@@ -28,23 +26,17 @@ export default function Team({
             <div className="service-info">
               <div>
                 <div className="title">
-                  <h4 style={{ color: "#00BDFF", marginBottom: "1rem" }}>
-                    Leadership That Drives Transformation
-                  </h4>
+                  <Headingh4 style={{ color: "#00BDFF", marginBottom: "1rem" }} heading="Leadership That Drives Transformation" />
+                 
                   <h2>
                     Our <span style={{ color: "#ffce00" }}>Expert</span> Team
                   </h2>
                 </div>
-                <p
-                  className="service_paragraph"
-                  style={{ marginBottom: "2rem" }}
-                >
-                  Our team of AI and digital transformation experts is dedicated
+                <Para paragraph=" Our team of AI and digital transformation experts is dedicated
                   to guiding your business through the complexities of the
                   Fourth Industrial Revolution. With deep industry knowledge and
                   innovative strategies, we help you achieve sustainable growth
-                  and success.
-                </p>
+                  and success." className="service_paragraph" style={{ marginBottom: "2rem" }} />
               </div>
             </div>
           ) : (
@@ -52,65 +44,14 @@ export default function Team({
               <h2 className="text-white">
                 Our <span style={{ color: "#ffce00" }}>Expert</span> Team
               </h2>
-              <h2>{heading}</h2>
+              <Headingh2 title={heading} />
             </div>
           )}
           <div
             className="row d-flex justify-content-evenly align-items-center gap-3 feature_container"
             style={{ marginLeft: "7%" }}
           >
-            <div className="col-xl-3 col-lg-4 col-sm-6">
-              <div className="team-box">
-                <Image src={personimg1} alt="" />
-                <div className="feature-top mt-4">
-                  <h3>{nameBarry}</h3>
-                </div>
-                <h4
-                  style={{
-                    textAlign: "start",
-                    marginLeft: "1rem",
-                    marginTop: "1rem",
-                  }}
-                >
-                  {Barrydes}
-                </h4>
-                <div data-cursor="pointer" className="link-overflow">
-                  <Link href="">
-                    Read more{" "}
-                    <FontAwesomeIcon
-                      icon={icon}
-                      style={{ color: "grey", paddingTop: "4px" }}
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6">
-              <div className="team-box">
-                <Image style={{ left: "-4%" }} src={personimg2} alt="" />
-                <div className="feature-top mt-4">
-                  <h3>{nameShane}</h3>
-                </div>
-                <h4
-                  style={{
-                    textAlign: "start",
-                    marginLeft: "1rem",
-                    marginTop: "1rem",
-                  }}
-                >
-                  {Shanedes}
-                </h4>
-                <div data-cursor="pointer" className="link-overflow">
-                  <Link href="" target="_blank">
-                    Read more{" "}
-                    <FontAwesomeIcon
-                      icon={icon}
-                      style={{ color: "grey", paddingTop: "4px" }}
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
+            <MainBox ServiceBox={ServiceBox} />
           </div>
         </div>
       </section>

@@ -1785,7 +1785,7 @@ header .navbar-nav .nav-item {
   margin-bottom: 0;
   position: relative;
 }
-header .navbar-nav .nav-item:before {
+header .navbar-nav .nav-item:before{
   content: "";
   width: 6px;
   height: 6px;

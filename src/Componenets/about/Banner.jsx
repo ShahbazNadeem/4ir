@@ -1,3 +1,7 @@
+import Heading1 from "../typography/h1/Heading1";
+import Headingh2 from "../typography/h2/H2";
+import Para from "../typography/paragrapgh/paragraph";
+
 export default function Banner({heading, title, paragraph,layout}){
     return(
         <>
@@ -9,13 +13,13 @@ export default function Banner({heading, title, paragraph,layout}){
                             {layout? null: (
 <div className="">
 
-    <h2 style={{fontSize: "20px"}}>{heading}
-                            </h2>
+    <Headingh2 headingstyle={{ fontSize: "20px", fontFamily: "'Play Sans', sans-serif" }} title={heading} />
+                            
 </div>
 
                             )}
-                            <h1>{title}</h1>
-                            <p>{paragraph}</p>
+                            <Heading1 title={title} />
+                            <Para paragraph={paragraph} />
                         </div>
                     </div>
                 </div>

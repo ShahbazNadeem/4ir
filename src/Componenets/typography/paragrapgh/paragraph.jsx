@@ -1,7 +1,7 @@
-export default function Para({paragraph}){
+export default function Para({paragraph, className, style}){
     return(
         <>
-         <p className="service_paragraph" style={{ marginBottom: "2rem" }}>
+         <p className={className} style={style}>
          {paragraph} </p>
         </>
     )

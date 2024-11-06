@@ -3,22 +3,33 @@
     "id": 1,
     "blogtitle": "Smashing: A New Content Curation App From Goodreads Co-Founder",
     "description": "Image Credits: Smashing Goodreads’ co-founder Otis Chandler has launched a new AI",
-   "image": "/assets/images/home/blog1.png"
-
+    "image": "/assets/images/home/blog1.png",
+    "columnClass": "col-lg-4 col-md-6",
+    "firstChildclass": "news_box",
+    "imageclass": "news_img",
+    "contentClass": "news_content",
+    "layout":false
   },
   {
     "id": 2,
     "blogtitle": "Revolutionize Project Management With AI: Skyrocket ROI And Boost Productivity",
     "description": "Image Credits: Smashing Goodreads’ co-founder Otis Chandler has launched a new AI",
-   "image": "/assets/images/home/blog2.jpg"
-
+    "image": "/assets/images/home/blog2.jpg",
+    "columnClass": "col-lg-4 col-md-6",
+    "firstChildclass": "news_box",
+    "imageclass": "news_img",
+    "contentClass": "news_content",
+    "layout":false
   },
   {
     "id": 3,
     "blogtitle": "Smashing: A New Content Curation App From Goodreads Co-Founder",
     "description": "Image Credits: Smashing Goodreads’ co-founder Otis Chandler has launched a new AI",
-   "image": "/assets/images/home/blog3.png"
-
+    "image": "/assets/images/home/blog3.png",
+    "columnClass": "col-lg-4 col-md-6",
+    "firstChildclass": "news_box",
+    "imageclass": "news_img",
+    "contentClass": "news_content",
+    "layout":false
   }
 ]
-

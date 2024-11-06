@@ -1,16 +1,9 @@
-export default function Demobtn({showModal, handleOpenModal, handleCloseModal}){
+import Button from "../typography/button/Button";
+
+export default function Model ({close}){
     return(
         <>
-         <button
-          data-cursor="pointer"
-          style={{ position: "relative", marginTop: "-1.5rem", padding: "13px 32px" }}
-          className="btn btn-theme d-sm-inline-block d-none"
-          onClick={handleOpenModal}
-        >
-          <span>Book a Demo</span>
-        </button>
-        {showModal && (
-        <div className="modal fade show" style={{ display: "block" }} aria-labelledby="demo-modalLabel" aria-hidden="true"    data-aos="fade-down" 
+          <div className="modal fade show" style={{ display: "block" }} aria-labelledby="demo-modalLabel" aria-hidden="true"    data-aos="fade-down" 
         data-aos-duration="800" 
         data-aos-easing="ease-in-out">
           <div className="modal-dialog modal-dialog-centered modal-lg">
@@ -23,7 +16,6 @@ export default function Demobtn({showModal, handleOpenModal, handleCloseModal}){
                 >
                   Book a <span style={{ color: "#ffce00" }}>Demo</span>
                 </h1>
-                <button type="button" className="btn-close" onClick={handleCloseModal} aria-label="Close"></button>
               </div>
               <div className="modal-body">
                 <iframe
@@ -34,13 +26,11 @@ export default function Demobtn({showModal, handleOpenModal, handleCloseModal}){
                 ></iframe>
               </div>
               <div className="modal-footer">
-                <button type="button" className="btn btn-theme" onClick={handleCloseModal}
- >Close</button>
+                <Button className="btn btn-theme" click={close} title="Close"  />
               </div>
             </div>
           </div>
         </div>
-      )}
         </>
     )
 }

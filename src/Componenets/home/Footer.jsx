@@ -5,6 +5,8 @@ import Youtube from "../../../public/assets/svg/youtube.svg"
 import Linkedin from "../../../public/assets/svg/social/linkedin.svg"
 import Star from "../../../public/assets/svg/star.svg"
 import Link from "next/link"
+import Headingh3 from "../typography/h3/Headingh3"
+import Headingh4 from "../typography/h4/H4"
 export default function Footer() {
     return(
         <>
@@ -14,7 +16,7 @@ export default function Footer() {
                 <div className="footer-main">
                     <Link href="#" className="footer-logo"><Image src={MainLogo} id="logo-img"
                             className="img-fluid" alt="" /></Link>
-                    <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
+                            <Headingh3 title="SUBSCRIBE TO OUR NEWSLETTER" />
                     <form>
                         <div className="input-group">
                             <input type="email" className="form-control" id="exampleFormControlInput1"
@@ -64,7 +66,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="footer-copyright">
-                <h4>@2024 All the Copyright Reserved.</h4>
+                <Headingh4 heading="@2024 All the Copyright Reserved." />
                 <ul className="footer-links">
                     <li><Link href="/html/privacy.html">Privacy Policy </Link></li>
                     <li><Link href="/html/terms.html">Terms & Condition </Link></li>

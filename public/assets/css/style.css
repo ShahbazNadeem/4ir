@@ -208,11 +208,13 @@ h1 {
   font-size: calc(22px + 34 * (100vw - 320px) / 1600);
   line-height: 1.5;
   letter-spacing: 0.03em;
+ 
 }
 
 h2 {
   font-size: calc(20px + 20 * (100vw - 320px) / 1600);
   font-weight: 600;
+
 }
 
 h3 {
@@ -521,6 +523,10 @@ li {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+.boxs_container .boxcustom{
+  border: 2px solid #00BDFF;
+   box-shadow: 0 0 10px 0 #00BDFF;
 }
 
 .btn-solid {
@@ -2367,11 +2373,12 @@ header .navbar-nav .nav-item:before {
   }
 }
 
-header .navbar-nav .nav-item.active::before,
+/* header .navbar-nav .nav-item.active::before,
 header .navbar-nav .nav-item:hover::before {
   -webkit-transform: translateY(-50%) scale(1);
   transform: translateY(-50%) scale(1);
-}
+  
+} */
 
 header .navbar-nav .nav-item:hover {
   color: rgba(var(--theme-color), 1);
