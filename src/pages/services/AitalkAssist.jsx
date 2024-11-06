@@ -318,7 +318,7 @@ const AitalkAssist = () => {
                         <h3>Increase Conversion Rates</h3>
                         <p>Pre-qualify leads, set up appointments, and follow up with customers—automatically. Watch
                             your
-                            conversion rates soar while freeing up your team's time.</p>
+                            conversion rates soar while freeing up your teams time.</p>
                     </div>
                 </div>
 
