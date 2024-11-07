@@ -3,7 +3,7 @@ import Service from "@/Componenets/home/Services";
 import Expertise from "@/Componenets/home/Expertise";
 import Team from "@/Componenets/home/Team";
 import LatestNews from "@/Componenets/home/LatestNews";
-import Testimonial from "@/Componenets/home/Testimonial";
+import Testimonial from "@/Componenets/home/CalltoAction";
 import Footer from "@/Componenets/home/Footer";
 import Image from "next/image";
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
@@ -41,7 +41,8 @@ import Heading1 from "@/Componenets/typography/h1/Heading1";
 import MainBox from "@/Componenets/mainbox/MainBox";
 import Button from "@/Componenets/typography/button/Button";
 import Mic from "@/Componenets/mic/Mic";
-
+import BlogBox from "@/Componenets/Blogcomponent/BlogBox";
+import CalltoAction from "@/Componenets/home/CalltoAction";
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
   const [audio, setAudio] = useState(null); // Initialize audio as null
@@ -95,12 +96,12 @@ export default function Page() {
       image3: ServiceTitle,
       title: "Expert Guidance:",
       para: "Unlock unparalleled insights and guidance for AI consulting and product solutions.",
-      columnclass:"col-sm-6",
-      firstChildClass:"service-box",
-      secondChildClass:"service-icon",
-      firstimageclass:"img-fluid outline-icon",
-      secondimageClass:"img-fluid bold-icon",
-   contentclass: "service-content"
+      columnclass: "col-sm-6",
+      firstChildClass: "service-box",
+      secondChildClass: "service-icon",
+      firstimageclass: "img-fluid outline-icon",
+      secondimageClass: "img-fluid bold-icon",
+      contentclass: "service-content",
     },
     {
       id: 2,
@@ -109,12 +110,12 @@ export default function Page() {
       image3: ServiceTitle,
       title: "Cutting-Edge Technology",
       para: "Access tailored AI products for staying ahead in todays landscape.",
-      columnclass:"col-sm-6",
-      firstChildClass:"service-box",
-      secondChildClass:"service-icon",
-      firstimageclass:"img-fluid outline-icon",
-      secondimageClass:"img-fluid bold-icon",
-      contentclass: "service-content"
+      columnclass: "col-sm-6",
+      firstChildClass: "service-box",
+      secondChildClass: "service-icon",
+      firstimageclass: "img-fluid outline-icon",
+      secondimageClass: "img-fluid bold-icon",
+      contentclass: "service-content",
     },
     {
       id: 3,
@@ -123,37 +124,37 @@ export default function Page() {
       image3: ServiceTitle,
       title: "Streamlined Training",
       para: "Equip your team with AI expertise for confident navigation.",
-      columnclass:"col-sm-6",
-      firstChildClass:"service-box",
-      secondChildClass:"service-icon",
-      firstimageclass:"img-fluid outline-icon",
-      secondimageClass:"img-fluid bold-icon",
-       contentclass: "service-content"
+      columnclass: "col-sm-6",
+      firstChildClass: "service-box",
+      secondChildClass: "service-icon",
+      firstimageclass: "img-fluid outline-icon",
+      secondimageClass: "img-fluid bold-icon",
+      contentclass: "service-content",
     },
   ];
   const TeamBox = [
     {
       id: 1,
-      personimg:Person1,
+      personimg: Person1,
       name: "Barry Krevoy",
-      description: "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
-      columnclass:"col-xl-3 col-lg-4 col-sm-6",
-      firstChildClass:"team-box",
-      secondChildClass:"feature-top mt-4",
+      description:
+        "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
+      columnclass: "col-xl-3 col-lg-4 col-sm-6",
+      firstChildClass: "team-box",
+      secondChildClass: "feature-top mt-4",
       contentclass: "link-overflow",
-      layout:true,
+      layout: true,
       icon: faArrowRight,
-      
     },
     {
       id: 2,
-      personimg:Person2,
+      personimg: Person2,
       name: "Shane Krevoy",
       description: "4IR Transformative Leadership Advisor/Consultant",
-      columnclass:"col-xl-3 col-lg-4 col-sm-6",
-      firstChildClass:"team-box",
-      secondChildClass:"feature-top mt-4",
-      layout:true,
+      columnclass: "col-xl-3 col-lg-4 col-sm-6",
+      firstChildClass: "team-box",
+      secondChildClass: "feature-top mt-4",
+      layout: true,
       contentclass: "link-overflow",
       icon: faArrowRight,
     },
@@ -166,12 +167,16 @@ export default function Page() {
       number: "01.",
       paragraph:
         "Crafting influential content requires a deep understanding of your target audience. Pinpoint your ideal demographic and familiarise yourself with their needs, passions, and sources of concern.",
-    ticktitle:["Attract your audience with captivating facts in your commercials" ,"Let’s engage with the customers effectively" ,"Brighten up your content with appealing graphics: pictures, clips, and graphs that will fascinate your users!" ,],
+      ticktitle: [
+        "Attract your audience with captivating facts in your commercials",
+        "Let’s engage with the customers effectively",
+        "Brighten up your content with appealing graphics: pictures, clips, and graphs that will fascinate your users!",
+      ],
       image: Strategic,
       imgWidth: "100%",
       imgHeight: "80%",
       aos: "fade-left",
-      link:"/services/StrategicCounseling",
+      link: "/services/StrategicCounseling",
       layout: false,
     },
     {
@@ -182,11 +187,16 @@ export default function Page() {
       aos: "fade-right",
       paragraph:
         "Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle.",
-      ticktitle:["AI Talk Assist – AI-driven tool for personalized" ,"24/7 customer service." ,"CRM Integration – Connects with your CRM for valuable insights." ,"Automates Tasks – Manages lead generation, appointment scheduling, and support." ,],
+      ticktitle: [
+        "AI Talk Assist – AI-driven tool for personalized",
+        "24/7 customer service.",
+        "CRM Integration – Connects with your CRM for valuable insights.",
+        "Automates Tasks – Manages lead generation, appointment scheduling, and support.",
+      ],
       image: AiSolution,
       imgWidth: "100%",
       imgHeight: "80%",
-      link:"/services/AitalkAssist",
+      link: "/services/AitalkAssist",
       layout: true,
     },
     {
@@ -197,18 +207,26 @@ export default function Page() {
       number: "03.",
       paragraph:
         "Experience the power of 4irinc AI and revolutionise your social media presence. Say goodbye to writer's block and hello to compelling hashtags, captivating captions, and endless content possibilities.",
-        ticktitle:["Curate endless content possibilities that make your website shine." ,"Generates compelling hashtags that skyrocket your reach" ,"Unlock a world of unlimited content ideas that keep your followers hooked." ,],
-link: "/services/TrainingEducation",
+      ticktitle: [
+        "Curate endless content possibilities that make your website shine.",
+        "Generates compelling hashtags that skyrocket your reach",
+        "Unlock a world of unlimited content ideas that keep your followers hooked.",
+      ],
+      link: "/services/TrainingEducation",
       image: Training,
       imgWidth: "100%",
       imgHeight: "80%",
       layout: false,
     },
   ];
-  
+
   return (
     <>
-      <Navbar showModal={showModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal}  />
+      <Navbar
+        showModal={showModal}
+        handleOpenModal={handleOpenModal}
+        handleCloseModal={handleCloseModal}
+      />
       {showModal && <Model close={handleCloseModal} />}
       <section id="home" className="section-b-space home-section">
         <div className="container-fluid">
@@ -309,10 +327,11 @@ link: "/services/TrainingEducation",
               fontSize: "40px",
               position: "relative",
               bottom: "2rem",
+              fontWeight: "400",
             }}
             className="text-white"
           />
-          <div className="row g-5">
+          <div className="row g-5 d-flex">
             <div className="col-lg-6">
               <div className="service-info">
                 <div>
@@ -374,14 +393,26 @@ link: "/services/TrainingEducation",
         ServiceBox={TeamBox}
         layout={false}
       />
-      <LatestNews
-        heading="LATEST NEWS"
-        title1="Innovation"
-        title2="Insight"
-        Blogapi={BlogApi}
-        icon={faArrowRight}
+      <section className="news-section section-b-space">
+        <div className="container">
+          <Headingh3 title="LATEST NEWS" className="text-white text-center" />
+        </div>
+        <Heading1
+          className="title-basic text-white"
+          spanstyle={{ color: "#ffce00" }}
+          title1="Innovation"
+          spantitle="Insight"
+        />
+
+        <div className="row news_container">
+          <BlogBox Blogapi={BlogApi} icon={faArrowRight} />
+        </div>
+      </section>
+      <CalltoAction
+        handleOpenModal={handleOpenModal}
+        showModal={showModal}
+        handleCloseModal={handleCloseModal}
       />
-      <Testimonial />
       <Footer />
     </>
   );

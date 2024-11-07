@@ -1,12 +1,12 @@
 import React from 'react'
-import { Pagination } from 'swiper/modules';
+import {Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import quoteOutline from '../../../public/assets/svg/quote.svg';
 import quoteFill from '../../../public/assets/svg/quote-green.svg';
 import Image from 'next/image';
 import Headingh4 from '../typography/h4/H4';
 import Para from '../typography/paragrapgh/paragraph';
-const ClientReview = ({testimonials}) => {
+const Testimonial = ({testimonials}) => {
   return (
     <>
      <section className="testimonial-section section-b-space" id="testimonial-section">
@@ -21,10 +21,11 @@ const ClientReview = ({testimonials}) => {
           </div>
         </div>
         <Swiper
-          modules={[Pagination ]}
+          modules={[Navigation,Pagination ]}
           spaceBetween={20}
           slidesPerView={3}
           pagination={{clickable:true}}
+          navigation={true}
           loop={true}
         
         >
@@ -55,4 +56,4 @@ const ClientReview = ({testimonials}) => {
   )
 }
 
-export default ClientReview
+export default Testimonial

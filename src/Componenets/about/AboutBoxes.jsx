@@ -20,7 +20,7 @@ return(
                             <p>{items.para}
                             </p>
                             {showbutton &&(
-                            <LearnBtn datacursor="pointer" className={`btn-arrow mt-5 btn-hover ${showbutton ? "w-100" : ""}`} iconClass="icon-arrow" link="" icon={icon} />
+                            <LearnBtn link={items.link} datacursor="pointer" className={`btn-arrow mt-5 btn-hover ${showbutton ? "w-100" : ""}`} iconClass="icon-arrow" icon={icon} />
                             )}
                         </div>
                     </div>

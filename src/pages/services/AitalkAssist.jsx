@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Homebg from "@/images/home/home-bg.gif";
@@ -19,7 +19,16 @@ import Training from "@/images/landing/ai_talk_assist/Feature Pics/Staff Trainin
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Button from "@/Componenets/typography/button/Button";
 import Model from "@/Componenets/model/Model";
-
+import Testimonial from "@/Componenets/clientreview/Testimonial";
+import Heading1 from "@/Componenets/typography/h1/Heading1";
+import CalltoAction from "@/Componenets/home/CalltoAction";
+import Headingh3 from "@/Componenets/typography/h3/Headingh3";
+import H2 from "@/Componenets/typography/h2/H2";
+import AiFeatureBox from "@/Componenets/ai-feature-box/AiFeatureBox";
+import jimImg from '@/images/landing/ai_talk_assist/JimThiel .png';
+import tobyImg from '@/images/landing/ai_talk_assist/TobyWoods.png';
+import carolImg from '@/images/landing/ai_talk_assist/CarolHuston.png';
+import Footer from "@/Componenets/home/Footer";
 const AitalkAssist = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -75,6 +84,66 @@ const AitalkAssist = () => {
       title: "Train your team to leverage AI for enhanced productivity.",
       para: "Specialized AI modules train your staff on how to utilize AI tools to their maximum potential. Ensures teams stay ahead in the age of automation",
     },
+  ];
+  const AiFeatureBoxapi=[
+    {
+      id:1,
+      title: "Automated Calls, Human Results",
+      para:"AI Talk Assist ensures your business is always available, making and receiving calls with natural, conversational AI that feels like talking to a real person.",
+     layout:false,
+    },
+    {
+      id:2,
+      title: "Increase Conversion Rates",
+      para:"Pre-qualify leads, set up appointments, and follow up with customers—automatically. Watch your conversion rates soar while freeing up your teams time.",
+   
+     layout:true,
+    },
+    {
+      id:3,
+      title: "Fully Customizable",
+      para:"Tailor AI Talk Assist to your specific business needs. It integrates smoothly with your CRM and marketing tools, so you can focus on growing your business.",
+   
+     layout:false,
+    },
+    {
+      id:4,
+      title: "Save Time, Cut Costs",
+      para:"No more missed calls or time wasted on repetitive tasks. AI Talk Assist operates 24/7, reducing the need for additional staff.",
+     layout:true,
+    },
+    {
+      id:5,
+      title: "Secure and Scalable",
+      para:"Built with cutting-edge technology, AI Talk Assist is secure, scalable, and adaptable as your business grows.",
+     layout:false,
+    },
+  ]
+  const testimonials = [
+    {
+      content:
+        'Their commitment to helping clients incorporate AI and stay updated with the latest technologies is evident...',
+      name: 'Toby Woods',
+      position: 'NorthStar Systems, LLC',
+      image: tobyImg,
+      aosDelay: 400,
+    },
+    {
+      content: 'Best of the best that about sums up my experience.',
+      name: 'Jim Thiel',
+      position: 'Mortgage Advisor',
+      image: jimImg,
+      aosDelay: 0,
+    },
+    {
+      content:
+        "While many people are intimidated by AI, Barry has a way of making it practical and approachable...",
+      name: 'Carol Huston',
+      position: 'True Story Realty',
+      image: carolImg,
+      aosDelay: 500,
+    },
+   
   ];
   return (
     <>
@@ -265,12 +334,10 @@ const AitalkAssist = () => {
       </section>
       <section className="section-b-space services_section" id="feature-section">
         <div className="container">
-          <div className="text-white text-center" style={{marginBottom: "6rem"}}>
-            <h1>
-              Unlock the <span style={{color: "#ffce00"}}>Power of AI</span> to
-              Supercharge Your Business Communications
-            </h1>
-            <Para className="service-content" paragraph="AI Talk Assist automates routine calls, handles appointment
+          <div className="text-white text-center">
+            <Heading1 title1=" Unlock the" spanstyle={{color: "#ffce00"}} spantitle="Power of AI" title=" Supercharge Your Business Communications" />
+            
+            <Para style={{fontSize: "16.615px"}} className="service-content" paragraph="AI Talk Assist automates routine calls, handles appointment
               setting, and manages customer queries, allowing you to focus on
               strategic initiatives. Save time, reduce operational costs, and
               provide a seamless customer experience—day or night." />
@@ -280,10 +347,10 @@ const AitalkAssist = () => {
       </section>
       <section className="ai-features-section section-b-space service-section" id="how-it-work">
         <div className="container">
-            <div className="ai-features-heading text-center text-white" style={{lineHeight: "1.3"}}>
-                <h2> <span style={{color: "#ffce00"}}>AI Talk Assist:</span> Automated Calls, <br /> Human-Like Conversations
-                </h2>
-                <h3>Effortless Communication, Maximum Efficiency</h3>
+            <div className="ai-features-heading text-center text-white" style={{lineHeight: "1.3" }}>
+              <H2  spanstyle={{color: "#ffce00"}} title="AI Talk Assist:" secondtitle="Automated Calls," title2="Human-Like Conversations" breakpoint={false} />
+                <Headingh3 title="Effortless Communication, Maximum Efficiency" />
+                
                 <Para paragraph="Transform your customer interactions with AI Talk Assist. Our intelligent, conversational AI makes
                     and receives calls with a natural flow, just
                     like talking to a real person. Pre-qualify leads, set appointments, and follow up automatically—all
@@ -296,69 +363,130 @@ const AitalkAssist = () => {
 
             <div className="ai-features-container">
                 <div className="ai-vertical-line"></div>
+          <AiFeatureBox AiFeatureBoxapi={AiFeatureBoxapi} />
 
-           
-                <div className="ai-feature-box-wrapper ai-left-box">
-                    <div className="ai-feature-box  service-box">
-                        <h3>Automated Calls, Human Results</h3>
-                        <Para paragraph="AI Talk Assist ensures your business is always available, making and receiving calls with
-                            natural, conversational AI that feels like talking to a real person." />
-                        
-                    </div>
-                    <div className="ai-horizontal-line-left">
-                        <div className="line-dot"></div>
-                    </div>
-                </div>
-
-                <div className="ai-feature-box-wrapper ai-right-box">
-                    <div className="ai-horizontal-line-right">
-                        <div className="line-dot"></div>
-                    </div>
-                    <div className="ai-feature-box   service-box">
-                        <h3>Increase Conversion Rates</h3>
-                        <p>Pre-qualify leads, set up appointments, and follow up with customers—automatically. Watch
-                            your
-                            conversion rates soar while freeing up your teams time.</p>
-                    </div>
-                </div>
-
-                <div className="ai-feature-box-wrapper ai-left-box">
-                    <div className="ai-feature-box   service-box">
-                        <h3>Fully Customizable</h3>
-                        <p>Tailor AI Talk Assist to your specific business needs. It integrates smoothly with your CRM
-                            and
-                            marketing tools, so you can focus on growing your business.</p>
-                    </div>
-                    <div className="ai-horizontal-line-left">
-                        <div className="line-dot"></div>
-                    </div>
-                </div>
-
-                <div className="ai-feature-box-wrapper ai-right-box">
-                    <div className="ai-horizontal-line-right">
-                        <div className="line-dot"></div>
-                    </div>
-                    <div className="ai-feature-box   service-box">
-                        <h3>Save Time, Cut Costs</h3>
-                        <p>No more missed calls or time wasted on repetitive tasks. AI Talk Assist operates 24/7,
-                            reducing
-                            the need for additional staff.</p>
-                    </div>
-                </div>
-
-                <div className="ai-feature-box-wrapper ai-left-box">
-                    <div className="ai-feature-box  service-box">
-                        <h3>Secure and Scalable</h3>
-                        <p>Built with cutting-edge technology, AI Talk Assist is secure, scalable, and adaptable as your
-                            business grows.</p>
-                    </div>
-                    <div className="ai-horizontal-line-left">
-                        <div className="line-dot"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    <Testimonial testimonials={testimonials} />
+            <section class="faq-section" id="faq-section">
+        <div class="container">
+
+            <div class="title-basic text-center" style={{marginBottom: "6rem"}}>
+                <h1 style={{color: "#ffce00"}}>FAQ</h1>
+                <h1 class="text-white">Frequently Asked Questions</h1>
+                <br />
+            </div>
+            <div class="row ">
+
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button data-cursor="pointer" class="accordion-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                    aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    How does AI Talk Assist handle customer interactions without feeling impersonal?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <p>AI Talk Assist mimics natural human conversations, ensuring that customer
+                                        interactions feel warm and personalized, enhancing user experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Is AI Talk Assist difficult to set up?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    No, it’s simple to integrate into your existing systems, with a smooth onboarding
+                                    process to get your team up and running quickly.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    Can AI Talk Assist grow with my business?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    Absolutely! AI Talk Assist is built to be secure, scalable, and adaptable as your
+                                    business expands.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    How does AI Talk Assist qualify leads?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    It automatically evaluates and prioritizes leads based on predefined criteria,
+                                    ensuring your sales team focuses on high-potential customers.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button data-cursor="pointer" class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    What happens to calls after business hours?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    AI Talk Assist operates 24/7, handling inquiries and scheduling appointments even
+                                    after business hours, ensuring constant accessibility for your customers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-g-6 circles">
+                    <div class="circle circle-active" data-bs-toggle="collapse" id="#panelsStayOpen-collapseOne"
+                        data-bs-target="#panelsStayOpen-collapseOne"> <span>Personalized</span></div>
+                    <div class="circle" data-bs-toggle="collapse" id="#panelsStayOpen-collapseTwo" data-bs-target="#panelsStayOpen-collapseTwo"
+                       > <span>Easy</span> </div>
+                    <div class="circle" data-bs-toggle="collapse" id="#panelsStayOpen-collapseThree" data-bs-target="#panelsStayOpen-collapseThree">
+                        <span>Scalable</span>
+                    </div>
+                    <div class="circle" data-bs-toggle="collapse" id="#panelsStayOpen-collapseFour" data-bs-target="#panelsStayOpen-collapseFour">
+                        <span>Efficient</span>
+                    </div>
+                    <div class="circle" data-bs-toggle="collapse" id="#panelsStayOpen-collapseFive" data-bs-target="#panelsStayOpen-collapseFive">
+                        <span>Continous</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <CalltoAction handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
+    <Footer />
     </>
   );
 };

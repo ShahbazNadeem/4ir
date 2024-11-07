@@ -1,7 +1,7 @@
 import Banner from "@/Componenets/about/Banner";
 import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
-import Testimonial from "@/Componenets/home/Testimonial";
+import Testimonial from "@/Componenets/home/CalltoAction";
 import Headingh2 from "@/Componenets/typography/h2/H2";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
@@ -19,8 +19,18 @@ import OfferBox from "@/Componenets/offerbox/OfferBox";
 import jimImg from '@/images/landing/ai_talk_assist/JimThiel .png';
 import tobyImg from '@/images/landing/ai_talk_assist/TobyWoods.png';
 import carolImg from '@/images/landing/ai_talk_assist/CarolHuston.png';
-import ClientReview from "@/Componenets/clientreview/ClientReview";
+import { useState } from "react";
+import CalltoAction from "@/Componenets/home/CalltoAction";
 export default function Strategic() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   const testimonials = [
     {
       content: 'Best of the best that about sums up my experience.',
@@ -137,14 +147,14 @@ export default function Strategic() {
         title="Strategic Counseling Services"
         paragraph="Business Automation with Technology and AI on it"
       />
-       <div className="service-section section-b-space mt-2">
+       <div className="service-section servicebackground section-b-space mt-2">
                 <div className="container">
                     <div className="row g-5">
                         <div className="service-info">
                             <div>
                                 <div className="title">
-                              <Headingh4 heading="AI-Powered Strategic Solutions" />
-                                   <Headingh2 title=" AI-Driven" secondtitle="Strategic Consulting Services" />
+                              <Headingh4  style={{color:"rgb(0 189 255)"}} heading="AI-Powered Strategic Solutions" />
+                                   <Headingh2 className="text-white" spanstyle={{color: "#ffce00"}} title1="Our" title=" AI-Driven" secondtitle="Strategic Consulting Services" />
                                 </div>
                               <Para paragraph="At the forefront of digital transformation, we offer comprehensive AI-driven consulting services designed to help businesses innovate, optimize, and grow. Our approach blends cutting-edge AI technologies with strategic insights to streamline operations, enhance customer experiences, and future-proof your business. From business model innovation to workforce transformation and data governance, we provide tailored solutions that deliver measurable results while ensuring smooth implementation and adoption across your organization. Discover how our AI expertise can take your business to the next level." />
                                 
@@ -154,8 +164,8 @@ export default function Strategic() {
                 </div>
             </div>
             <OfferBox data={OfferBoxarray} />
-            <ClientReview testimonials={testimonials} />
-      <Testimonial />
+          
+            <CalltoAction handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
       <Footer />
     </>
   );

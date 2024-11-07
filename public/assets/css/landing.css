@@ -217,7 +217,7 @@ section,
  1.2 Image-ratio start
 ==========================*/
 .ratio_40 .bg-size:before {
-  padding-top: 40%;
+
   content: "";
   display: block;
 }

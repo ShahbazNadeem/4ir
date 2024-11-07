@@ -107,7 +107,7 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
                     </Link>
                   </li>
                   <li className={`nav-item ${router.pathname === '/html/contact-us.html' ? 'active' : ''}`}>
-                    <Link className="nav-link" href="/html/contact-us.html">
+                    <Link className="nav-link" href="/contact">
                       Contact us
                     </Link>
                   </li>

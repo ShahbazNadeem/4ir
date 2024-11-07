@@ -14,6 +14,7 @@ import "@/css/pages/services.css";
 import "@/css/pages/startegic-counselling.css";
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({

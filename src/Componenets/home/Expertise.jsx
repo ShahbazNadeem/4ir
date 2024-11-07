@@ -3,7 +3,7 @@ import Para from "../typography/paragrapgh/paragraph";
 export default function Expertise ({expertise, heading1, heading2, para}){
     return(
         <>
-        <div className="service-section section-b-space mt-2">
+        <div className="service-section section-b-space mt-2 expertise">
         <div className="container">
             <div className="row g-5 expertise_div">
                 <div className="col-lg-6">

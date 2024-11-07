@@ -1,7 +1,7 @@
-export default function Headingh4({heading, style}){
+export default function Headingh4({className,heading, style}){
     return(
         <>
-         <h4 style={style}>
+         <h4 className={className} style={style}>
                                        {heading}
                                     </h4>
         </>

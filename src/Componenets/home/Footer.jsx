@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="container">
             <div className="footer-row">
                 <div className="footer-main">
-                    <Link href="#" className="footer-logo"><Image src={MainLogo} id="logo-img"
+                    <Link href="/" className="footer-logo"><Image src={MainLogo} id="logo-img"
                             className="img-fluid" alt="" /></Link>
                             <Headingh3 title="SUBSCRIBE TO OUR NEWSLETTER" />
                     <form>
@@ -41,10 +41,10 @@ export default function Footer() {
                     </div>
                     <div className="footer-content">
                         <ul>
-                            <li><Link data-cursor="pointer" href="/home.html">Home</Link></li>
-                            <li><Link data-cursor="pointer" href="/html/blog-grid.html">Blog</Link></li>
-                            <li><Link data-cursor="pointer" href="/html/services.html">Services</Link></li>
-                            <li><Link data-cursor="pointer" href="/html/contact-us.html">Contact us</Link></li>
+                            <li><Link data-cursor="pointer" href="/">Home</Link></li>
+                            <li><Link data-cursor="pointer" href="/blog">Blog</Link></li>
+                            <li><Link data-cursor="pointer" href="/services">Services</Link></li>
+                            <li><Link data-cursor="pointer" href="/contact">Contact us</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -55,11 +55,11 @@ export default function Footer() {
                     </div>
                     <div className="footer-content">
                         <ul>
-                            <li><Link data-cursor="pointer" href="/html/strategic_counselling.html">Strategic
+                            <li><Link data-cursor="pointer" href="/services/StrategicCounseling">Strategic
                                     Counselling</Link></li>
-                            <li><Link data-cursor="pointer" href="/html/ai-talk-assist.html">AI Talk Assist</Link></li>
+                            <li><Link data-cursor="pointer" href="/services/AitalkAssist">AI Talk Assist</Link></li>
                             <li><Link data-cursor="pointer" target="_blank"
-                                    href="/html/training_and_education.html">Training &
+                                    href="/services/TrainingEducation">Training &
                                     Education</Link></li>
                         </ul>
                     </div>

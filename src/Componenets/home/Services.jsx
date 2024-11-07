@@ -22,7 +22,7 @@ export default function Service({ Services }) {
             data-aos-delay="500"
           ></div>
           <div className="container">
-            <div
+            <div style={{display: "flex"}}
               className={`row g-md-5 g-4 ${
                 items.layout ? " flex-row-reverse" : ""
               }`}

@@ -1,7 +1,7 @@
 import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
 import Team from "@/Componenets/home/Team";
-import Testimonial from "@/Componenets/home/Testimonial";
+import Testimonial from "@/Componenets/home/CalltoAction";
 import React, { useState } from "react"; // Import useState
 import Feature from "@/images/feature.gif";
 import Featurebg from "@/images/feature-bg.png";
@@ -12,8 +12,18 @@ import Banner from "@/Componenets/about/Banner";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import Headingh2 from "@/Componenets/typography/h2/H2";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
+import CalltoAction from "@/Componenets/home/CalltoAction";
 
 const About = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
   const [activeTab, setActiveTab] = useState("mission");
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -53,14 +63,14 @@ const About = () => {
   ];
   return (
     <>
-      <Navbar />
+      <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
       <Banner
         heading="FOURTH INDUSTRIAL REVOLUTION INC"
         title="ABOUT US"
         paragraph="AI Solutions Experts: Our Story and Mission"
         layout={false}
       />
-      <div className="service-section section-b-space mt-2">
+      <div className="service-section section-b-space mt-2 about">
         <div className="container">
           <div className="row g-5">
             <div className="service-info">
@@ -109,7 +119,7 @@ const About = () => {
         img2={Featurebg}
         layout={true}
       />
-      <Testimonial />
+     <CalltoAction handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
       <Footer />
     </>
   );
