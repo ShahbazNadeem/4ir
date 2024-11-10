@@ -22,6 +22,7 @@ return(
                           alt="blog"
                           width={500}
                           height={500}
+                          priority
                         />
                       </Link>
                       <div class="hover-content">
@@ -39,6 +40,7 @@ return(
                       alt=""
                       width={1000}
                       height={1000}
+                      priority
                     />
                   )}
                 </div>

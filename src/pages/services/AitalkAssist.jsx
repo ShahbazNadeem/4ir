@@ -299,7 +299,7 @@ const AitalkAssist = () => {
             </span>
           </button>
           <Link href="/" style={{ cursor: "pointer" }}>
-            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" />
+            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" priority />
           </Link>
           <nav className="header-nav-middle">
             <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
@@ -372,23 +372,25 @@ const AitalkAssist = () => {
             <div className="col-12">
               <div className="home-content">
                 <div className="bg-effect">
-                  <Image src={Homebg} className="img-fluid bg-gif" alt="" />
+                  <Image src={Homebg} className="img-fluid bg-gif" alt="" priority />
                   <Image
                     src={Home1}
                     className="img-fluid effect1 rotate-effect"
                     alt=""
+                    priority
                   />
                   <Image
                     src={Home2}
                     className="img-fluid effect2 rotate-effect"
                     alt=""
+                    priority
                   />
                 </div>
                 <div style={{ marginLeft: "90px" }}>
                   <h1>
                     Transform Your Customer Experience with <br />
                     <div className="title-effect">
-                      <Image src={titleeffect} alt="" />
+                      <Image src={titleeffect} alt="" priority />
                       <span style={{ color: "#ffce00" }}>AI TALK ASSIST</span>
                     </div>
                   </h1>
@@ -459,12 +461,14 @@ const AitalkAssist = () => {
                       className="img-fluid left-hand"
                       style={{ marginLeft: "5rem" }}
                       alt="hand"
+                      priority
                     />
                     <Image
                       src={hand}
                       className="img-fluid right-hand"
                       style={{ marginRight: "5rem" }}
                       alt="hand"
+                      priority
                     />
                   </div>
                 </div>

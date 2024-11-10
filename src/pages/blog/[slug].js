@@ -54,7 +54,7 @@ export default function BlogPost() {
             </div>
             <div className="col-lg-6 d-lg-inline-block d-none">
               <div className="breadcrumb-img">
-                <Image src={Svg} className="img-fluid" alt="service" />
+                <Image src={Svg} className="img-fluid" alt="service" priority />
               </div>
             </div>
           </div>
@@ -74,6 +74,7 @@ export default function BlogPost() {
                   id="current_blog_image"
                   className="img-fluid w-100 bg-img"
                   alt="blog"
+                  priority
                 />
               </div>
               <div className="blog-title-box">
@@ -86,7 +87,7 @@ export default function BlogPost() {
                 </span>
                 <ul>
                   <li>
-                    <Image src={User2} className="img-fluid avtar" alt="author" />{" "}
+                    <Image src={User2} className="img-fluid avtar" alt="author" priority />{" "}
                     <span id="current_blog_author">{data.author}</span>
                   </li>
                   <li>

@@ -6,7 +6,7 @@ export default function H2 ({title, secondtitle, headingstyle, spanstyle,imgsrc,
             {breakpoint ? (
 
          <Image src={imgsrc} class="img-fluid"
-                                    alt="title-effect" />
+                                    alt="title-effect" priority />
             ):null}
             {title1}
          <span style={spanstyle}>{title}</span> {secondtitle}{breakpoint? <br />: null} {title2}

@@ -49,6 +49,7 @@ export default function Service({ Services }) {
                               src={Tick}
                               className="img-fluid is working"
                               alt="tick"
+                              priority
                             />
                             {item}
                           </li>
@@ -73,6 +74,7 @@ export default function Service({ Services }) {
                     style={{ width: items.imgWidth, height: items.imgHeight }}
                     src={items.image}
                     alt=""
+                    priority
                   />
                 </div>
               </div>

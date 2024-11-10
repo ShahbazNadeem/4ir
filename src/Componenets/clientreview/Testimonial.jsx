@@ -34,15 +34,15 @@ const Testimonial = ({testimonials}) => {
               <div className="testimonial-box">
                 <div className="content-sec">
                   <div className="quote-img">
-                    <Image src={quoteOutline} className="img-fluid outline-img" alt="quote outline" />
-                    <Image src={quoteFill} className="img-fluid fill-img" alt="quote fill" />
+                    <Image src={quoteOutline} className="img-fluid outline-img" alt="quote outline" priority />
+                    <Image src={quoteFill} className="img-fluid fill-img" alt="quote fill" priority />
                   </div>
                   <p>{testimonial.content}</p>
                 </div>
                 <div className="small-circle"><span></span></div>
                 <div className="large-circle"><span></span></div>
                 <div className="avtar-img">
-                  <Image src={testimonial.image} className="img-fluid" alt={testimonial.name} />
+                  <Image src={testimonial.image} className="img-fluid" alt={testimonial.name} priority />
                 </div>
                 <h4>{testimonial.name}</h4>
                 <h5>{testimonial.position}</h5>

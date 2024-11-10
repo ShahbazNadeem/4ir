@@ -13,7 +13,7 @@ const MainBox = ({ ServiceBox }) => {
       {ServiceBox.map((items) => (
         <div className={items.columnclass} key={items.id}>
           <div className={items.firstChildClass}>
-            {items.layout ? <Image src={items.personimg} alt="" width={100} height={100} /> : null}
+            {items.layout ? <Image src={items.personimg} alt="" width={100} height={100} priority /> : null}
             <div className={items.secondChildClass}>
               {items.layout ? (
                 <Headingh3 title={items.name} />
@@ -23,11 +23,13 @@ const MainBox = ({ ServiceBox }) => {
                     src={items.image1}
                     className={items.firstimageclass}
                     alt=""
+                    priority
                   />
                   <Image
                     src={items.image2}
                     className={items.secondimageClass}
                     alt=""
+                    priority
                   />
                 </>
               )}

@@ -80,8 +80,8 @@ const Teampost = () => {
           <div class="row g-5 service_row">
             <div class="col-lg-6">
               <div class="barry_images d-flex gap-3">
-                <Image src={Image1} class="profile_img" alt="" />
-                <Image src={Image2} alt="" />
+                <Image src={Image1} class="profile_img" alt="" priority />
+                <Image src={Image2} alt="" priority />
               </div>
             </div>
 

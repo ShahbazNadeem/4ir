@@ -263,58 +263,65 @@ export default function Page() {
               </div>
             </div>
             <div className="home-img d-lg-flex d-none">
-              <Image src={Robot} className="img-fluid robot-img" alt="robot" />
+              <Image src={Robot} className="img-fluid robot-img" alt="robot" priority />
               <div className="round-effect">
                 <Image
                   src={RoundBlue}
                   style={{ willChange: "transform" }}
                   className="img-fluid "
                   alt="robot"
+                  priority
                 />
               </div>
               <ul className="home-effect">
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" />
+                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
                   <Image
                     src={DrivenSolution}
                     className="img-fluid outline-icon"
                     alt=""
+                    priority
                   />
                   AI-Driven Solutions
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" />
+                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
                   <Image
                     src={Graph}
                     className="img-fluid outline-icon"
                     alt=""
+                    priority
                   />{" "}
                   Business Growth Strategies
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" />
+                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
                   <Image
                     src={Innovative}
                     className="img-fluid outline-icon"
                     alt=""
+                    priority
                   />
                   Innovative Tech Consulting
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" />
+                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
                   <Image
                     src={Text}
                     className="img-fluid outline-icon"
                     alt=""
+                    priority
                   />{" "}
                   Advanced Training Programs
+
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" />
+                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
                   <Image
                     src={AiAppointment}
                     className="img-fluid outline-icon"
                     alt=""
+                    priority
                   />{" "}
                   AI Appointment Marketing
                 </li>

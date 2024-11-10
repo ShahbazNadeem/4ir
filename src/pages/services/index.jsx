@@ -135,20 +135,20 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
               >
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={RealEstate} alt="Real Estate" />
+                    <Image src={RealEstate} alt="Real Estate" priority />
                     <Headingh4 className="expertise_text" heading="Real Estate" />
                   
                   </article>
                 </div>
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={Insurance} alt="Finance & Insurance Market" />
+                    <Image src={Insurance} alt="Finance & Insurance Market" priority />
                     <Headingh4 className="expertise_text" heading=" Finance & Insurance Market" />
                   </article>
                 </div>
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={Mortgage} alt="Mortgage" />
+                    <Image src={Mortgage} alt="Mortgage" priority />
                     <Headingh4 className="expertise_text" heading=" Mortgage" />
                     
                   </article>
@@ -162,21 +162,21 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
               >
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={Healthcare} alt="Health Care" />
+                    <Image src={Healthcare} alt="Health Care" priority />
                     <Headingh4 className="expertise_text" heading=" Health Care" />
                   
                   </article>
                 </div>
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={Education} alt="Education" />
+                    <Image src={Education} alt="Education" priority />
                     <Headingh4 className="expertise_text" heading=" Education" />
                   
                   </article>
                 </div>
                 <div className="col-xl-3 col-lg-4 col-sm-6">
                   <article className="expertise_box">
-                    <Image src={Retail} alt="Retail" />
+                    <Image src={Retail} alt="Retail" priority />
                     <Headingh4 className="expertise_text" heading=" Retail" />
                     
                   </article>

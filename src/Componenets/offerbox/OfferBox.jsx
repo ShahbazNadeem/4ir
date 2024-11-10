@@ -8,7 +8,7 @@ export default function OfferBox({data}){
             <div class="offers_container">
                 <div class="offer_box left" style={{flexDirection: items.row }}>
                     <div class="offer_img">
-                        <Image src={items.image} alt="" />
+                        <Image src={items.image} alt="" priority />
                     </div>
                     <div class="offer_content">
                         <h3>{items.title} </h3>

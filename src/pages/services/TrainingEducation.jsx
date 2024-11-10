@@ -198,9 +198,11 @@ Education and Skills Development"
                   height: "100%",
                   border: "none",
                   borderRadius: "1rem",
+                
                 }}
                 src={Training}
                 alt=""
+                priority
               />
             </div>
           </div>

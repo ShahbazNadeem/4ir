@@ -16,9 +16,9 @@ export default function Team({
     <>
       <section className="team-section section-b-space">
         <div className="bg-effect">
-          <Image src={img1} className="img-fluid feature-left" alt="" />
-          <Image src={img1} className="img-fluid feature-right" alt="" />
-          <Image src={img2} className="img-fluid feature-bg" alt="" />
+          <Image src={img1} className="img-fluid feature-left" alt="" priority />
+          <Image src={img1} className="img-fluid feature-right" alt="" priority />
+          <Image src={img2} className="img-fluid feature-bg" alt="" priority />
           <span className="round-effect"></span>
         </div>
         <div className="container">

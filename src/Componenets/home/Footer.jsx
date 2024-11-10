@@ -15,7 +15,7 @@ export default function Footer() {
             <div className="footer-row">
                 <div className="footer-main">
                     <Link href="/" className="footer-logo"><Image src={MainLogo} id="logo-img"
-                            className="img-fluid" alt="" /></Link>
+                            className="img-fluid" alt="" priority /></Link>
                             <Headingh3 title="SUBSCRIBE TO OUR NEWSLETTER" />
                     <form>
                         <div className="input-group">
@@ -36,7 +36,7 @@ export default function Footer() {
                 </div>
                 <div className="link-section">
                     <div className="footer-title">
-                        <Image src={Star} className="img-fluid" alt="star" />
+                        <Image src={Star} className="img-fluid" alt="star" priority />
                         Quick Link
                     </div>
                     <div className="footer-content">
@@ -50,7 +50,7 @@ export default function Footer() {
                 </div>
                 <div className="link-section">
                     <div className="footer-title">
-                        <Image src={Star} className="img-fluid" alt="star" />
+                        <Image src={Star} className="img-fluid" alt="star" priority />
                         Our service
                     </div>
                     <div className="footer-content">

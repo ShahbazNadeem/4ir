@@ -52,7 +52,7 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
             </span>
           </button>
           <Link href="/" style={{ cursor: "pointer" }}>
-            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" />
+            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" priority />
           </Link>
           <nav className="header-nav-middle">
             <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
