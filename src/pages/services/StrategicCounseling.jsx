@@ -3,7 +3,7 @@ import Banner from "@/Componenets/about/Banner";
 import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
 import Testimonial from "@/Componenets/clientreview/Testimonial";
-import Headingh2 from "@/Componenets/typography/h2/H2";
+import Headingh2 from "@/Componenets/typography/h2/Heading2";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Strategicimg from "@/images/services/strategic counselling/strategicconsulting.png";

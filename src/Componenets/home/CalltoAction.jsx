@@ -1,5 +1,5 @@
 import Button from "../typography/button/Button"
-import H2 from "@/typography/h2/H2"
+import H2 from "@/typography/h2/Heading2"
 import Model from "../model/Model"
 export default function CalltoAction({handleOpenModal, showModal, handleCloseModal}) {
   return(

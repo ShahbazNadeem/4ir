@@ -12,7 +12,7 @@ import Healthcare from "@/images/blue service icon/Healthcare.png";
 import Education from "@/images/blue service icon/Education.png";
 import Retail from "@/images/blue service icon/Healthcare.png";
 import Image from "next/image";
-import Headingh2 from "@/Componenets/typography/h2/H2";
+import Headingh2 from "@/Componenets/typography/h2/Heading2";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Strategic from "@/images/services/strategicconsulting.png";
@@ -22,7 +22,7 @@ import { faArrowRight, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import AboutBoxes from "@/Componenets/about/AboutBoxes";
 import { useState } from "react";
 import Span from "@/Componenets/typography/span/Span";
-import H2 from "@/Componenets/typography/h2/H2";
+import H2 from "@/Componenets/typography/h2/Heading2";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 export default function Services() {
   const [showModal, setShowModal] = useState(false);

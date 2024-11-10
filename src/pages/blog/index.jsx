@@ -8,7 +8,7 @@ import Testimonial from '@/Componenets/home/CalltoAction';
 import Footer from '@/Componenets/home/Footer';
 import CalltoAction from '@/Componenets/home/CalltoAction';
 import { useState } from 'react';
-import H2 from '@/Componenets/typography/h2/H2';
+import H2 from '@/Componenets/typography/h2/Heading2';
 import Para from '@/Componenets/typography/paragrapgh/paragraph';
 import Blogapi from "./secondblogapi.json"
 const Index = () => {

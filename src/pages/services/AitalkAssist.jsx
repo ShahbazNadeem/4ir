@@ -24,14 +24,19 @@ import Testimonial from "@/Componenets/clientreview/Testimonial";
 import Heading1 from "@/Componenets/typography/h1/Heading1";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
-import H2 from "@/Componenets/typography/h2/H2";
+import H2 from "@/Componenets/typography/h2/Heading2";
 import AiFeatureBox from "@/Componenets/ai-feature-box/AiFeatureBox";
 import jimImg from "@/images/landing/ai_talk_assist/JimThiel .png";
 import tobyImg from "@/images/landing/ai_talk_assist/TobyWoods.png";
 import carolImg from "@/images/landing/ai_talk_assist/CarolHuston.png";
 import Footer from "@/Componenets/home/Footer";
 import FAQ from "@/Componenets/FAQ/Faq";
+import Heading5 from "@/Componenets/typography/h5/Heading5";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Logo from "@/images/4IRLogomain.png";
+import { useRouter } from "next/router";
 const AitalkAssist = () => {
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -64,6 +69,41 @@ const AitalkAssist = () => {
       }
     };
   }, []);
+  const [isListening, setIsListening] = useState(false);
+  const [audio, setAudio] = useState(null); // Initialize audio as null
+  const [isAnimating, setIsAnimating] = useState(false); // State for animation
+
+  // Use useEffect to create audio instance on the client side
+  useEffect(() => {
+    const audioInstance = new Audio("/assets/audio/heather-audio.wav");
+    setAudio(audioInstance);
+
+    // Cleanup function to stop audio when component unmounts
+    return () => {
+      audioInstance.pause();
+      audioInstance.currentTime = 0; // Reset audio to start
+    };
+  }, []);
+
+  const handleMicClick = () => {
+    setIsAnimating(true); // Start animation
+    setIsListening((prev) => {
+      if (prev) {
+        if (audio) {
+          audio.pause(); // Stop audio if it was playing
+          audio.currentTime = 0; // Reset audio to start
+        }
+      } else {
+        audio.play(); // Play audio if it was stopped
+      }
+      return !prev; // Toggle the listening state
+    });
+
+    // Remove animation class after a short delay
+    setTimeout(() => {
+      setIsAnimating(false); // Reset animation state
+    }, 200); // Match the duration of the CSS transition
+  };
   const Box = [
     {
       id: 1,
@@ -246,85 +286,86 @@ const AitalkAssist = () => {
   return (
     <>
       {showModal && <Model close={handleCloseModal} />}
-      <header className={isSticky ? "sticky1" : ""}>
-        <button
-          className="navbar-toggler d-xl-none d-inline navbar-menu-button"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#primaryMenu"
-        >
-          <span className="navbar-toggler-icon">
-            <i className="iconsax" data-icon="text-align-justify"></i>
-          </span>
-        </button>
-        <Link href="/">
-          <Image
-            src={Mainlogo}
-            id="logo-img"
-            style={{ position: "relative", marginTop: "-0.6rem" }}
-            className="img-fluid"
-            alt="logo"
-          />
-        </Link>
-        <nav className="header-nav-middle">
-          <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
-            <div
-              className="offcanvas offcanvas-collapse order-xl-2"
-              id="primaryMenu"
-            >
-              <div className="offcanvas-header navbar-shadow">
-                <h5 className="mb-0">Back</h5>
-                <button
-                  className="btn-close lead"
-                  type="button"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div className="offcanvas-body">
-                <ul className="navbar-nav">
-                  <li className="nav-item">
+      <div id="home-header" >
+        <header className={isSticky ? "sticky1" : ""}>
+          <button
+            className="navbar-toggler d-xl-none d-inline navbar-menu-button"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#primaryMenu"
+          >
+            <span className="navbar-toggler-icon">
+              <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
+            </span>
+          </button>
+          <Link href="/" style={{ cursor: "pointer" }}>
+            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" />
+          </Link>
+          <nav className="header-nav-middle">
+            <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
+              <div className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                <div className="offcanvas-header navbar-shadow">
+                  <Heading5 title="Back" className="mb-0" />
+                  <button
+                    className="btn-close lead"
+                    type="button"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="offcanvas-body">
+                  <ul className="navbar-nav">
+                    <li className={`nav-item`}>
                     <Link
                       className="nav-link"
-                      style={{ paddingBottom: "10px" }}
+                      // style={{ paddingBottom: "10px" }}
                       href="#feature-section"
                     >
                       Features
                     </Link>
-                  </li>
-
-                  <li className="nav-item">
+                    </li>
+                    <li className={`nav-item `}>
                     <Link className="nav-link" href="#how-it-work">
                       How It Works
                     </Link>
-                  </li>
-
-                  <li className="nav-item">
+                    </li>
+                    <li className={`nav-item dropdown `}>
                     <Link className="nav-link" href="#faq-section">
                       FAQ
                     </Link>
-                  </li>
-                  <li className="nav-item">
+                      <button
+                        className="dropdown-toggle dropdown-arrow"
+                        id="servicesDropdown"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span className="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                    </li>
+                    <li className={`nav-item`}>
                     <Link className="nav-link" href="#testimonial-section">
                       Testimonials
                     </Link>
-                  </li>
-                </ul>
+                    </li>
+                 
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
-        <Button
-          style={{
-            position: "relative",
-            marginTop: "-0.5rem",
-            padding: "13px 32px",
-          }}
-          click={handleOpenModal}
-          title="Book a Demo"
-          className="btn btn-theme d-sm-inline-block d-none"
-        />
-      </header>
+          </nav>
+          <Button
+            style={{
+              position: "relative",
+              marginTop: "-1.5rem",
+              padding: "13px 32px",
+            }}
+            click={handleOpenModal}
+            title="Book a Demo"
+            className="btn btn-theme d-sm-inline-block d-none"
+          />
+        </header>
+      </div>
+    
       <section id="home" className="home-section aitalkassist">
         <div className="container" style={{ marginTop: "10rem" }}>
           <div className="row">
@@ -374,7 +415,9 @@ const AitalkAssist = () => {
                 <div className="laptop-sec position-relative">
                   <div className="mic-sec">
                     <div className="mic-div">
-                      <button type="button" className="mic listening ">
+                      <button type="button" className={`mic ${isAnimating ? "animating" : ""} ${
+                      isListening ? "listening" : ""
+                    }`}  onClick={handleMicClick}>
                         <FontAwesomeIcon
                           icon={faMicrophone}
                           style={{ color: "#00BDFF" }}

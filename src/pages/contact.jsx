@@ -7,7 +7,7 @@ import { useState } from "react";
 import Heading1 from "@/Componenets/typography/h1/Heading1";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Headingh4 from "@/Componenets/typography/h4/H4";
-import H2 from "@/Componenets/typography/h2/H2";
+import H2 from "@/Componenets/typography/h2/Heading2";
 import Banner from "@/Componenets/about/Banner";
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);

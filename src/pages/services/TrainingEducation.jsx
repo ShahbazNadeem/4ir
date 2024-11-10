@@ -7,7 +7,7 @@ import AiFeatureBox from "@/Componenets/ai-feature-box/AiFeatureBox";
 import Footer from "@/Componenets/home/Footer";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Headingh4 from "@/Componenets/typography/h4/H4";
-import H2 from "@/Componenets/typography/h2/H2";
+import H2 from "@/Componenets/typography/h2/Heading2";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import FAQ from "@/Componenets/FAQ/Faq";
 import Image from "next/image";

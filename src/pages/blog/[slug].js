@@ -10,7 +10,7 @@ import User2 from "@/images/user/2.jpg";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import Svg2 from "../../../public/assets/svg/title-effect2.svg";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
-import H2 from "@/Componenets/typography/h2/H2";
+import H2 from "@/Componenets/typography/h2/Heading2";
 
 export default function BlogPost() {
   const [data, setData] = useState(null);

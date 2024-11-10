@@ -35,7 +35,7 @@ import Featurebg from "@/images/feature-bg.png";
 import BlogApi from "./blog/blogapi.json";
 import Model from "@/Componenets/model/Model";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
-import Headingh2 from "@/Componenets/typography/h2/H2";
+import Headingh2 from "@/Componenets/typography/h2/Heading2";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import Heading1 from "@/Componenets/typography/h1/Heading1";
 import MainBox from "@/Componenets/mainbox/MainBox";
@@ -51,7 +51,7 @@ export default function Page() {
 
   // Use useEffect to create audio instance on the client side
   useEffect(() => {
-    const audioInstance = new Audio("/assets/audio/audio.mp3");
+    const audioInstance = new Audio("/assets/audio/heather-audio.wav");
     setAudio(audioInstance);
 
     // Cleanup function to stop audio when component unmounts

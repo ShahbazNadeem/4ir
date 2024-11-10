@@ -11,7 +11,7 @@ import Person2 from "@/images/team/ShaneKrevoy.png";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Banner from "@/Componenets/about/Banner";
 import Headingh4 from "@/Componenets/typography/h4/H4";
-import Headingh2 from "@/Componenets/typography/h2/H2";
+import Headingh2 from "@/Componenets/typography/h2/Heading2";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 
