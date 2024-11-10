@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
 import Team from "@/Componenets/home/Team";
@@ -69,6 +70,7 @@ const About = () => {
         title="ABOUT US"
         paragraph="AI Solutions Experts: Our Story and Mission"
         layout={false}
+       marginLeft="100px"
       />
       <div className="service-section section-b-space mt-2 about">
         <div className="container">

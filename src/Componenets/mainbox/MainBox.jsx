@@ -5,13 +5,15 @@ import Headingh3 from "../typography/h3/Headingh3";
 import Headingh4 from "../typography/h4/H4";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const MainBox = ({ ServiceBox }) => {
+
   return (
     <>
       {ServiceBox.map((items) => (
         <div className={items.columnclass} key={items.id}>
           <div className={items.firstChildClass}>
-            {items.layout ? <Image src={items.personimg} alt="" /> : null}
+            {items.layout ? <Image src={items.personimg} alt="" width={100} height={100} /> : null}
             <div className={items.secondChildClass}>
               {items.layout ? (
                 <Headingh3 title={items.name} />
@@ -42,16 +44,17 @@ const MainBox = ({ ServiceBox }) => {
             ) : null}
             <div className={items.contentclass}>
               {items.layout ? (
-                <Link href="">
+                <Link href={items.link === "https://www.linkedin.com/in/shane-krevoy-48a5b3b5" ? "https://www.linkedin.com/in/shane-krevoy-48a5b3b5" : `/team/${items.id}`}>
                   Read more{" "}
                   <FontAwesomeIcon
-                    icon={items.icon}
+                    icon={faArrowRight}
                     style={{ color: "grey", paddingTop: "4px" }}
                   />
                 </Link>
               ) : (
                 <>
                   <Headingh3
+                  className="text-white"
                     showimage={true}
                     title={items.title}
                     image={items.image3}

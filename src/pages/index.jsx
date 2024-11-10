@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "@/Componenets/home/Header";
 import Service from "@/Componenets/home/Services";
 import Expertise from "@/Componenets/home/Expertise";
@@ -30,9 +31,8 @@ import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import Feature from "@/images/feature.gif";
 import Featurebg from "@/images/feature-bg.png";
-import Person1 from "@/images/team/BarryKrevoy.png";
-import Person2 from "@/images/team/ShaneKrevoy.png";
-import BlogApi from "./blogapi.json";
+
+import BlogApi from "./blog/blogapi.json";
 import Model from "@/Componenets/model/Model";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Headingh2 from "@/Componenets/typography/h2/H2";
@@ -43,6 +43,7 @@ import Button from "@/Componenets/typography/button/Button";
 import Mic from "@/Componenets/mic/Mic";
 import BlogBox from "@/Componenets/Blogcomponent/BlogBox";
 import CalltoAction from "@/Componenets/home/CalltoAction";
+import TeamBox from "./teamapi.json"
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
   const [audio, setAudio] = useState(null); // Initialize audio as null
@@ -102,6 +103,7 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
+      layout:false,
     },
     {
       id: 2,
@@ -116,6 +118,7 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
+      layout:false,
     },
     {
       id: 3,
@@ -130,35 +133,36 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
+      layout:false,
     },
   ];
-  const TeamBox = [
-    {
-      id: 1,
-      personimg: Person1,
-      name: "Barry Krevoy",
-      description:
-        "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
-      columnclass: "col-xl-3 col-lg-4 col-sm-6",
-      firstChildClass: "team-box",
-      secondChildClass: "feature-top mt-4",
-      contentclass: "link-overflow",
-      layout: true,
-      icon: faArrowRight,
-    },
-    {
-      id: 2,
-      personimg: Person2,
-      name: "Shane Krevoy",
-      description: "4IR Transformative Leadership Advisor/Consultant",
-      columnclass: "col-xl-3 col-lg-4 col-sm-6",
-      firstChildClass: "team-box",
-      secondChildClass: "feature-top mt-4",
-      layout: true,
-      contentclass: "link-overflow",
-      icon: faArrowRight,
-    },
-  ];
+  // const TeamBox = [
+  //   {
+  //     id: 1,
+  //     personimg: Person1,
+  //     name: "Barry Krevoy",
+  //     description:
+  //       "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
+  //     columnclass: "col-xl-3 col-lg-4 col-sm-6",
+  //     firstChildClass: "team-box",
+  //     secondChildClass: "feature-top mt-4",
+  //     contentclass: "link-overflow",
+  //     layout: true,
+  //     icon: faArrowRight,
+  //   },
+  //   {
+  //     id: 2,
+  //     personimg: Person2,
+  //     name: "Shane Krevoy",
+  //     description: "4IR Transformative Leadership Advisor/Consultant",
+  //     columnclass: "col-xl-3 col-lg-4 col-sm-6",
+  //     firstChildClass: "team-box",
+  //     secondChildClass: "feature-top mt-4",
+  //     layout: true,
+  //     contentclass: "link-overflow",
+  //     icon: faArrowRight,
+  //   },
+  // ];
   const Services = [
     {
       id: 1,
@@ -174,7 +178,7 @@ export default function Page() {
       ],
       image: Strategic,
       imgWidth: "100%",
-      imgHeight: "80%",
+      imgHeight: "auto",
       aos: "fade-left",
       link: "/services/StrategicCounseling",
       layout: false,
@@ -195,7 +199,7 @@ export default function Page() {
       ],
       image: AiSolution,
       imgWidth: "100%",
-      imgHeight: "80%",
+      imgHeight: "auto",
       link: "/services/AitalkAssist",
       layout: true,
     },
@@ -215,7 +219,7 @@ export default function Page() {
       link: "/services/TrainingEducation",
       image: Training,
       imgWidth: "100%",
-      imgHeight: "80%",
+      imgHeight: "auto",
       layout: false,
     },
   ];
@@ -326,7 +330,7 @@ export default function Page() {
             headingstyle={{
               fontSize: "40px",
               position: "relative",
-              bottom: "2rem",
+              bottom: "5rem",
               fontWeight: "400",
             }}
             className="text-white"
@@ -372,7 +376,7 @@ export default function Page() {
               />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" style={{marginLeft: "-95px"}}>
             <div className="service_boxes_div">
               <MainBox ServiceBox={ServiceBox} />
             </div>

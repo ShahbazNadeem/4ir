@@ -92,9 +92,7 @@
     color: #00BDFF;
 }
 
-.mic-sec {
-    margin-left: 15rem;
-}
+
 
 .service_boxes_div {
     position: relative;
@@ -212,8 +210,8 @@
 @media screen and (min-width:1500px) {
 
     .mic {
-        padding: 10rem;
-        font-size: 4rem;
+        margin: auto;
+        font-size: 2.5rem;
     }
 }
 

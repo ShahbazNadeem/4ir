@@ -6,7 +6,9 @@ const AiFeatureBox = ({AiFeatureBoxapi}) => {
     <>
      {AiFeatureBoxapi.map((items)=>(
 
-<div key={items.id} className={`ai-feature-box-wrapper ${items.layout ? "ai-right-box":"ai-left-box"}`}>
+<div  data-aos="fade-up"
+    data-aos-delay="50"
+    data-aos-duration="1000" key={items.id} className={`ai-feature-box-wrapper ${items.layout ? "ai-right-box":"ai-left-box"}`}>
   {items.layout ?(
      <div className="ai-horizontal-line-right">
      <div className="line-dot"></div>

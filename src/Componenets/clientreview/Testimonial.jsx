@@ -6,6 +6,7 @@ import quoteFill from '../../../public/assets/svg/quote-green.svg';
 import Image from 'next/image';
 import Headingh4 from '../typography/h4/H4';
 import Para from '../typography/paragrapgh/paragraph';
+
 const Testimonial = ({testimonials}) => {
   return (
     <>
@@ -21,13 +22,12 @@ const Testimonial = ({testimonials}) => {
           </div>
         </div>
         <Swiper
-          modules={[Navigation,Pagination ]}
-          spaceBetween={20}
+          modules={[Pagination ]}
+          spaceBetween={30}
           slidesPerView={3}
-          pagination={{clickable:true}}
-          navigation={true}
+          pagination={{ clickable: true }}
           loop={true}
-        
+          
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>

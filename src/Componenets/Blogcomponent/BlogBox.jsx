@@ -7,6 +7,7 @@ const BlogBox = ({Blogapi, icon}) => {
   return (
     <>
   {Blogapi.map((items) => {
+  
 return(
 
             <div style={{display:"flex"}} className={items.columnClass}key={items.id}>
@@ -14,7 +15,7 @@ return(
                 <div className={items.imageclass}>
                   {items.layout ? (
                     <>
-                      <a data-cursor="pointer" href="">
+                      <Link  href={`/blog/${items.slug}`}>
                         <Image
                           src={items.image}
                           class="img-fluid"
@@ -22,7 +23,7 @@ return(
                           width={500}
                           height={500}
                         />
-                      </a>
+                      </Link>
                       <div class="hover-content">
                         <a data-cursor="pointer" href="">
                           <FontAwesomeIcon
@@ -44,7 +45,7 @@ return(
 
                 <div className={items.contentClass}>
                   <h3>
-                    <Link href="blog-details.html">{items.blogtitle}</Link>
+                    <Link href={`/blog/${items.slug}`}>{items.blogtitle}</Link>
                   </h3>
                   {items.layout ? (
                      <ul>

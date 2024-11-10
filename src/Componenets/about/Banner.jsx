@@ -2,7 +2,7 @@ import Heading1 from "../typography/h1/Heading1";
 import Headingh2 from "../typography/h2/H2";
 import Para from "../typography/paragrapgh/paragraph";
 
-export default function Banner({ heading, title, paragraph, layout ,contactClass }) {
+export default function Banner({ heading, title, paragraph, layout ,fadeRight, fadeLeft ,contactClass,widthclass, marginLeft }) {
   return (
     <>
       <section id="home"  className={`section-b-space home-section ${contactClass || ""}`}>
@@ -15,7 +15,10 @@ export default function Banner({ heading, title, paragraph, layout ,contactClass
               display: "flex",
             }}
           >
-            <div class="home-content" style={{ marginTop: "5rem", width: "auto" }}>
+            <div  data-aos={fadeLeft}
+
+    data-aos-delay="50"
+    data-aos-duration="1000" class="home-content" style={{ marginLeft: marginLeft ? marginLeft:"none", marginTop: "5rem",  width: widthclass ? widthclass : "auto" }}>
               <div>
                 {layout ? null : (
                   <div className="">
@@ -28,7 +31,7 @@ export default function Banner({ heading, title, paragraph, layout ,contactClass
                     />
                   </div>
                 )}
-                <Heading1 title={title} />
+                <Heading1  title={title} />
                 <Para style={{width: "auto"}} paragraph={paragraph} />
               </div>
             </div>

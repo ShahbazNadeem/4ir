@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '@/Componenets/home/Header';
 import LatestNews from '@/Componenets/home/LatestNews'
 import React from 'react'
@@ -9,7 +10,7 @@ import CalltoAction from '@/Componenets/home/CalltoAction';
 import { useState } from 'react';
 import H2 from '@/Componenets/typography/h2/H2';
 import Para from '@/Componenets/typography/paragrapgh/paragraph';
-import Blogapi from "../secondblogapi.json"
+import Blogapi from "./secondblogapi.json"
 const Index = () => {
   const [showModal, setShowModal] = useState(false);
 

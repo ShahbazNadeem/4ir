@@ -1,3 +1,4 @@
+'use client'
 import Navbar from "@/Componenets/home/Header";
 import CallToAction from "@/Componenets/home/CalltoAction";
 import React from "react";
@@ -21,28 +22,9 @@ const Contact = () => {
   return (
     <>
     <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
-    <Banner title="BOOK A MEETING WITH 4IR"  paragraph="  Book a time to explore how we can advance your business with
-                  AI solutions." contactClass="contact" />
-      <section id="home" class="section-b-space home-section contact">
-        <div class="container-fluid">
-          <div
-            class="home-sec"
-            style={{
-              textAlign: "center",
-              justifyContent: "center",
-              display: "flex",
-            }}
-          >
-            <div class="home-content" style={{ marginTop: "5rem" }}>
-              <div>
-                <Heading1 title="BOOK A MEETING WITH 4IR" />
-                <Para  paragraph="  Book a time to explore how we can advance your business with
-                  AI solutions." />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <Banner layout={true} title="BOOK A MEETING WITH 4IR"  paragraph="  Book a time to explore how we can advance your business with
+                  AI solutions." contactClass="contact"   marginLeft="100px"
+                  widthclass="50%" />
       <section class="section-b-space">
         <div class="container">
             <div class="service-info">

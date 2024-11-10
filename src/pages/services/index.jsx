@@ -67,6 +67,8 @@ export default function Services() {
         layout={true}
         title="OUR SERVICES"
         paragraph="AI Products and Solutions by Fourth Industrial Revolution Inc."
+         marginLeft="100px"
+         widthclass="35%"
       />
       <div className="service-section section-b-space mt-2">
         <div className="container">

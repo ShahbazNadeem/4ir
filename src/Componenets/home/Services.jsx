@@ -47,7 +47,7 @@ export default function Service({ Services }) {
                           <li key={item.id}>
                             <Image
                               src={Tick}
-                              className="img-fluid"
+                              className="img-fluid is working"
                               alt="tick"
                             />
                             {item}
@@ -62,6 +62,7 @@ export default function Service({ Services }) {
                     link={items.link}
                     iconClass="icon-arrow"
                     width="47%"
+                    size="18px"
                     icon={faArrowUp}
                   />
                 </div>
