@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import Headingh4 from "../typography/h4/H4";
 import Para from "../typography/paragrapgh/paragraph";
-import Headingh2 from "../typography/h2/H2";
+import Headingh2 from "@/typography/h2/H2";
 import MainBox from "../mainbox/MainBox";
 export default function Team({
   heading,

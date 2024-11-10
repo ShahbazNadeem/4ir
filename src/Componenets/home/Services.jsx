@@ -7,7 +7,7 @@ import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import Link from "next/link";
 import LearnBtn from "../typography/button/LearnMorebtn";
-import Headingh2 from "../typography/h2/H2";
+import Headingh2 from "@/typography/h2/H2";
 import Para from "../typography/paragrapgh/paragraph";
 
 export default function Service({ Services }) {

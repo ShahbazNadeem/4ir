@@ -1,5 +1,5 @@
 import Heading1 from "../typography/h1/Heading1";
-import Headingh2 from "../typography/h2/H2";
+import Headingh2 from "@/typography/h2/H2";
 import Para from "../typography/paragrapgh/paragraph";
 
 export default function Banner({ heading, title, paragraph, layout ,fadeRight, fadeLeft ,contactClass,widthclass, marginLeft }) {
