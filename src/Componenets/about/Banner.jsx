@@ -18,8 +18,8 @@ export default function Banner({ heading, title, paragraph,size, layout ,fadeRig
             <div  data-aos={fadeLeft}
 
     data-aos-delay="50"
-    data-aos-duration="1000" class="home-content" style={{ marginLeft: marginLeft ? marginLeft:"none", marginTop: "5rem",  width: widthclass ? widthclass : "auto" }}>
-              <div>
+    data-aos-duration="1000" class="home-content home-content1" style={{ marginLeft: marginLeft ? marginLeft:"none", marginTop: "5rem",  width: widthclass ? widthclass : "auto" }}>
+              <div className="contact-heading">
                 {layout ? null : (
                   <div className="">
                     <Headingh2

@@ -31,7 +31,6 @@ import AiSolution from "@/images/services/AIsolutions.png";
 import Training from "@/images/services/trainingandeducation.png";
 import Feature from "@/images/feature.gif";
 import Featurebg from "@/images/feature-bg.png";
-
 import BlogApi from "./blog/blogapi.json";
 import Model from "@/Componenets/model/Model";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
@@ -225,6 +224,7 @@ export default function Page() {
                   />
                 </div>
                 <Heading1
+                className="home-h1"
                   spantitle="EMPOWER YOUR BUSINESS"
                   spanstyle={{ color: "#ffce00" }}
                   title="WITH AI-DRIVEN SUCCESS"
@@ -318,7 +318,7 @@ export default function Page() {
               bottom: "5.5rem",
               fontWeight: "400",
             }}
-            className="text-white"
+            className="text-white home-heading"
           />
           <div className="row g-5">
             <div className="col-lg-6">

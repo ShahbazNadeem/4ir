@@ -25,7 +25,7 @@ export default function LatestNews({
             </h1>
           </>
         ) : null}
-        <div className="conatiner" style={{padding: "0px auto"}}> 
+        <div className="container" style={{padding: "0px auto"}}> 
         <div className="row news_container">
           <BlogBox Blogapi={Blogapi} icon={icon} />
         </div>

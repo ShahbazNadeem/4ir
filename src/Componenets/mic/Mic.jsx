@@ -11,7 +11,7 @@ const Mic = ({isAnimating,isListening,handleMicClick}) => {
                     className={`mic ${isAnimating ? "animating" : ""} ${
                       isListening ? "listening" : ""
                     }`}
-                    style={{width: "300px", height: "300px"}}
+                    style={{width: "auto", height: "auto"}}
                     onClick={handleMicClick}
                   >
                     <FontAwesomeIcon

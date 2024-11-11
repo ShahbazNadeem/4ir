@@ -85,6 +85,7 @@
     .offer_box {
         flex-direction: column;
         padding: 1.3rem;
+        display: block;
         gap: 1rem;
     }
 
@@ -98,6 +99,11 @@
 
     .offer_box .offer_content p {
         font-size: 1rem;
+    }
+    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+display: flex;
+flex-direction: column;
+width: 100% !important;
     }
 }
 

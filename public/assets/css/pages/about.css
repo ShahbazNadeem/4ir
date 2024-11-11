@@ -84,6 +84,7 @@
     }
     .service-section{
         width: 100vw;
+        padding-top: 30px !important;
     }
 
     .service-info {

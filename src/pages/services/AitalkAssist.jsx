@@ -18,7 +18,7 @@ import Customer from "@/images/landing/ai_talk_assist/Feature Pics/Customer Supp
 import Communication from "@/images/landing/ai_talk_assist/Feature Pics/Off-Hours Communication Handling.png";
 import Training from "@/images/landing/ai_talk_assist/Feature Pics/Staff Training.png";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
-import Button from "@/Componenets/typography/button/Button";
+import Button1 from "@/Componenets/typography/button/Button";
 import Model from "@/Componenets/model/Model";
 import Testimonial from "@/Componenets/clientreview/Testimonial";
 import Heading1 from "@/Componenets/typography/h1/Heading1";
@@ -35,10 +35,17 @@ import Heading5 from "@/Componenets/typography/h5/Heading5";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/images/4IRLogomain.png";
 import { useRouter } from "next/router";
+import { Button, Offcanvas, OffcanvasHeader, OffcanvasBody, Nav, NavItem, NavLink } from "reactstrap";
 const AitalkAssist = () => {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
-
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+    // Toggle offcanvas visibility
+    const toggleOffcanvas = () => setIsOpen(!isOpen);
   const handleOpenModal = () => {
     setShowModal(true);
   };
@@ -187,7 +194,7 @@ const AitalkAssist = () => {
   const testimonials = [
     {
       content:
-        "Their commitment to helping clients incorporate AI and stay updated with the latest technologies is evident...",
+      " While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients." ,
       name: "Toby Woods",
       position: "NorthStar Systems, LLC",
       image: tobyImg,
@@ -202,7 +209,7 @@ const AitalkAssist = () => {
     },
     {
       content:
-        "While many people are intimidated by AI, Barry has a way of making it practical and approachable...",
+        "There commitment to helping clients incorporate AI and stay updated with the latest technologies is evident. Working with them has been both fun and rewarding, saving me time and money. I highly recommend Fourth Industrial Revolution to any buisness looking to enhance its digital presence and operational efficiency. ",
       name: "Carol Huston",
       position: "True Story Realty",
       image: carolImg,
@@ -286,6 +293,8 @@ const AitalkAssist = () => {
   return (
     <>
       {showModal && <Model close={handleCloseModal} />}
+         {/* Offcanvas Component */}
+    
       <div id="home-header" >
         <header className={isSticky ? "sticky1" : ""}>
           <button
@@ -293,6 +302,7 @@ const AitalkAssist = () => {
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#primaryMenu"
+            onClick={toggleOffcanvas}
           >
             <span className="navbar-toggler-icon">
               <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
@@ -353,7 +363,7 @@ const AitalkAssist = () => {
               </div>
             </div>
           </nav>
-          <Button
+          <Button1
             style={{
               position: "relative",
               marginTop: "-1.5rem",
@@ -433,7 +443,7 @@ const AitalkAssist = () => {
                           style={{ left: "100%" }}
                         ></canvas>
                       </button>
-                      <Button
+                      <Button1
                         style={{
                           textDecoration: "none",
                           fontSize: "1rem",
@@ -501,7 +511,7 @@ const AitalkAssist = () => {
             />
           </div>
           <AboutBoxes layout={true} shadow="none" Box={Box} showbutton={false} />
-          <Button   style={{
+          <Button1   style={{
               position: "relative",
               marginTop: "-1.5rem",
               padding: "13px 32px",
@@ -587,6 +597,63 @@ const AitalkAssist = () => {
         handleCloseModal={handleCloseModal}
       />
       <Footer />
+      <Offcanvas isOpen={isOpen} toggle={toggleOffcanvas} style={{width: "297px"}} className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+        <OffcanvasHeader toggle={toggleOffcanvas} className="navbar-shadow d-flex align-items-center">
+          <Heading5 title="Back" className="mb-0 back" />
+          <Button color="link" className="btn-close" onClick={toggleOffcanvas}>
+              <i class="ri-close-line"></i>
+          </Button>
+        </OffcanvasHeader>
+        <OffcanvasBody className="offcanvas-body">
+          <Nav vertical className="navbar-nav">
+            <NavItem className={`nav-item1 ${router.pathname === '/' ? 'active' : ''}`}>
+              <NavLink className="nav-link1" tag={Link} href="/">
+                Home
+              </NavLink>
+            </NavItem>
+            <NavItem className={`nav-item1 ${router.pathname === '/aboutus' ? 'active' : ''}`}>
+              <NavLink className="nav-link1" tag={Link} href="/aboutus">
+                About Us
+              </NavLink>
+            </NavItem>
+            <NavItem className={`nav-item1 dropdown ${router.pathname.startsWith('/services') ? 'active' : ''}`}>
+      <NavLink className="nav-link1 " href="/services" onClick={(e) => { e.preventDefault(); }} id="servicesLink">
+        Services
+        <span onClick={toggleDropdown} style={{ cursor: 'pointer', marginLeft: '7.5rem' }}>
+          {dropdownOpen ? <i class="ri-arrow-up-s-fill"></i>: <i class="ri-arrow-down-s-fill"></i>}
+        </span>
+      </NavLink>
+      <ul className={`dropdown-menu sidebar-navlinks ${dropdownOpen ? 'show' : ''}`} aria-labelledby="servicesLink">
+        <li>
+          <Link className="dropdown-item1" href="/services/StrategicCounseling">
+            Strategic Counseling
+          </Link>
+        </li>
+        <li>
+          <Link className="dropdown-item1" href="/services/AitalkAssist">
+            AITalkAssist
+          </Link>
+        </li>
+        <li>
+          <Link className="dropdown-item1" href="/services/TrainingEducation">
+            Training & Education
+          </Link>
+        </li>
+      </ul>
+    </NavItem>
+            <NavItem className={`nav-item1 ${router.pathname === '/blog' ? 'active' : ''}`}>
+              <NavLink className="nav-link1" tag={Link} href="/blog">
+                Blog
+              </NavLink>
+            </NavItem>
+            <NavItem className={`nav-item1 ${router.pathname === '/contact' ? 'active' : ''}`}>
+              <NavLink className="nav-link1" tag={Link} href="/contact">
+                Contact Us
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </OffcanvasBody>
+      </Offcanvas>
     </>
   );
 };

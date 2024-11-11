@@ -295,7 +295,6 @@ body,section{
 
     .boxs_container {
         grid-template-columns: 1fr;
-        margin: auto;
     }
 
     .box {

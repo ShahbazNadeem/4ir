@@ -97,10 +97,9 @@
 .service_boxes_div {
     position: relative;
     margin-top: 20%;
-    left: 19%;
-    width: 200%;
+    width: auto;
     display: flex;
-    gap: 3rem;
+    gap: 10rem;
     justify-content: space-evenly;
 }
 
@@ -192,10 +191,22 @@
     }
 
     .service_boxes_div {
-        left: -3%;
+        padding: 50px 15px !important;
+        left: unset;
         position: relative;
-        margin: 10rem auto;
-        width: 90%;
+        margin: unset;
+        width: 100%;
+        gap: 1rem !important;
+    }
+    .service-section .service-box{
+        width: 100% !important;
+    }
+    .service-section .container .home-heading{
+        padding-top: 30px;
+    }
+    .about-section .row{
+        display: flex;
+        flex-direction: column !important;
     }
 }
 
@@ -203,7 +214,7 @@
 
     .home-section .home-content {
         position: relative;
-        left: -5%;
+        left: -12% !important;
     }
 
 }

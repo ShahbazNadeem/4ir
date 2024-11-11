@@ -11,6 +11,7 @@ import Image from "next/image";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
+import Footer from "@/Componenets/home/Footer";
 const Teampost = () => {
   const [data, setData] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -107,7 +108,7 @@ const Teampost = () => {
           <div class="row">
 
 <div class="col-lg-6">
-    <div class="service_boxes_div" style={{width: "100%", position: "relative", left: "auto"}}>
+    <div class="service_boxes_div service" style={{width: "100%", position: "relative", left: "none"}}>
 
         <div class="col-sm-6">
             <div class="service-box">
@@ -165,6 +166,7 @@ const Teampost = () => {
             </div>
         </div>
     </div>
+    <Footer />
     </>
   );
 };
