@@ -69,7 +69,7 @@ export default function Services() {
         paragraph="AI Products and Solutions by Fourth Industrial Revolution Inc."
          widthclass="35%"
       />
-      <div className="service-section section-b-space mt-2"style={{paddingTop: "178px"}}>
+      <div className="service-section section-b-space mt-2"style={{paddingTop: "178px", backgroundColor: "#0b1622"}}>
         <div className="container">
           <div className="row g-5">
             <div className="service-info">
@@ -121,14 +121,13 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
-            pagination={{ clickable: true }}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
             navigation={true}
             scrollbar={{ draggable: true }}
-            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+            modules={[Navigation, Scrollbar, Autoplay]}
           >
             <SwiperSlide>
               <div

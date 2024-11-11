@@ -1,5 +1,5 @@
 import Image from "next/image"
-import MainLogo from "@/images/main-logo.png"
+import MainLogo from "@/images/4IRLogomain.png"
 import Facebook from "../../../public/assets/svg/social/fb.svg"
 import Youtube from "../../../public/assets/svg/youtube.svg"
 import Linkedin from "../../../public/assets/svg/social/linkedin.svg"
@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
                     <div className="footer-content">
                         <ul>
-                            <li><Link data-cursor="pointer" href="/">Home</Link></li>
+                            <li><Link data-cursor="pointer" href="/" >Home</Link></li>
                             <li><Link data-cursor="pointer" href="/blog">Blog</Link></li>
                             <li><Link data-cursor="pointer" href="/services">Services</Link></li>
                             <li><Link data-cursor="pointer" href="/contact">Contact us</Link></li>

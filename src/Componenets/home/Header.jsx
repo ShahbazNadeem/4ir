@@ -84,8 +84,8 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
                         Home
                       </Link>
                     </li>
-                    <li className={`nav-item ${router.pathname === '/about' ? 'active' : ''}`}>
-                      <Link className="nav-link" href="/about">
+                    <li className={`nav-item ${router.pathname === '/aboutus' ? 'active' : ''}`}>
+                      <Link className="nav-link" href="/aboutus">
                         About Us
                       </Link>
                     </li>
@@ -154,8 +154,8 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
                 Home
               </NavLink>
             </NavItem>
-            <NavItem className={`nav-item1 ${router.pathname === '/about' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="/about">
+            <NavItem className={`nav-item1 ${router.pathname === '/aboutus' ? 'active' : ''}`}>
+              <NavLink className="nav-link1" tag={Link} href="/aboutus">
                 About Us
               </NavLink>
             </NavItem>

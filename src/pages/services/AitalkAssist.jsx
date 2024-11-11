@@ -515,6 +515,7 @@ const AitalkAssist = () => {
       <section
         className="ai-features-section section-b-space service-section"
         id="how-it-work"
+        style={{paddingTop: "178px"}}
       >
         <div className="container">
           <div
@@ -526,6 +527,7 @@ const AitalkAssist = () => {
               title="AI Talk Assist:"
               secondtitle="Automated Calls,"
               title2="Human-Like Conversations"
+              headingstyle={{width: "40%", position: "relative", left:"30%"}}
               breakpoint={false}
             />
             <Headingh3 title="Effortless Communication, Maximum Efficiency" />

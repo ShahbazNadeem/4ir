@@ -67,7 +67,7 @@ const About = () => {
       <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
       <Banner
         heading="FOURTH INDUSTRIAL REVOLUTION INC"
-        title="ABOUT US"
+        title="ABOUT Us"
         paragraph="AI Solutions Experts: Our Story and Mission"
         layout={false}
       />

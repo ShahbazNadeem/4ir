@@ -36,7 +36,7 @@ export default function Team({
                   to guiding your business through the complexities of the
                   Fourth Industrial Revolution. With deep industry knowledge and
                   innovative strategies, we help you achieve sustainable growth
-                  and success." className="service_paragraph" style={{ marginBottom: "2rem" }} />
+                  and success." className="service_paragraph" style={{ marginBottom: "2rem",fontSize: "17.6px" }} />
               </div>
             </div>
           ) : (

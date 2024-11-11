@@ -1,3 +1,4 @@
+// _app.js
 import "bootstrap/dist/css/bootstrap.css";
 import "@/css/style.css";
 import "@/css/pages/ai-talk-assist.css";
@@ -15,18 +16,18 @@ import "@/css/pages/startegic-counselling.css";
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
 import CustomCursor from "@/Componenets/custom-Cursor/Custom-Cursor";
-// import "bootstrap/dist/js/bootstrap.bundle"
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 1000,
+      once: true,
     });
   }, []);
-    return(
-      <>
+
+  return (
+    <>
       <CustomCursor />
-      <Component {...pageProps}  />
-      </>
-  )
-  }
+      <Component {...pageProps} />
+    </>
+  );
+}

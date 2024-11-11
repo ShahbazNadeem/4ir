@@ -311,7 +311,7 @@ export default function Page() {
       <div className="service-section section-b-space expertise">
         <div className="container">
         <Headingh2
-            title="About Us"
+            title="About"
             headingstyle={{
               fontSize: "40px",
               position: "relative",
@@ -413,4 +413,14 @@ export default function Page() {
       <Footer />
     </>
   );
+}
+
+export function generateMetadata ({params}){
+  return{
+
+    title: "Fourth Industrial Revolution",
+    description: "Home page"
+  }
+
+  
 }

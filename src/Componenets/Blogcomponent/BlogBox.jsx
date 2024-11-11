@@ -22,6 +22,7 @@ return(
                           alt="blog"
                           width={500}
                           height={500}
+                          style={{cursor: "pointer"}}
                           priority
                         />
                       </Link>
@@ -35,6 +36,8 @@ return(
                       </div>
                     </>
                   ) : (
+                    <Link  href={`/blog/${items.slug}`} >
+                    
                     <Image
                       src={items.image}
                       alt=""
@@ -42,6 +45,7 @@ return(
                       height={1000}
                       priority
                     />
+                    </Link>
                   )}
                 </div>
 

@@ -63,19 +63,13 @@ export default function BlogPost() {
 
       {data && (
         <section className="ratio_40">
-          <div className="container">
+          <div className="container" style={{padding: "0px 90px"}}>
             <div className="blog-details" id="blog_detail_container">
-              <div className="blog-img bg-size">
-                <Image
-                  src={data.image}
-                  style={{ borderRadius: "6px" }}
-                  width={100}
-                  height={100}
-                  id="current_blog_image"
-                  className="img-fluid w-100 bg-img"
-                  alt="blog"
-                  priority
-                />
+              <div className="blog-img bg-size" style={{backgroundImage: data.image ? `url(${data.image})` : `url(${data.image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '65vh',
+        position: "relative"}}>
               </div>
               <div className="blog-title-box">
                 <span
