@@ -57,12 +57,18 @@
   .container {
     max-width: 1400px;
   }
+  .ai-features-heading h2{
+    width: 40%;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .ai-features-heading h2{
+    width: 40%;
   }
 }
 
@@ -1458,10 +1464,12 @@ header,
 .title-basic h2 {
   color: rgba(var(--theme-color), 1);
   font-weight: 400;
-  width: 48%;
+  width: auto;
   margin: -10px auto 50px;
 }
-
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal{
+  background-color: #00bbff88;
+}
 @media (max-width: 1199px) {
   .title-basic h2 {
     width: 58%;
@@ -2919,7 +2927,7 @@ header .navbar-text {
 
 .service_boxes_div {
     position: relative;
-    left: 16%;
+    left: 16% !important;
     margin-top: 20%;
     width: 100%;
     display: flex;
@@ -7217,17 +7225,28 @@ header .offcanvas-backdrop {
   .about-section .bg-effect {
     width: calc(100% - (52px + 15 * (100vw - 1400px) / 30));
   }
+  .ai-features-heading h2{
+    width: 40%;
+  }
 }
 
 @media (max-width: 1399px) {
   .about-section .bg-effect {
     width: calc(100% - (42px + 100 * (100vw - 1200px) / 200));
   }
+  .ai-features-heading h2{
+    width: 40%;
+  }
+  
+
 }
 
 @media (max-width: 1199px) {
   .about-section .bg-effect {
     width: calc(100% - (29px + 108 * (100vw - 992px) / 208));
+  }
+  .ai-features-heading h2{
+    width: 40%;
   }
 }
 
@@ -7235,17 +7254,26 @@ header .offcanvas-backdrop {
   .about-section .bg-effect {
     width: calc(100% - (36px + 112 * (100vw - 768px) / 224));
   }
+  .ai-features-heading h2{
+    width: 40%;
+  }
 }
 
 @media (max-width: 767px) {
   .about-section .bg-effect {
     width: calc(100% - (33px + 94 * (100vw - 576px) / 192));
   }
+  .ai-features-heading h2{
+    width: 40%;
+  }
 }
 
 @media (max-width: 576px) {
   .about-section .bg-effect {
     width: calc(100% - 15px);
+  }
+  .ai-features-heading h2{
+    width: 40%;
   }
 }
 
@@ -7682,6 +7710,7 @@ header .offcanvas-backdrop {
   .barry_expertise_container {
       grid-template-columns: repeat(3, 1fr);
   }
+
 }
 @media screen and (max-width:1000px) {
   .news_container {
@@ -7691,6 +7720,7 @@ header .offcanvas-backdrop {
   .news_box {
     margin: 1rem 0;
   }
+
 }
 
 

@@ -11,6 +11,9 @@ import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import Svg2 from "../../../public/assets/svg/title-effect2.svg";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import H2 from "@/Componenets/typography/h2/Heading2";
+import Testimonial from "@/Componenets/clientreview/Testimonial";
+import CalltoAction from "@/Componenets/home/CalltoAction";
+import Footer from "@/Componenets/home/Footer";
 
 export default function BlogPost() {
   const [data, setData] = useState(null);
@@ -131,6 +134,10 @@ export default function BlogPost() {
           </div>
         </section>
       )}
+      <CalltoAction  handleOpenModal={handleOpenModal}
+        showModal={showModal}
+        handleCloseModal={handleCloseModal} />
+      <Footer />
     </>
   );
 }

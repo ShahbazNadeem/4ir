@@ -5510,7 +5510,7 @@ header .offcanvas-backdrop {
   }
 }
 .service-section .service-info p {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 .service-section .service-info a {
   margin-top: 35px;

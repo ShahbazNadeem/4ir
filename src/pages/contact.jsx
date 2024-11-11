@@ -24,7 +24,7 @@ const Contact = () => {
     <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
     <Banner layout={true} title="BOOK A MEETING WITH 4IR"  paragraph="  Book a time to explore how we can advance your business with
                   AI solutions." contactClass="contact"   marginLeft="-30px"
-                  widthclass="40%" />
+                  widthclass="auto" />
       <section class="section-b-space">
         <div class="container">
             <div class="service-info">

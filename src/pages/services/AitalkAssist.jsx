@@ -527,7 +527,7 @@ const AitalkAssist = () => {
               title="AI Talk Assist:"
               secondtitle="Automated Calls,"
               title2="Human-Like Conversations"
-              headingstyle={{width: "40%", position: "relative", left:"30%"}}
+              headingstyle={{width: "auto", position: "relative", }}
               breakpoint={false}
             />
             <Headingh3 title="Effortless Communication, Maximum Efficiency" />

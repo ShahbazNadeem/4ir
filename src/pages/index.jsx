@@ -167,7 +167,7 @@ export default function Page() {
       number: "02.",
       aos: "fade-right",
       paragraph:
-        "Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle.",
+        `"Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle."`,
       ticktitle: [
         "AI Talk Assist – AI-driven tool for personalized",
         "24/7 customer service.",
@@ -311,7 +311,7 @@ export default function Page() {
       <div className="service-section section-b-space expertise">
         <div className="container">
         <Headingh2
-            title="About"
+            title="About Us"
             headingstyle={{
               fontSize: "40px",
               position: "relative",
@@ -326,7 +326,7 @@ export default function Page() {
                 <div>
                   <div className="title">
                     <Headingh2
-                      headingstyle={{ color: "#fff", width: "610px" }}
+                      headingstyle={{ color: "#fff", width: "auto" }}
                       spanstyle={{ color: "#ffce00" }}
                       title=" Empowering Your Business"
                       secondtitle=" In With AI Consulting And Product Solutions"
@@ -365,11 +365,11 @@ export default function Page() {
 
           
     
-          </div>
-        <div className="col-lg-5" >
+        <div className="col-lg-6" >
             <div className="service_boxes_div">
               <MainBox ServiceBox={ServiceBox} />
             </div>
+          </div>
         </div>
       </div>
       <Service Services={Services} />

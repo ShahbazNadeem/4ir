@@ -4,7 +4,7 @@ import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
 import Testimonial from "@/Componenets/home/CalltoAction";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Autoplay, Scrollbar } from "swiper/modules";
 import RealEstate from "@/images/blue service icon/RealEstate.png";
 import Insurance from "@/images/blue service icon/Insurance.png";
 import Mortgage from "@/images/blue service icon/Mortgage.png";
@@ -116,7 +116,7 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
         </div>
       </div>
 
-      <section className="feature-section section-b-space">
+      <section className="feature-section section-b-space"style={{paddingBottom: "0px"}} >
         <div className="container">
           <Swiper
             spaceBetween={20}
@@ -125,9 +125,9 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
               delay: 2500,
               disableOnInteraction: false,
             }}
-            navigation={true}
+           
             scrollbar={{ draggable: true }}
-            modules={[Navigation, Scrollbar, Autoplay]}
+            modules={[ Scrollbar, Autoplay]}
           >
             <SwiperSlide>
               <div

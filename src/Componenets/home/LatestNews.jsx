@@ -14,7 +14,7 @@ export default function LatestNews({
 }) {
   return (
     <>
-      <section className="news-section section-b-space" style={{padding: layout ? null :"calc(40px + 60 * (100vw - 320px) / 1600) 97px" }} >
+      <section className="news-section section-b-space" >
         {layout ? (
           <>
             <div className="container">
@@ -25,8 +25,10 @@ export default function LatestNews({
             </h1>
           </>
         ) : null}
+        <div className="conatiner" style={{padding: "0px auto"}}> 
         <div className="row news_container">
           <BlogBox Blogapi={Blogapi} icon={icon} />
+        </div>
         </div>
       </section>
     </>
