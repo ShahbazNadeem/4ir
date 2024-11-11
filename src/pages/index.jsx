@@ -60,6 +60,8 @@ export default function Page() {
       audioInstance.currentTime = 0; // Reset audio to start
     };
   }, []);
+  const [isOpen, setIsOpen] = useState(false);
+
 
   const handleMicClick = () => {
     setIsAnimating(true); // Start animation
@@ -136,38 +138,13 @@ export default function Page() {
       layout:false,
     },
   ];
-  // const TeamBox = [
-  //   {
-  //     id: 1,
-  //     personimg: Person1,
-  //     name: "Barry Krevoy",
-  //     description:
-  //       "CEO | 4IR Transformative Leadership Consultant/Advisor/Speaker | Executive Education Instructor",
-  //     columnclass: "col-xl-3 col-lg-4 col-sm-6",
-  //     firstChildClass: "team-box",
-  //     secondChildClass: "feature-top mt-4",
-  //     contentclass: "link-overflow",
-  //     layout: true,
-  //     icon: faArrowRight,
-  //   },
-  //   {
-  //     id: 2,
-  //     personimg: Person2,
-  //     name: "Shane Krevoy",
-  //     description: "4IR Transformative Leadership Advisor/Consultant",
-  //     columnclass: "col-xl-3 col-lg-4 col-sm-6",
-  //     firstChildClass: "team-box",
-  //     secondChildClass: "feature-top mt-4",
-  //     layout: true,
-  //     contentclass: "link-overflow",
-  //     icon: faArrowRight,
-  //   },
-  // ];
   const Services = [
     {
       id: 1,
       main: "about-section section-b-space section-mb-space",
       heading: "Strategic Consulting.",
+      title1: "What we",
+      title2: "Offer",
       number: "01.",
       paragraph:
         "Crafting influential content requires a deep understanding of your target audience. Pinpoint your ideal demographic and familiarise yourself with their needs, passions, and sources of concern.",
@@ -201,6 +178,7 @@ export default function Page() {
       imgWidth: "100%",
       imgHeight: "auto",
       link: "/services/AitalkAssist",
+      color: "rgb(0 189 255)",
       layout: true,
     },
     {
@@ -330,25 +308,25 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="service-section section-b-space">
+      <div className="service-section section-b-space expertise">
         <div className="container">
-          <Headingh2
+        <Headingh2
             title="About Us"
             headingstyle={{
               fontSize: "40px",
               position: "relative",
-              bottom: "5rem",
+              bottom: "5.5rem",
               fontWeight: "400",
             }}
             className="text-white"
           />
-          <div className="row g-5 d-flex">
+          <div className="row g-5">
             <div className="col-lg-6">
               <div className="service-info">
                 <div>
                   <div className="title">
                     <Headingh2
-                      headingstyle={{ color: "#fff" }}
+                      headingstyle={{ color: "#fff", width: "610px" }}
                       spanstyle={{ color: "#ffce00" }}
                       title=" Empowering Your Business"
                       secondtitle=" In With AI Consulting And Product Solutions"
@@ -375,7 +353,7 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6" style={{marginRight: "-195px"}}>
               <Mic
                 isListening={isListening}
                 isAnimating={isAnimating}
@@ -383,11 +361,15 @@ export default function Page() {
               />
             </div>
           </div>
-          <div className="col-lg-6" style={{marginLeft: "-95px"}}>
+
+
+          
+    
+          </div>
+        <div className="col-lg-5" >
             <div className="service_boxes_div">
               <MainBox ServiceBox={ServiceBox} />
             </div>
-          </div>
         </div>
       </div>
       <Service Services={Services} />
@@ -412,13 +394,17 @@ export default function Page() {
           className="title-basic text-white"
           spanstyle={{ color: "#ffce00" }}
           title1="Innovation"
-          spantitle="Insight"
+          spantitle="Insights"
         />
 
         <div className="row news_container">
           <BlogBox Blogapi={BlogApi} icon={faArrowRight} />
         </div>
       </section>
+      <div>
+      <div>
+</div>
+    </div>
       <CalltoAction
         handleOpenModal={handleOpenModal}
         showModal={showModal}

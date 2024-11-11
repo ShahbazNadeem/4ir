@@ -41,7 +41,7 @@ export default function Team({
             </div>
           ) : (
             <div className="title-basic text-center">
-              <h2 className="text-white">
+              <h2 className="text-white" style={{fontWeight: "600"}}>
                 Our <span style={{ color: "#ffce00" }}>Expert</span> Team
               </h2>
               <Headingh2 title={heading} />

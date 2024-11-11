@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-const FAQ = ({ Faq , circleData }) => {
-  const [activeIndex, setActiveIndex] = useState(null); // Track the active FAQ index
+const FAQ = ({ Faq, circleData }) => {
+  // Set the initial active index to the first item's toggleId if Faq has items
+  const [activeIndex, setActiveIndex] = useState(Faq.length > 0 ? Faq[0].toggleId : null);
 
   // Toggle function to handle which FAQ item is expanded
   const toggleFAQ = (index) => {
@@ -26,7 +27,7 @@ const FAQ = ({ Faq , circleData }) => {
                     aria-expanded={activeIndex === items.toggleId ? "true" : "false"}
                     aria-controls={items.ariaControls}
                   >
-                   {items.title}
+                    {items.title}
                   </button>
                 </h2>
                 <div
@@ -44,20 +45,19 @@ const FAQ = ({ Faq , circleData }) => {
         </div>
       </div>
 
-      <div className="col-lg-6 circles">
-  {circleData.map((items) => {
-    return (
-      <div
-        key={items.label}
-        className={`circle ${activeIndex === items.toggleId ? "circle-active" : ""}`}
-        onClick={() => toggleFAQ(items.toggleId)}
-      >
-        <span>{items.label}</span>
+      <div className="col-lg-6 circles active">
+        {circleData.map((items) => {
+          return (
+            <div
+              key={items.label}
+              className={`circle ${activeIndex === items.toggleId ? "circle-active" : ""}`}
+              onClick={() => toggleFAQ(items.toggleId)}
+            >
+              <span>{items.label}</span>
+            </div>
+          );
+        })}
       </div>
-    );
-  })}
-</div>
-
     </>
   );
 };

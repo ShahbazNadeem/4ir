@@ -14,6 +14,8 @@ import "@/css/pages/services.css";
 import "@/css/pages/startegic-counselling.css";
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
+import CustomCursor from "@/Componenets/custom-Cursor/Custom-Cursor";
+// import "bootstrap/dist/js/bootstrap.bundle"
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init({
@@ -21,5 +23,10 @@ export default function App({ Component, pageProps }) {
       once: true, 
     });
   }, []);
-    return<Component {...pageProps} />
+    return(
+      <>
+      <CustomCursor />
+      <Component {...pageProps}  />
+      </>
+  )
   }

@@ -23,8 +23,8 @@ const Contact = () => {
     <>
     <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
     <Banner layout={true} title="BOOK A MEETING WITH 4IR"  paragraph="  Book a time to explore how we can advance your business with
-                  AI solutions." contactClass="contact"   marginLeft="100px"
-                  widthclass="50%" />
+                  AI solutions." contactClass="contact"   marginLeft="-30px"
+                  widthclass="40%" />
       <section class="section-b-space">
         <div class="container">
             <div class="service-info">
@@ -33,11 +33,11 @@ const Contact = () => {
                       <Headingh4 style={{color: "#00BDFF", marginBottom: "1rem"}} heading="Connect with Us to Accelerate Innovation" />
                         <H2 className="text-white" spanstyle={{color: "#ffce00"}} title="Let’s Connect" secondtitle=" and Drive Innovation Together" />
                     </div>
-                    <Para className="service_paragraph" style={{marginBottom: "2rem"}} paragraph="We’re excited to help you
+                    <Para className="service_paragraph" style={{marginBottom: "2rem", fontSize: "17.2px"}} paragraph="We’re excited to help you
                         explore the possibilities of AI and digital transformation for your business. To ensure you get
                         the most out of our
                         conversation, we invite you to schedule a meeting at a time that suits you." />
-                    <Para className="service_paragraph" style={{marginBottom: "2rem"}} paragraph="Simply use the Calendly
+                    <Para className="service_paragraph" style={{marginBottom: "2rem", fontSize: "17.2px"}} paragraph="Simply use the Calendly
                         scheduler below to book a one-on-one consultation with our team. Together, we’ll discuss your
                         unique needs,
                         challenges, and how we can support your journey through the Fourth Industrial Revolution." />

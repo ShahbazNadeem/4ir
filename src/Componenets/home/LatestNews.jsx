@@ -14,7 +14,7 @@ export default function LatestNews({
 }) {
   return (
     <>
-      <section className="news-section section-b-space">
+      <section className="news-section section-b-space" style={{padding: layout ? null :"calc(40px + 60 * (100vw - 320px) / 1600) 97px" }} >
         {layout ? (
           <>
             <div className="container">

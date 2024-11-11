@@ -265,7 +265,7 @@ li {
     2.2 Breadcrumb Scss start
 ==========================*/
 .breadcrumb-section {
-  padding-top: 180px;
+  padding-top: 139px;
   padding-bottom: 30px;
   position: relative;
 }
@@ -5058,6 +5058,7 @@ header .offcanvas-backdrop {
   .home-section .home-content p {
     width: 100%;
   }
+
 }
 .home-section .home-content .start-link {
   display: -webkit-box;
@@ -5124,6 +5125,9 @@ header .offcanvas-backdrop {
   .home-section .home-laptop .hand-sec .left-hand {
     left: 97px;
     bottom: calc(-100% + 97px);
+  }
+  .home-section .home-content .mic_text{
+    margin-left: 456px !important;
   }
 }
 @media (max-width: 1199px) {
@@ -5330,7 +5334,7 @@ header .offcanvas-backdrop {
 }
 
 .service-section {
-  padding-top: 244px;
+  padding-top: 342px;
   background-color: #02111a;
   /* background: linear-gradient(180.02deg, rgba(var(--title-color), 0.05) 0.02%, rgba(var(--title-color), 0) 90.86%); */
   position: relative;
@@ -5358,6 +5362,7 @@ header .offcanvas-backdrop {
   background: #0a0e17;
   position: relative;
   border-radius: 4px;
+  width: 401px;
   height: 100%;
 }
 @media (max-width: 1400px) {

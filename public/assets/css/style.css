@@ -2926,7 +2926,38 @@ header .navbar-text {
     gap: 3rem;
     justify-content: space-evenly;
 }
+.side-bar{
+  background-color: #02111a;
 
+}
+.side-barheader{
+  background-color: #02111a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding: 20px 24px;
+  z-index: 1;
+  box-shadow: 0 4px 6px -2px rgba(153, 153, 153, 0.2);
+}
+.offcanvas-header .btn-close {
+ display: none;
+}
+.offcanvas-header .close-btn {
+  position: relative;
+  left: 330px;
+  top: -31px;
+  font-size: 25px;
+  color: lightgrey;
+  text-decoration: none;
+}
 
 .service-content {
     position: relative;
@@ -7301,9 +7332,8 @@ header .offcanvas-backdrop {
   }
 
   .team-section .team-box {
-    width: 90vw;
+    width: 43vw;
     margin: auto;
-    left: 4.3%;
   }
 }
 

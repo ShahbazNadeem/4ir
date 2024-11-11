@@ -29,15 +29,18 @@ export default function Service({ Services }) {
             >
               <div className="col-lg-6 order-lg-0 order-1">
                 <div className="about-content">
+                  {items.title1 ? (
+
                   <h1 className="text-white">
-                    What we <span style={{ color: "#ffce00" }}>Offer</span>
+                    {items.title1} <span style={{ color: "#ffce00" }}>{items.title2}</span>
                   </h1>
+                  ): null }
                   <div>
                     <div className="title">
                       <span className="number-pattern">{items.number}</span>
                       <Headingh2
-                        className="text-white"
                         secondtitle={items.heading}
+                       headingstyle={{ color: items.color ? items.color : "#fff" }}
                       />
                     </div>
                     <Para paragraph={items.paragraph} />

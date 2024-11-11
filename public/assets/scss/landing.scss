@@ -575,13 +575,16 @@ nav.navbar {
                padding-bottom: 50px;
                @media (max-width: 1400px) {
                     width: 50%;
+                    margin-left: 100px;
                }
                @media (max-width: 1199px) {
                     width: 76%;
+                    margin-left: none;
                }
                @media (max-width: 991px) {
                     width: 100%;
                     padding-bottom: 0;
+                    margin-left: none,
                }
                h2 {
                     font-family: $qwitcher;

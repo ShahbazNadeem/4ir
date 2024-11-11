@@ -4,7 +4,7 @@ import Footer from "@/Componenets/home/Footer";
 import Navbar from "@/Componenets/home/Header";
 import Testimonial from "@/Componenets/home/CalltoAction";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import RealEstate from "@/images/blue service icon/RealEstate.png";
 import Insurance from "@/images/blue service icon/Insurance.png";
 import Mortgage from "@/images/blue service icon/Mortgage.png";
@@ -67,17 +67,16 @@ export default function Services() {
         layout={true}
         title="OUR SERVICES"
         paragraph="AI Products and Solutions by Fourth Industrial Revolution Inc."
-         marginLeft="100px"
          widthclass="35%"
       />
-      <div className="service-section section-b-space mt-2">
+      <div className="service-section section-b-space mt-2"style={{paddingTop: "178px"}}>
         <div className="container">
           <div className="row g-5">
             <div className="service-info">
               <div>
                 <div className="title">
                   <Headingh4 style={{color:"rgb(0 189 255)"}} heading="Innovative AI Solutions for Business Growth" />
-                  <Headingh2
+                  <Headingh2 className="text-white"
                   spanstyle={{color: "#ffce00"}}
                     title="AI Products and Solutions"
                     secondtitle="by Fourth Industrial Revolution Inc."
@@ -102,13 +101,12 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
                 </div>
                 <Para style={{fontSize: "1.2rem"}} paragraph="At Fourth Industrial Revolution Inc., we serve a diverse range of industries, helping businesses from various sectors embrace AI and digital transformation. From finance to healthcare, retail to manufacturing, our solutions are tailored to meet the unique challenges of your industry." />
                 <br />
-                <Span style={{ fontSize: "16.615px", color: "rgb(156 157 159)" }} title="We build long-term partnerships based on trust, transparency,
+                <Span style={{ fontSize: "17.4px", color: "rgb(156 157 159)" }} title="We build long-term partnerships based on trust, transparency,
                   and a shared vision for success. Our holistic approach ensures
                   we not only provide the right technology but also foster a
                   culture of innovation and continuous improvement." />
                 <br />
-                <br />
-                <Span style={{ fontSize: "16.615px", color: "rgb(156 157 159)" }} title=" No matter where you are in your digital transformation
+                <Span style={{ fontSize: "17.4px", color: "rgb(156 157 159)" }} title=" No matter where you are in your digital transformation
                   journey, we are here to guide you every step of the way.
                   Contact us today to learn how we can help your business thrive
                   in the Fourth Industrial Revolution." />
@@ -124,9 +122,13 @@ paragraph="Transform your business with cutting-edge AI technologies and strateg
             spaceBetween={20}
             slidesPerView={1}
             pagination={{ clickable: true }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             navigation={true}
             scrollbar={{ draggable: true }}
-            modules={[Navigation, Pagination, Scrollbar]}
+            modules={[Navigation, Pagination, Scrollbar, Autoplay]}
           >
             <SwiperSlide>
               <div

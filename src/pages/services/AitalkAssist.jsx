@@ -298,7 +298,7 @@ const AitalkAssist = () => {
               <FontAwesomeIcon icon={faBars} style={{ color: "black" }} />
             </span>
           </button>
-          <Link href="/" style={{ cursor: "pointer" }}>
+          <Link href="/" style={{ cursor: "pointer", width: "auto" }}>
             <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" priority />
           </Link>
           <nav className="header-nav-middle">
@@ -407,6 +407,7 @@ const AitalkAssist = () => {
                       textDecoration: "none",
                       backgroundColor: "#8800ff",
                       fontSize: "calc(18px + 4*(100vw - 320px) / 1600)",
+                      marginLeft: "532px"
                     }}
                   >
                     Give it a try!
@@ -491,7 +492,7 @@ const AitalkAssist = () => {
             />
 
             <Para
-              style={{ fontSize: "16.615px" }}
+              style={{ fontSize: "17.615px" }}
               className="service-content"
               paragraph="AI Talk Assist automates routine calls, handles appointment
               setting, and manages customer queries, allowing you to focus on
@@ -499,7 +500,7 @@ const AitalkAssist = () => {
               provide a seamless customer experience—day or night."
             />
           </div>
-          <AboutBoxes Box={Box} showbutton={false} />
+          <AboutBoxes layout={true} shadow="none" Box={Box} showbutton={false} />
           <Button   style={{
               position: "relative",
               marginTop: "-1.5rem",
@@ -565,7 +566,7 @@ const AitalkAssist = () => {
             <div class="heading">
                 <div class="title-basic">
                     <h1 class="text-white">Book a <span style={{color: "#ffce00"}}>Demo</span></h1>
-                    <Para style={{marginBottom: "6rem",fontFamily: "'Outfit', sans-serif", fontSize: "1.3rem", fontWeight: "500"}} paragraph="Ready to see
+                    <Para style={{marginBottom: "6rem",fontFamily: "'Outfit', sans-serif", fontSize: "20.6px", fontWeight: "500"}} paragraph="Ready to see
                         AI Talk Assist in action? Schedule your FREE demo now and discover how it can transform your
                         customer interactions and boost
                         productivity! Pick a time that works best for you below." />

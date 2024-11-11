@@ -35,6 +35,15 @@ export default function Strategic() {
   const testimonials = [
     {
       id: 1,
+      content:
+     " While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients." ,
+      name: "Carol Huston",
+      position: "True Story Realty",
+      image: carolImg,
+      aosDelay: 500,
+    },
+    {
+      id: 2,
       content: "Best of the best that about sums up my experience.",
       name: "Jim Thiel",
       position: "Mortgage Advisor",
@@ -42,23 +51,25 @@ export default function Strategic() {
       aosDelay: 0,
     },
     {
-      id: 2,
+      id: 3,
       content:
-        "Their commitment to helping clients incorporate AI and stay updated with the latest technologies is evident...",
+        "There commitment to helping clients incorporate AI and stay updated with the latest technologies is evident. Working with them has been both fun and rewarding, saving me time and money. I highly recommend Fourth Industrial Revolution to any buisness looking to enhance its digital presence and operational efficiency. ",
       name: "Toby Woods",
       position: "NorthStar Systems, LLC",
       image: tobyImg,
       aosDelay: 400,
     },
     {
-      id: 3,
+      id: 4,
       content:
-        "While many people are intimidated by AI, Barry has a way of making it practical and approachable...",
+     " While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients." ,
       name: "Carol Huston",
       position: "True Story Realty",
       image: carolImg,
       aosDelay: 500,
     },
+   
+  
   ];
   const OfferBoxarray = [
     {
@@ -149,12 +160,12 @@ export default function Strategic() {
         layout={true}
         title="Strategic Counseling Services"
         paragraph="Business Automation with Technology and AI on it"
-          marginLeft="100px"
+    size= "40px"
          widthclass="40%"
          fadeLeft="fade-left"
          fadeRight="fade-right"
       />
-      <div className="service-section servicebackground section-b-space mt-2">
+      <div className="service-section servicebackground section-b-space mt-2"style={{paddingTop: "178px"}}>
         <div className="container">
           <div className="row g-5">
             <div className="service-info">

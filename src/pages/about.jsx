@@ -70,9 +70,8 @@ const About = () => {
         title="ABOUT US"
         paragraph="AI Solutions Experts: Our Story and Mission"
         layout={false}
-       marginLeft="100px"
       />
-      <div className="service-section section-b-space mt-2 about">
+      <div className="service-section section-b-space mt-2 about" style={{paddingTop: "178px"}}>
         <div className="container">
           <div className="row g-5">
             <div className="service-info">
