@@ -72,10 +72,10 @@ const Teampost = () => {
         handleCloseModal={handleCloseModal}
       />
       {data && (
-        <Banner title={data.name} paragraph={data.description} layout={true} />
+        <Banner  title={data.name} paragraph={data.description} layout={true} />
       )}
 
-      <div class="service-section section-b-space mt-2 expertise">
+      <div class="service-section section-b-space mt-2 expertise" style={{paddingTop: "250px"}}>
         <div class="container">
           <div class="row g-5 service_row">
             <div class="col-lg-6">
@@ -107,12 +107,12 @@ const Teampost = () => {
           <div class="row">
 
 <div class="col-lg-6">
-    <div class="service_boxes_div">
+    <div class="service_boxes_div" style={{width: "100%", position: "relative", left: "auto"}}>
 
         <div class="col-sm-6">
             <div class="service-box">
                 <div class="service-content">
-                <Headingh3 title="To 500K Monthly Visitors" />
+                <Headingh3 style={{color: "#00BDFF"}} title="To 500K Monthly Visitors" />
                 <Para paragraph={`"Collectible Trader" - online auction pioneer since '95, reshaping collectibles
                         market.` }/>
                 </div>
@@ -121,7 +121,7 @@ const Teampost = () => {
         <div class="col-sm-6">
             <div class="service-box">
                 <div class="service-content">
-                <Headingh3 title="30% Cost Reduction" />
+                <Headingh3 style={{color: "#00BDFF"}} title="30% Cost Reduction" />
                 <Para paragraph="Achieved through early adoption of internet technologies in business, enhancing
                         productivity and efficiency for our clients" />
                 </div>
@@ -130,7 +130,7 @@ const Teampost = () => {
         <div class="col-sm-6">
             <div class="service-box">
                 <div class="service-content">
-                    <Headingh3 title="Top 5% Performance" />
+                    <Headingh3 style={{color: "#00BDFF"}} title="Top 5% Performance" />
                     <Para paragraph="37 years of sales leadership, innovative strategies & team development." />
                    
                 </div>

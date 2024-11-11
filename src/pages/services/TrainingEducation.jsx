@@ -62,6 +62,7 @@ export default function TrainingEducation() {
       heading: "02",
       title: "Dream Big, Start Bold",
       para: "Learn how to scaffold your educational goals within the context of your MTP, ensuring every step you take is a stride towards a larger vision.",
+      shadow: "#00BDFF 0px 0px 5px"
     },
     {
       id: 3,
@@ -159,7 +160,7 @@ Education and Skills Development"
   
          widthclass="70%"
       />
-      <section class="service-section section-b-space mt-2 training" style={{paddingTop: "178px"}}>
+      <section class="service-section section-b-space mt-2 training" style={{paddingTop: "200px"}}>
         <div class="container">
           <div class="row g-5 expertise_div">
             <div class="col-lg-6">
@@ -241,7 +242,7 @@ Education and Skills Development"
           </div>
           <div class="barry_expertise_container">
             {BarryBox.map((items) => (
-              <article class="barry_exp_box" key={items.id}>
+              <article class="barry_exp_box" style={{boxShadow: items.shadow}} key={items.id}>
                 <div class="exp_content">
                   <H2
                     className="heading"
@@ -263,6 +264,7 @@ Education and Skills Development"
       <section
         className="ai-features-section section-b-space service-section"
         id="how-it-work"
+        style={{paddingTop: "125px"}}
       >
         <div className="container">
           <div className="title">
