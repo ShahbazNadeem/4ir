@@ -179,8 +179,16 @@ header #logo-img {
     .service-section .container {
         margin-top: -5rem;
     }
+    .aitalk-heading{
+        margin-left: 18px !important;
+    }
+    .home-section .home-content .mic_text{
+        margin-left: 37rem !important;
+    }
+    .aboutbox-conatiner{
+        margin-left: -4px !important;
+    }
 }
-
 .modal-content {
     height: 90vh;
     max-height: 90vh;

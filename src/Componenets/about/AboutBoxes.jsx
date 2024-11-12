@@ -2,14 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Image from "next/image"
 import Link from "next/link"
 import LearnBtn from "../typography/button/LearnMorebtn"
-export default function AboutBoxes({Box, icon, showbutton, shadow, layout}){
+export default function AboutBoxes({Box, icon, showbutton,addingclass, shadow, layout}){
 return(
     <>
      <section className="section-b-space services_section">
-        <div className="container" style={{marginLeft: "-49px"}}>
-            <div className="boxs_container">
+        <div className={`container ${addingclass ? "aboutbox-conatiner": null}`} style={{marginLeft: "-50px"}}>
+            <div className=" row boxs_container">
                 {Box.map((items)=>(
-                <Link href="" key={items.id}>
+
+
+                <Link  href="" key={items.id}>
                     <div className={`box ${showbutton ? "boxcustom" : ""}`}>
                         <div className="box_img">
                             <Image src={items.image} alt="" />
@@ -26,7 +28,8 @@ return(
                     </div>
                 </Link>
 
-                ))}
+))}
+
 
             </div>
         </div>

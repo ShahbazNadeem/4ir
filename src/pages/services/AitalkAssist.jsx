@@ -522,7 +522,7 @@ const AitalkAssist = () => {
               provide a seamless customer experience—day or night."
             />
           </div>
-          <AboutBoxes layout={true} shadow="none" Box={Box} showbutton={false} />
+          <AboutBoxes addingclass={true} layout={true} shadow="none" Box={Box} showbutton={false} />
           <Button1   style={{
               position: "relative",
               marginTop: "-1.5rem",

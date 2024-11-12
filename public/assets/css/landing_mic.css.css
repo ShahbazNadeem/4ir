@@ -5127,7 +5127,10 @@ header .offcanvas-backdrop {
     bottom: calc(-100% + 97px);
   }
   .home-section .home-content .mic_text{
-    margin-left: 170px !important;
+    margin-left: 180px !important;
+  }
+  .services_section .null{
+    margin-left: -4px !important;
   }
 }
 @media (max-width: 1199px) {
@@ -5362,7 +5365,7 @@ header .offcanvas-backdrop {
   background: #0a0e17;
   position: relative;
   border-radius: 4px;
-  width: 415px;
+  width: 100%;
   height: 100%;
 }
 @media (max-width: 1400px) {

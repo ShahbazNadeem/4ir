@@ -365,7 +365,7 @@ export default function Page() {
 
           
     
-        <div className="col-lg-6" >
+        <div className="col-lg-12" >
             <div className="service_boxes_div">
               <MainBox ServiceBox={ServiceBox} />
             </div>
