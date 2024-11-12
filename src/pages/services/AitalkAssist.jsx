@@ -384,7 +384,10 @@ const AitalkAssist = () => {
         </header>
       </div>
     
-      <section id="home" className="home-section aitalkassist">
+      <section id="home" className="home-section aitalkassist" style={{  backgroundImage: "url(/assets/images/landing/ai_talk_assist/4IRHomebanner.png)",
+  backgroundPosition: "center" ,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover" }}>
         <div className="container" style={{ marginTop: "10rem" }}>
           <div className="row">
             <div className="col-12">
