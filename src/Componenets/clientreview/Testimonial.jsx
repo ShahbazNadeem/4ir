@@ -27,10 +27,27 @@ const Testimonial = ({testimonials}) => {
           slidesPerView={3}
           pagination={{ clickable: true }}
           loop={true}
+          breakpoints={{
+            // Screen width >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            // Screen width >= 768px and < 1024px
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // Screen width < 768px
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+          }}
           
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide className={testimonial.class ? "wrapperswiper": null} key={index}>
+            <SwiperSlide className={testimonial.class ? "wrapperswiper": "swiper-wrapper"} key={index}>
               <div className="testimonial-box">
                 <div className="content-sec">
                   <div className="quote-img">

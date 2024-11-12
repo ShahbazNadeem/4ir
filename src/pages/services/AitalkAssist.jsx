@@ -527,7 +527,8 @@ const AitalkAssist = () => {
               position: "relative",
               marginTop: "-1.5rem",
               padding: "13px 32px",
-              left: "43%"
+              left: "50%",
+  transform: "translateX(-50%)",
             }}
             click={handleOpenModal}
             title="Book a Demo"
@@ -618,49 +619,24 @@ const AitalkAssist = () => {
         </OffcanvasHeader>
         <OffcanvasBody className="offcanvas-body" style={{backgroundColor: "rgb(20 29 43)"}}>
           <Nav vertical className="navbar-nav">
-            <NavItem className={`nav-item1 ${router.pathname === '/' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="/">
-                Home
+            <NavItem className={`nav-item1 `}>
+              <NavLink className="nav-link1" href="#feature-section">
+                Features
               </NavLink>
             </NavItem>
-            <NavItem className={`nav-item1 ${router.pathname === '/aboutus' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="/aboutus">
-                About Us
+            <NavItem className={`nav-item1 `}>
+              <NavLink className="nav-link1" href="#how-it-work">
+           How It Works
               </NavLink>
             </NavItem>
-            <NavItem className={`nav-item1 dropdown ${router.pathname.startsWith('/services') ? 'active' : ''}`}>
-      <NavLink className="nav-link1 " href="/services" onClick={(e) => { e.preventDefault(); }} id="servicesLink">
-        Services
-        <span onClick={toggleDropdown} style={{ cursor: 'pointer', marginLeft: '7.5rem' }}>
-          {dropdownOpen ? <i class="ri-arrow-up-s-fill"></i>: <i class="ri-arrow-down-s-fill"></i>}
-        </span>
-      </NavLink>
-      <ul className={`dropdown-menu sidebar-navlinks ${dropdownOpen ? 'show' : ''}`} aria-labelledby="servicesLink">
-        <li>
-          <Link className="dropdown-item1" href="/services/StrategicCounseling">
-            Strategic Counseling
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item1" href="/services/AitalkAssist">
-            AITalkAssist
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item1" href="/services/TrainingEducation">
-            Training & Education
-          </Link>
-        </li>
-      </ul>
-    </NavItem>
-            <NavItem className={`nav-item1 ${router.pathname === '/blog' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="/blog">
-                Blog
+            <NavItem className={`nav-item1 `}>
+              <NavLink className="nav-link1" href="#faq-section">
+                FAQ
               </NavLink>
             </NavItem>
             <NavItem className={`nav-item1 ${router.pathname === '/contact' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="/contact">
-                Contact Us
+              <NavLink className="nav-link1" tag={Link} href="#testimonial-section">
+                Testimonials
               </NavLink>
             </NavItem>
           </Nav>

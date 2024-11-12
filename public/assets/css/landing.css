@@ -672,7 +672,7 @@ nav.navbar {
   font-family: "Qwitcher Grypen", cursive;
   font-size: calc(38px + 12 * (100vw - 320px) / 1600);
   color: rgba(var(--theme-color), 1);
-  padding: 0 40px;
+  padding: 0 24px;
   display: inline-block;
   position: relative;
   margin-top: -16px;
@@ -1088,7 +1088,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover; */
   background-color: #0a0e17;
-  padding: 45px 0;
+  padding: 30px 0;
   border-radius: 8px 8px 0 0;
   border-top: 2px solid rgba(var(--theme-color), 1);
 }

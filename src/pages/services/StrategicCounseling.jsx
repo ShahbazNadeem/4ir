@@ -173,6 +173,7 @@ export default function Strategic() {
          widthclass="40%"
          fadeLeft="fade-left"
          fadeRight="fade-right"
+         margin="16px"
       />
       <div className="service-section servicebackground section-b-space mt-2"style={{paddingTop: "178px"}}>
         <div className="container">

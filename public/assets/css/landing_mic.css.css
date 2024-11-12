@@ -5140,6 +5140,11 @@ header .offcanvas-backdrop {
   .home-section .home-laptop .hand-sec .left-hand {
     left: -105px;
   }
+  .swiper-wrapper{
+    transition-duration: 0ms;
+    /* transform: translate3d(-389.333px, 0px, 0px) !important; */
+    transition-delay: 0ms;
+  }
 }
 .home-section .home-laptop .hand-sec .right-hand {
   position: absolute;

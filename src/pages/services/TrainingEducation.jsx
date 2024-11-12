@@ -157,7 +157,7 @@ export default function TrainingEducation() {
         title="AI TRAINING & EMPOWERMENT"
         paragraph="Unlock the Full Potential of Your Team with Tailored AI
 Education and Skills Development"
-  
+   margin="16px"
          widthclass="70%"
       />
       <section class="service-section section-b-space mt-2 training" style={{paddingTop: "200px"}}>
@@ -171,7 +171,6 @@ Education and Skills Development"
                     style={{
                       color: "#00BDFF",
                       marginBottom: "2rem",
-                      width: "50%",
                     }}
                   />
                   <div class="title">
