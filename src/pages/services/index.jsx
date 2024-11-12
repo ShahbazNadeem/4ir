@@ -68,6 +68,7 @@ export default function Services() {
         title="OUR SERVICES"
         paragraph="AI Products and Solutions by Fourth Industrial Revolution Inc."
          widthclass="35%"
+         marginLeft= "2px"
       />
       <div className="service-section section-b-space mt-2"style={{paddingTop: "178px", backgroundColor: "#0b1622"}}>
         <div className="container">

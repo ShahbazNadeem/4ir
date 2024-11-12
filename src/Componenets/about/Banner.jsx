@@ -2,7 +2,7 @@ import Heading1 from "../typography/h1/Heading1";
 import Headingh2 from "@/typography/h2/Heading2";
 import Para from "../typography/paragrapgh/paragraph";
 
-export default function Banner({ heading, title, paragraph,size, layout ,fadeRight, fadeLeft ,contactClass,widthclass, marginLeft }) {
+export default function Banner({ heading, title, paragraph,size,margin, layout ,fadeRight, fadeLeft ,contactClass,widthclass, marginLeft }) {
   return (
     <>
       <section id="home"  className={`section-b-space home-section ${contactClass || ""}`}>
@@ -13,6 +13,7 @@ export default function Banner({ heading, title, paragraph,size, layout ,fadeRig
               textAlign: "center ",
               justifyContent: "center",
               display: "flex",
+              marginLeft: margin
             }}
           >
             <div  data-aos={fadeLeft}

@@ -5129,9 +5129,6 @@ header .offcanvas-backdrop {
   .home-section .home-content .mic_text{
     margin-left: 180px !important;
   }
-  .services_section .null{
-    margin-left: -4px !important;
-  }
 }
 @media (max-width: 1199px) {
   .home-section .home-laptop .hand-sec .left-hand {
