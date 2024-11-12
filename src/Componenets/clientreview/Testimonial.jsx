@@ -30,7 +30,7 @@ const Testimonial = ({testimonials}) => {
           
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide className={testimonial.class ? "wrapperswiper": null} key={index}>
               <div className="testimonial-box">
                 <div className="content-sec">
                   <div className="quote-img">

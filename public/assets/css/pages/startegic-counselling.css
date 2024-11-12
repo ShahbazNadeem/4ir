@@ -58,7 +58,7 @@
 /* Responsive styles for tablets */
 @media (max-width: 1024px) {
     .offer_box {
-        flex-direction: column;
+        flex-direction: column ;
         gap: 1rem;
         padding: 1.7rem;
         align-items: center;
@@ -83,9 +83,16 @@
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
     .offer_box {
-        flex-direction: column;
+        flex-direction: column ;
         padding: 1.3rem;
         display: block;
+        gap: 1rem;
+    }
+    .offer_box1{
+        display: flex;
+        flex-direction: column-reverse !important ;
+        padding: 1.3rem;
+   
         gap: 1rem;
     }
 
@@ -103,6 +110,11 @@
     .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
 display: flex;
 /* flex-direction: column; */
+width: 100% !important;
+    }
+    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .wrapperswiper {
+display: flex;
+flex-direction: column;
 width: 100% !important;
     }
 }

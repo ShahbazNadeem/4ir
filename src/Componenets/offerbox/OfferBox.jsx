@@ -6,7 +6,7 @@ export default function OfferBox({data}){
         {data.map((items)=>(
              <div  data-aos={items.aos} data-aos-delay="500"data-aos-duration="1000" class="container" key={items.id}>
             <div class="offers_container">
-                <div class="offer_box left" style={{flexDirection: items.row }}>
+                <div class={`offer_box left ${items.columnreverse} `} style={{flexDirection: items.row }}>
                     <div class="offer_img">
                         <Image src={items.image} alt="" priority />
                     </div>

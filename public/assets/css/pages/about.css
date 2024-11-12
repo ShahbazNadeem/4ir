@@ -97,7 +97,10 @@
     .service-info {
         width: 90vw;
         position: relative;
-        margin: 1rem auto;
+        margin: 0.2rem auto;
+    }
+    .training{
+        margin: -4rem auto !important;
     }
 }
 
