@@ -101,12 +101,14 @@ export default function BlogPost() {
                 <div className="row">
                   <div className="col-lg-8 col-md-10 m-auto">
                     <div className="blog-main-content">
-                      {data.blogcontent.map((items) => (
+                      {data.blogcontent.map((items) => {
+                        return(
+
                         <div key={items.id}>
                           <Headingh3
                             imageclass="img-fluid title-effect"
                             className="mt-xl-5 mt-md-3 mt-2"
-                            image={items.image}
+                            image={items.image ? items.image : null}
                             imgstyle={{ width: "62px" }}
                             showimage={true}
                             title={items.heading}
@@ -125,7 +127,8 @@ export default function BlogPost() {
                             </ol>
                           )}
                         </div>
-                      ))}
+                        )
+})}
                     </div>
                   </div>
                 </div>

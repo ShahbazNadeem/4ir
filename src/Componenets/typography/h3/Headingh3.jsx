@@ -9,7 +9,7 @@ const Headingh3 = ({style, title, className, image,imageclass, showimage, imgsty
         alt={title}
         width={100}
         height={100}
-        style={imgstyle}
+        style={image ? imgstyle : { display: "none" }}
         className={`img-fluid ${imageclass}`}
       />
     ): null } 

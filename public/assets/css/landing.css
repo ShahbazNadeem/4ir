@@ -458,7 +458,12 @@ nav.navbar {
   .home-section .home-sec {
     height: 100%;
     padding: calc(132px + 26 * (100vw - 320px) / 1600) 0 calc(80px + 20 * (100vw - 320px) / 1600) 0;
-    margin-left: 30px;
+    margin-left: 50px;
+  }
+  .home-section .home-heading1 {
+    height: 100%;
+    padding: calc(132px + 26 * (100vw - 320px) / 1600) 0 calc(80px + 20 * (100vw - 320px) / 1600) 0;
+    margin-left: 16px;
   }
 }.home-section .home-content {
   position: relative;

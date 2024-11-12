@@ -172,14 +172,17 @@
       },
       {
         "id": 2,
+        "image": false,
         "para": "Grok functions as a chatbot, akin to ChatGPT or Claude, with a distinctively sassy tone and access to Twitter data. While evaluating such systems remains challenging, experts generally consider Grok competitive with last-generation medium-size models like GPT-3.5. Whether one finds this impressive considering its short development time or disappointing given xAI’s resources is subjective."
       },
       {
         "id": 3,
+        "image": false,
         "para": "Regardless, Grok represents a modern and capable large language model, and increased access to such technologies benefits the developer community. However, the crux of the issue lies in defining “open” in a meaningful manner beyond mere rhetoric or moral posturing."
       },
       {
         "id": 5,
+        "image": false,
         "para": "The ambiguity surrounding terms like “open” and “open source” in the AI realm is not new. It extends beyond technicalities like licensing (Grok is licensed under Apache 2.0). The fundamental concern revolves around whether such initiatives genuinely foster collaboration and innovation or merely serve as PR maneuvers for companies or individuals."
       }
     ],

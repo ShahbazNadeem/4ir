@@ -211,7 +211,7 @@ export default function Page() {
       {showModal && <Model close={handleCloseModal} />}
       <section id="home" className="section-b-space home-section">
         <div className="container-fluid">
-          <div className="home-sec">
+          <div className="home-sec home-heading1">
             <div className="home-content">
               <div className="home-contents">
                 <div>
