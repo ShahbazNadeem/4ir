@@ -306,6 +306,9 @@ body,section{
         margin: 2rem auto;
         left: 1%;
     }
+    .ratio_40{
+        padding-top: unset !important;
+    }
 
     .service_row {
         margin-top: 0;
