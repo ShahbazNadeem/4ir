@@ -141,13 +141,13 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
 
           {/* Offcanvas Component */}
           <Offcanvas isOpen={isOpen} toggle={toggleOffcanvas} style={{    width: "297px"}} className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
-        <OffcanvasHeader toggle={toggleOffcanvas} className="navbar-shadow d-flex align-items-center">
+        <OffcanvasHeader toggle={toggleOffcanvas} className="navbar-shadow d-flex align-items-center" style={{backgroundColor: "rgb(20 29 43)"}}>
           <Heading5 title="Back" className="mb-0 back" />
           <Button color="link" className="btn-close" onClick={toggleOffcanvas}>
               <i class="ri-close-line"></i>
           </Button>
         </OffcanvasHeader>
-        <OffcanvasBody className="offcanvas-body">
+        <OffcanvasBody className="offcanvas-body" style={{backgroundColor: "rgb(20 29 43)"}}>
           <Nav vertical className="navbar-nav">
             <NavItem className={`nav-item1 ${router.pathname === '/' ? 'active' : ''}`}>
               <NavLink className="nav-link1" tag={Link} href="/">
