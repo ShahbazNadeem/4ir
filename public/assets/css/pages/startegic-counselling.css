@@ -102,7 +102,7 @@
     }
     .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
 width: 100% !important;
     }
 }

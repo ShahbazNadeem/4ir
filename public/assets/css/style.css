@@ -7742,12 +7742,14 @@ header .offcanvas-backdrop {
   .barry_expertise_container {
       grid-template-columns: repeat(3, 1fr);
   }
-
+.content-heading h2{
+  margin-left: 20px !important;
+}
 }
 @media screen and (max-width:1000px) {
   .news_container {
     margin: auto;
-    display: block;
+    display: block !important;
   }
 
   .news_box {

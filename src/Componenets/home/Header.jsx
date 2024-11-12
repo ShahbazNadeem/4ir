@@ -160,9 +160,12 @@ export default function Navbar({ showModal, handleOpenModal, handleCloseModal })
               </NavLink>
             </NavItem>
             <NavItem className={`nav-item1 dropdown ${router.pathname.startsWith('/services') ? 'active' : ''}`}>
-      <NavLink className="nav-link1 " href="/services" onClick={(e) => { e.preventDefault(); }} id="servicesLink">
+      <NavLink className="nav-link1 " href="/services" id="servicesLink">
         Services
-        <span onClick={toggleDropdown} style={{ cursor: 'pointer', marginLeft: '7.5rem' }}>
+        <span onClick={(e) => { 
+  e.preventDefault();
+  toggleDropdown();
+}} style={{ cursor: 'pointer', marginLeft: '7.5rem' }}>
           {dropdownOpen ? <i class="ri-arrow-up-s-fill"></i>: <i class="ri-arrow-down-s-fill"></i>}
         </span>
       </NavLink>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Pagination } from 'swiper/modules';
+import {  Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import quoteOutline from '../../../public/assets/svg/quote.svg';
 import quoteFill from '../../../public/assets/svg/quote-green.svg';

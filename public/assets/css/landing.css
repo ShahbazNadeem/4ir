@@ -655,9 +655,11 @@ nav.navbar {
     width: 100% !important;
     padding-bottom: 0;
   }
-  .home-section .home-sec .home-content1 {
-    width: 100% !important;
-    margin-left: -80px;
+  .home-section .home-sec .home-content .heading {
+    margin-left: unset !important;
+  }
+  .home-section .home-sec .home-content .para {
+    margin-left: unset !important;
   }
 }
 .home-section .home-sec .home-content h2 {

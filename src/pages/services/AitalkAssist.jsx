@@ -215,6 +215,14 @@ const AitalkAssist = () => {
       image: carolImg,
       aosDelay: 500,
     },
+    {
+      content:
+        "There commitment to helping clients incorporate AI and stay updated with the latest technologies is evident. Working with them has been both fun and rewarding, saving me time and money. I highly recommend Fourth Industrial Revolution to any buisness looking to enhance its digital presence and operational efficiency. ",
+      name: "Carol Huston",
+      position: "True Story Realty",
+      image: carolImg,
+      aosDelay: 500,
+    },
   ];
   const Faq = [
     {
@@ -396,7 +404,7 @@ const AitalkAssist = () => {
                     priority
                   />
                 </div>
-                <div style={{ marginLeft: "90px" }}>
+                <div className="aitalk-heading" style={{ marginLeft: "90px" }}>
                   <h1>
                     Transform Your Customer Experience with <br />
                     <div className="title-effect">

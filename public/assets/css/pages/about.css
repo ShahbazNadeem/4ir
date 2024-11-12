@@ -85,6 +85,10 @@
     .service-section{
         width: 100vw;
         padding-top: 30px !important;
+        padding-bottom: 110px;
+    }
+    .home-content .aitalk-heading{
+        margin-left: unset !important;
     }
 
     .service-info {

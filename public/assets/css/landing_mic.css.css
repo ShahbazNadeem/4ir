@@ -5127,7 +5127,7 @@ header .offcanvas-backdrop {
     bottom: calc(-100% + 97px);
   }
   .home-section .home-content .mic_text{
-    margin-left: 456px !important;
+    margin-left: 140px !important;
   }
 }
 @media (max-width: 1199px) {

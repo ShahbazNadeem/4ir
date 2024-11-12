@@ -31,8 +31,8 @@ export default function Banner({ heading, title, paragraph,size, layout ,fadeRig
                     />
                   </div>
                 )}
-                <Heading1 headingstyle={{fontSize: size}}  title={title} />
-                <Para style={{width: "auto"}} paragraph={paragraph} />
+                <Heading1 className='heading' headingstyle={{fontSize: size}}  title={title} />
+                <Para className='para' style={{width: "auto"}} paragraph={paragraph} />
               </div>
             </div>
           </div>
