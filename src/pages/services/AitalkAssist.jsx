@@ -465,6 +465,7 @@ const AitalkAssist = () => {
                           borderRadius: "1rem",
                           padding: "3px 12px",
                         }}
+                        className="aibookdemobtn"
                         title="Book a Demo"
                         click={handleOpenModal}
                       />

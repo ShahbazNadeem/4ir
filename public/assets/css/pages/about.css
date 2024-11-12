@@ -90,6 +90,9 @@
     .home-content .aitalk-heading{
         margin-left: -33px !important;
     }
+    .home-laptop .aibookdemobtn{
+        margin-bottom: 44px;
+    }
 
     .service-info {
         width: 90vw;
