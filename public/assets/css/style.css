@@ -527,9 +527,9 @@ li {
   transform: rotate(90deg);
 }
 .aitalkassist{
-  background-image: url("../images/landing/ai_talk_assist/4IRHomebanner.png") !important;
+  background-image: url(../images/landing/ai_talk_assist/4IRHomebanner.png) !important;
   background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-repeat: repeat !important;
   background-size: cover !important;
 }
 .boxs_container .boxcustom{
