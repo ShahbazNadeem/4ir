@@ -73,10 +73,10 @@ const Teampost = () => {
         handleCloseModal={handleCloseModal}
       />
       {data && (
-        <Banner  title={data.name} paragraph={data.description} layout={true} />
+        <Banner marginLeft="10px" title={data.name} paragraph={data.description} layout={true} />
       )}
 
-      <div class="service-section section-b-space mt-2 expertise" style={{paddingTop: "250px"}}>
+      <div class="service-section section-b-space mt-2 expertise-section expertise" style={{paddingTop: "250px"}}>
         <div class="container">
           <div class="row g-5 service_row">
             <div class="col-lg-6">

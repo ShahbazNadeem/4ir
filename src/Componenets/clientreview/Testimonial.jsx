@@ -6,6 +6,7 @@ import quoteFill from '../../../public/assets/svg/quote-green.svg';
 import Image from 'next/image';
 import Headingh4 from '../typography/h4/H4';
 import Para from '../typography/paragrapgh/paragraph';
+import H2 from '../typography/h2/Heading2';
 
 const Testimonial = ({ layout,testimonials}) => {
   return (
@@ -25,11 +26,11 @@ const Testimonial = ({ layout,testimonials}) => {
         ):(
           <>
           <div class="title-basic">
-          <h1 class="text-white">What <span style={{color: "#ffce00"}}>Our Clients</span> Are Saying</h1>
-          <p style={{marginBottom: "6rem", color: "#fff", fontSize: "1.3rem", fontWeight: "lighter"}}>See how AI Talk
+            <H2 className="text-white" title1="What " spanstyle={{color: "#ffce00"}} title="Our Clients" title2="Are Saying" />
+         
+          <Para style={{marginBottom: "6rem", color: "#fff", fontSize: "1.25rem", fontWeight: "lighter"}} paragraph="See how AI Talk
               Assist has helped businesses save time, boost conversions, and enhance
-              customer experiences. Real results, real impact!
-          </p>
+              customer experiences. Real results, real impact!" />
       </div>
           </>
         )}
