@@ -71,7 +71,7 @@ export default function BlogPost() {
               <div className="blog-img bg-size" style={{backgroundImage: data.image ? `url(${data.image})` : `url(${data.image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        height: '65vh',
+        height: '79vh',
         position: "relative"}}>
               </div>
               <div className="blog-title-box">
