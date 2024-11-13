@@ -41,16 +41,14 @@ export default function Footer() {
               <Image src={Star} className="img-fluid" alt="star" priority />
               Quick Link
             </div>
-            {isQuickLinksOpen && (
-              <div className="footer-content">
-                <ul>
-                  <li><Link href="/">Home</Link></li>
-                  <li><Link href="/blog">Blog</Link></li>
-                  <li><Link href="/services">Services</Link></li>
-                  <li><Link href="/contact">Contact us</Link></li>
-                </ul>
-              </div>
-            )}
+            <div className={`footer-content ${isQuickLinksOpen ? 'open' : ''}`}>
+              <ul>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/services">Services</Link></li>
+                <li><Link href="/contact">Contact us</Link></li>
+              </ul>
+            </div>
           </div>
 
           {/* Our Services Section */}
@@ -59,15 +57,13 @@ export default function Footer() {
               <Image src={Star} className="img-fluid" alt="star" priority />
               Our service
             </div>
-            {isServicesOpen && (
-              <div className="footer-content">
-                <ul>
-                  <li><Link href="/services/StrategicCounseling">Strategic Counselling</Link></li>
-                  <li><Link href="/services/AitalkAssist">AI Talk Assist</Link></li>
-                  <li><Link href="/services/TrainingEducation">Training & Education</Link></li>
-                </ul>
-              </div>
-            )}
+            <div className={`footer-content ${isServicesOpen ? 'open' : ''}`}>
+              <ul>
+                <li><Link href="/services/StrategicCounseling">Strategic Counselling</Link></li>
+                <li><Link href="/services/AitalkAssist">AI Talk Assist</Link></li>
+                <li><Link href="/services/TrainingEducation">Training & Education</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -83,15 +79,18 @@ export default function Footer() {
 
       {/* Styles */}
       <style jsx>{`
-        .link-section .footer-content {
-          display: ${isQuickLinksOpen || isServicesOpen ? 'block' : 'none'};
+        .footer-content {
+          display: block; /* Show by default on larger screens */
         }
         @media (max-width: 768px) {
+          .footer-content {
+            display: none; /* Hide by default on small screens */
+          }
+          .footer-content.open {
+            display: block; /* Show only if open on small screens */
+          }
           .footer-title {
             cursor: pointer;
-          }
-          .footer-content {
-            display: none;
           }
         }
       `}</style>

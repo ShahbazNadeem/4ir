@@ -221,6 +221,7 @@ export default function Page() {
                       fontSize: "20px",
                       fontFamily: "'Play', sans-serif",
                     }}
+                    spanstyle={{padding: "0px 20px"}}
                   />
                 </div>
                 <Heading1

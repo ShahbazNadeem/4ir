@@ -306,7 +306,7 @@
     position: relative;
     overflow: hidden;
     @media (max-width: 991px) {
-        padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320)));
+        padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320))) !important;
     }
     &:after {
         content: "";

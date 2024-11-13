@@ -653,7 +653,8 @@ nav.navbar {
 }
 @media (max-width: 1199px) {
   .home-section .home-sec .home-content {
-    width: 76%;
+    width: 76% !important;
+   margin-left: 150px !important;
   }
 }
 @media (max-width: 991px) {
