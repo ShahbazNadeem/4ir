@@ -1090,7 +1090,7 @@ footer {
   background-color: #0a0e17;
   padding: 30px 0;
   border-radius: 8px 8px 0 0;
-  border-top: 2px solid rgba(var(--theme-color), 1);
+  border-top: 1px solid rgba(var(--theme-color), 1);
 }
 footer .footer-content {
   text-align: center;

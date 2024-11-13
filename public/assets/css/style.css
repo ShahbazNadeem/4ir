@@ -4672,6 +4672,9 @@ header .offcanvas-backdrop {
   .blog-details .blog-title-box ul li+li:after {
     display: none;
   }
+  .blog-main-content img{
+    width: 30px !important;
+  }
 }
 
 .blog-main-content {
@@ -6482,9 +6485,9 @@ header .offcanvas-backdrop {
     margin-left: 60px !important;
   }
   .container .blog-details .blog-img{
-    width: 86vw !important;
-    margin-left: -57px;
-    height: 30vh !important;
+    width: 93vw !important;
+    margin-left: -78px;
+    height: 22vh !important;
   }
   .blog-details .blog-title-box{
     width: 82vw !important;
