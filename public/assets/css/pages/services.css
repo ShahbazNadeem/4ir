@@ -26,7 +26,6 @@ body,section{
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     transition: .5s all ease;
-    padding-left: 26px;
 }
 
 .boxs_container .box {
@@ -296,7 +295,9 @@ body,section{
 
     .boxs_container {
         grid-template-columns: 1fr;
+        margin-left: 49px;
     }
+ 
 
     .box {
         display: block;
@@ -305,7 +306,7 @@ body,section{
 
     .services_section {
         margin: 2rem auto;
-        left: 1%;
+        left: -3%;
     }
     .ratio_40{
         padding-top: unset !important;

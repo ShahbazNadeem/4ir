@@ -3056,18 +3056,7 @@ padding: 25px 20px;
         margin: 0 1.5rem;
     }
 }
-@media screen and (max-width: 1000px) {
-  .service-section{
-    padding-top: 170px !important;
-  }
-  .service_boxes_div{
-   display: flex !important;
-   flex-direction: row !important;
-  }
-  .team-section .row{
-    margin-left: unset !important;
-  }
-}
+
 @media screen and (max-width:600px) {
 
     body {
@@ -7767,7 +7756,7 @@ header .offcanvas-backdrop {
 @media screen and (max-width:1000px) {
   .news_container {
     margin: auto;
-
+    display: block !important;
   }
 
   .news_box {

@@ -458,12 +458,11 @@ nav.navbar {
   .home-section .home-sec {
     height: 100%;
     padding: calc(132px + 26 * (100vw - 320px) / 1600) 0 calc(80px + 20 * (100vw - 320px) / 1600) 0;
-    margin-left: 50px;
   }
   .home-section .home-heading1 {
     height: 100%;
     padding: calc(132px + 26 * (100vw - 320px) / 1600) 0 calc(80px + 20 * (100vw - 320px) / 1600) 0;
-    margin-left: 16px;
+    margin-left: unset;
   }
 }.home-section .home-content {
   position: relative;
@@ -654,7 +653,6 @@ nav.navbar {
 @media (max-width: 1199px) {
   .home-section .home-sec .home-content {
     width: 76% !important;
-   margin-left: 150px !important;
   }
 }
 @media (max-width: 991px) {
