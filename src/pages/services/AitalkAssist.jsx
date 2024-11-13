@@ -573,7 +573,7 @@ const AitalkAssist = () => {
           </div>
         </div>
       </section>
-      <Testimonial testimonials={testimonials} />
+      <Testimonial layout={false} testimonials={testimonials} />
       <section class="faq-section" id="faq-section">
         <div class="container">
           <div class="title-basic text-center" style={{ marginBottom: "6rem" }}>

@@ -206,7 +206,7 @@ Duration="1000" paragraph="At the forefront of digital transformation, we offer 
         </div>
       </div>
       <OfferBox data={OfferBoxarray} />
-      <Testimonial testimonials={testimonials} />
+      <Testimonial layout={true} testimonials={testimonials} />
       <CalltoAction
         handleOpenModal={handleOpenModal}
         showModal={showModal}

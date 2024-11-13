@@ -7,20 +7,32 @@ import Image from 'next/image';
 import Headingh4 from '../typography/h4/H4';
 import Para from '../typography/paragrapgh/paragraph';
 
-const Testimonial = ({testimonials}) => {
+const Testimonial = ({ layout,testimonials}) => {
   return (
     <>
      <section className="testimonial-section section-b-space" id="testimonial-section">
       <div className="container">
-        <div className="service-info" style={{ position: 'relative', marginBottom: '5rem' }}>
-          <div>
-            <div className="title">
-                <Headingh4 heading="Real Clients, Real Success" style={{ color: '#00BDFF' }} />
-              <h2 className="text-white">What <span style={{ color: '#ffce00' }}>Our Clients</span> Are Saying</h2>
-            </div>
-            <Para className="service_paragraph" paragraph=" Explore How Our AI Solutions and Training Empower Businesses to Save Time, Increase Conversions, and Elevate Customer Experiences" />
-          </div>
-        </div>
+        {layout ? (
+ <div className="service-info" style={{ position: 'relative', marginBottom: '5rem' }}>
+ <div>
+   <div className="title">
+       <Headingh4 heading="Real Clients, Real Success" style={{ color: '#00BDFF' }} />
+     <h2 className="text-white">What <span style={{ color: '#ffce00' }}>Our Clients</span> Are Saying</h2>
+   </div>
+   <Para className="service_paragraph" paragraph=" Explore How Our AI Solutions and Training Empower Businesses to Save Time, Increase Conversions, and Elevate Customer Experiences" />
+ </div>
+</div>
+        ):(
+          <>
+          <div class="title-basic">
+          <h1 class="text-white">What <span style={{color: "#ffce00"}}>Our Clients</span> Are Saying</h1>
+          <p style={{marginBottom: "6rem", color: "#fff", fontSize: "1.3rem", fontWeight: "lighter"}}>See how AI Talk
+              Assist has helped businesses save time, boost conversions, and enhance
+              customer experiences. Real results, real impact!
+          </p>
+      </div>
+          </>
+        )}
         <Swiper
           modules={[Pagination ]}
           spaceBetween={30}
