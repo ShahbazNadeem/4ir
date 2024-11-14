@@ -374,7 +374,6 @@ const AitalkAssist = () => {
           <Button1
             style={{
               position: "relative",
-              marginTop: "-1.5rem",
               padding: "13px 32px",
             }}
             click={handleOpenModal}
