@@ -83,10 +83,20 @@
         padding-top: 30px !important;
         /* padding-bottom: 110px; */
     }
+    .ai-features-section{
+        padding-top: 0px !important;
+        padding-bottom: 50px !important;
+      }
     .homeabout-sec{
         width: 100vw;
         padding-top: 30px !important;
         padding-bottom: 0px !important;
+    }
+    .faq-section{
+        padding-top: 0px !important;
+    }
+    .faq-section .title-basic{
+        margin-bottom: 1rem !important;
     }
     .info-section{
       padding-top: 10px !important;

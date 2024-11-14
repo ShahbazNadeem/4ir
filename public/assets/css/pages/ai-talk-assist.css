@@ -513,10 +513,6 @@ header,
     grid-column: 2 / span 1;
 }
 
-.ai-features-heading {
-    margin-bottom: 6rem !important;
-}
-
 @media (max-width: 1024px) {
     .ai-features-container {
         grid-template-columns: 1fr;
