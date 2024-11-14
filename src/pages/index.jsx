@@ -43,11 +43,12 @@ import Mic from "@/Componenets/mic/Mic";
 import BlogBox from "@/Componenets/Blogcomponent/BlogBox";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 import TeamBox from "./teamapi.json"
+import Head from "next/head";
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
   const [audio, setAudio] = useState(null); // Initialize audio as null
   const [isAnimating, setIsAnimating] = useState(false); // State for animation
-
+  const [isLoading, setIsLoading] = useState(false);
   // Use useEffect to create audio instance on the client side
   useEffect(() => {
     const audioInstance = new Audio("/assets/audio/heather-audio.wav");
@@ -59,8 +60,6 @@ export default function Page() {
       audioInstance.currentTime = 0; // Reset audio to start
     };
   }, []);
-  const [isOpen, setIsOpen] = useState(false);
-
 
   const handleMicClick = () => {
     setIsAnimating(true); // Start animation
@@ -75,11 +74,13 @@ export default function Page() {
       }
       return !prev; // Toggle the listening state
     });
-
+    setIsLoading(true); // Start loading when mic is clicked
     // Remove animation class after a short delay
     setTimeout(() => {
-      setIsAnimating(false); // Reset animation state
-    }, 200); // Match the duration of the CSS transition
+      setIsAnimating(false); 
+      setIsLoading(false); // Stop loading after some time
+      setIsListening(true); /// Reset animation state
+    }, 3000); // Match the duration of the CSS transition
   };
   const [showModal, setShowModal] = useState(false);
 
@@ -355,11 +356,12 @@ export default function Page() {
             </div>
 
             <div className="col-lg-6" style={{marginRight: "-195px"}}>
-              <Mic
-                isListening={isListening}
-                isAnimating={isAnimating}
-                handleMicClick={handleMicClick}
-              />
+            <Mic
+      isAnimating={isAnimating}
+      isListening={isListening}
+      isLoading={isLoading}
+      handleMicClick={handleMicClick}
+    />
             </div>
           </div>
 
@@ -397,10 +399,12 @@ export default function Page() {
           title1="Innovation"
           spantitle="Insights"
         />
+<div className="container">
 
         <div className="row news_container">
           <BlogBox Blogapi={BlogApi} icon={faArrowRight} />
         </div>
+</div>
       </section>
       <div>
       <div>

@@ -73,7 +73,7 @@ const Contact = () => {
             
             className="calendly-inline-widget"
             src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-            style={{minWidth: "100%", height: "100%" }}
+            style={{minWidth: "100%", height: "700px" }}
              loading="lazy"
               ></iframe>
         </div>
