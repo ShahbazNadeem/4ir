@@ -1805,6 +1805,7 @@ header .navbar-nav .nav-item:before{
   border-radius: 100%;
   position: absolute;
   left: -7px;
+  top: 50%;
   -webkit-transform: translateY(-50%) scale(0);
   transform: translateY(-50%) scale(0);
   -webkit-transition: all 0.5s ease;

@@ -111,7 +111,12 @@
         padding-left: 10px !important;
     }
     .home-content .aitalk-heading{
-        margin-left: -33px !important;
+        position: relative;
+        left: -34%;
+    }
+    .home-content .aitalk-heading .mic_text{
+        position: relative;
+        left: -34%;
     }
     .home-laptop .aibookdemobtn{
         margin-bottom: 44px;

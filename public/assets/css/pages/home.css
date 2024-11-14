@@ -218,6 +218,18 @@
     }
 
 }
+@media screen and (max-width:1024px) {
+
+    .aitalkassist .home-content {
+        position: relative;
+        width: 121%;
+        left: 0% !important;
+    }
+    .aitalkassist .mic_text{
+        position: relative;
+        left: -4rem !important;
+    }
+}
 
 @media screen and (min-width:1500px) {
 

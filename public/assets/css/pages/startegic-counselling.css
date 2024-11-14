@@ -183,10 +183,37 @@ header #logo-img {
         margin-left: 10px !important;
     }
     .home-section .home-content .mic_text{
-        margin-left: 37.5rem !important;
+        margin-left: 23rem !important;
     }
     .aboutbox-conatiner{
         margin-left: -4px !important;
+    }
+}
+@media screen and (max-width:1588px) {
+    .home-section .home-content .mic_text{
+        margin-left: 30rem !important;
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 0% !important;
+    }
+}
+@media screen and (max-width:3280px) {
+    .home-section .home-content .mic_text{
+        margin-left: 37rem !important;
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 0% !important;
+    }
+}
+@media screen and (max-width:994px) {
+    .home-section .home-content .mic_text{
+        margin-left: 13rem !important;
+    }
+    .aitalkassist .home-content{
+        position: relative;
+        left: 0% !important;
     }
 }
 .modal-content {
