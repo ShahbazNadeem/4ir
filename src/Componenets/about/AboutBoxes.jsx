@@ -6,7 +6,7 @@ export default function AboutBoxes({Box, icon, showbutton,addingclass, shadow, l
 return(
     <>
      <section className="section-b-space services_section">
-        <div className={`container ${addingclass ? "aboutbox-conatiner": null}`} style={{marginLeft: "-50px"}}>
+        <div className={`container ${addingclass ? "aboutbox-conatiner": null}`} style={{marginLeft: layout ? "-15px": "-50px"}}>
             <div className=" row boxs_container">
                 {Box.map((items)=>(
 

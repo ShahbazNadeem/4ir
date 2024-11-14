@@ -501,7 +501,7 @@ const AitalkAssist = () => {
         </div>
       </section>
       <section
-        className="section-b-space services_section"
+        className="section-b-space services_section aitalkservice-sec"
         id="feature-section"
       >
         <div className="container">
@@ -511,6 +511,7 @@ const AitalkAssist = () => {
               spanstyle={{ color: "#ffce00" }}
               spantitle="Power of AI"
               title=" Supercharge Your Business Communications"
+              headingstyle={{width: "87%", marginLeft: "4.5rem"}}
             />
 
             <Para
@@ -597,10 +598,20 @@ const AitalkAssist = () => {
                         productivity! Pick a time that works best for you below." />
                 </div>
             </div>
-
-            <iframe class="calendly-inline-widget"
-                src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-                style={{width:"100%",height:"700px"}}></iframe>
+            <div>
+      <iframe
+        className="calendly-inline-widget"
+        src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+        style={{
+          width: '100%',
+          height: '700px',
+          border: 'none',
+          padding: 0,
+          margin: 0,
+        }}
+        scrolling="no"
+      />
+    </div>
 
         </div>
     </div>

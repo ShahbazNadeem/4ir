@@ -80,8 +80,16 @@
     }
     .service-section{
         width: 100vw;
-        padding-top: 60px !important;
-        padding-bottom: 110px;
+        padding-top: 30px !important;
+        /* padding-bottom: 110px; */
+    }
+    .homeabout-sec{
+        width: 100vw;
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+    }
+    .info-section{
+      padding-top: 10px !important;
     }
     .expertise-section{
         padding-top: unset !important;

@@ -309,7 +309,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="service-section section-b-space expertise">
+      <div className="service-section section-b-space expertise homeabout-sec">
         <div className="container">
         <Headingh2
             title="About Us"

@@ -2848,6 +2848,12 @@ header .hot-deal-box span {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     display: block !important;
+    margin-top:200px;
+    box-shadow: -1px 0 10px 0 rgba(var(--title-color), 0.07), 5px 20px 40px 0 rgba(var(--title-color), 0.04);
+    background-color: #0b1828;
+    border: 1px solid rgba(var(--theme-color), 0.1);
+    padding: 20px;
+    border-radius: 0;
   }
   header .navbar-expand-xl .dropdown:hover .dropdown-menu-2 {
     -webkit-transform: translateX(-50%) translateY(0);

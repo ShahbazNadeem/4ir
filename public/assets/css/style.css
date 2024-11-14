@@ -526,12 +526,6 @@ li {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.aitalkassist{
-  /* background-image: url(../images/landing/ai_talk_assist/4IRHomebanner.png) !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important; */
-}
 .boxs_container .boxcustom{
   border: 2px solid #00BDFF;
    box-shadow: 0 0 10px 0 #00BDFF;
@@ -1646,8 +1640,40 @@ footer .footer-row .footer-main {
   footer .footer-row .link-section.open .footer-content {
     display: block;
   }
+  .home-content1{
+    margin-left: unset !important;
+  }
+  .about-section{
+    padding-top: unset !important;
+  }
+  .about-section .container{
+    margin-top: unset !important;
+  }
+  .services .services_section .container{
+    margin-left: -60px !important;
+  }
+  .aitalkservice-sec{
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+  }
+  .aitalkservice-sec h1{
+    margin-left: 20px !important;
+  }
+  .aitalkservice-sec .services_section{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .aitalkservice-sec .services_section .container{
+   margin-left: -53px !important;
+  }
+  .ai-features-section{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
 }
-
+.calendly-inline-widget #root .lmtWIHO_gkbTeeyuvoJC.mOUYF5ZmuNL6I7t0mSFg{
+  background: #0D1524 !important;
+}
 footer .footer-logo {
   margin-bottom: calc(14px + 10 * (100vw - 320px) / 1600);
   display: inline-block;

@@ -380,9 +380,9 @@ body,section{
     display: none;
 }
 
-.offcanvas-body .nav-item {
+/* .offcanvas-body .nav-item {
     display: block;
-}
+} */
 
 .dropdown-arrow {
     background: none;
