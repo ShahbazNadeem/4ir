@@ -22,6 +22,7 @@ import tobyImg from "@/images/landing/ai_talk_assist/TobyWoods.png";
 import carolImg from "@/images/landing/ai_talk_assist/CarolHuston.png";
 import { useState } from "react";
 import CalltoAction from "@/Componenets/home/CalltoAction";
+import Head from "next/head";
 export default function Strategic() {
   const [showModal, setShowModal] = useState(false);
 
@@ -164,6 +165,9 @@ export default function Strategic() {
   ];
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar />
       <Banner
         layout={true}

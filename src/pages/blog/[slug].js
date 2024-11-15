@@ -14,6 +14,7 @@ import H2 from "@/Componenets/typography/h2/Heading2";
 import Testimonial from "@/Componenets/clientreview/Testimonial";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 import Footer from "@/Componenets/home/Footer";
+import Head from "next/head";
 
 export default function BlogPost() {
   const [data, setData] = useState(null);
@@ -39,6 +40,9 @@ export default function BlogPost() {
 
   return (
     <>
+      <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar
         handleOpenModal={handleOpenModal}
         handleCloseModal={handleCloseModal}
@@ -50,8 +54,15 @@ export default function BlogPost() {
             <div className="col-lg-6">
               <div className="breadcrumb-content">
                 <div>
-                  <H2 title1="Blog Details" breakpoint={true} imgsrc={Breadcrumbimg} />
-                  <Para paragraph="Discover the most recent blogs about artificial intelligence here." iconadd={true} />
+                  <H2
+                    title1="Blog Details"
+                    breakpoint={true}
+                    imgsrc={Breadcrumbimg}
+                  />
+                  <Para
+                    paragraph="Discover the most recent blogs about artificial intelligence here."
+                    iconadd={true}
+                  />
                 </div>
               </div>
             </div>
@@ -66,14 +77,20 @@ export default function BlogPost() {
 
       {data && (
         <section className="ratio_40">
-          <div className="container" style={{padding: "0px 90px"}}>
+          <div className="container" style={{ padding: "0px 90px" }}>
             <div className="blog-details" id="blog_detail_container">
-              <div className="blog-img bg-size" style={{backgroundImage: data.image ? `url(${data.image})` : `url(${data.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        height: '79vh',
-        position: "relative"}}>
-              </div>
+              <div
+                className="blog-img bg-size"
+                style={{
+                  backgroundImage: data.image
+                    ? `url(${data.image})`
+                    : `url(${data.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  height: "79vh",
+                  position: "relative",
+                }}
+              ></div>
               <div className="blog-title-box">
                 <span
                   data-cursor="pointer"
@@ -84,7 +101,12 @@ export default function BlogPost() {
                 </span>
                 <ul>
                   <li>
-                    <Image src={User2} className="img-fluid avtar" alt="author" priority />{" "}
+                    <Image
+                      src={User2}
+                      className="img-fluid avtar"
+                      alt="author"
+                      priority
+                    />{" "}
                     <span id="current_blog_author">{data.author}</span>
                   </li>
                   <li>
@@ -102,33 +124,31 @@ export default function BlogPost() {
                   <div className="col-lg-8 col-md-10 m-auto">
                     <div className="blog-main-content">
                       {data.blogcontent.map((items) => {
-                        return(
+                        return (
+                          <div key={items.id}>
+                            <Headingh3
+                              imageclass="img-fluid title-effect"
+                              className="mt-xl-5 mt-md-3 mt-2"
+                              image={items.image ? items.image : null}
+                              imgstyle={{ width: "62px" }}
+                              showimage={true}
+                              title={items.heading}
+                            />
+                            <Para
+                              className="current_blog_overview"
+                              paragraph={items.para}
+                            />
 
-                        <div key={items.id}>
-                          <Headingh3
-                            imageclass="img-fluid title-effect"
-                            className="mt-xl-5 mt-md-3 mt-2"
-                            image={items.image ? items.image : null}
-                            imgstyle={{ width: "62px" }}
-                            showimage={true}
-                            title={items.heading}
-                          />
-                          <Para
-                            className="current_blog_overview"
-                            paragraph={items.para}
-                          />
-
-                        
-                          {items.li && (
-                            <ol>
-                              {items.li.map((listItem) => (
-                                <li key={listItem.id}>{listItem.title}</li>
-                              ))}
-                            </ol>
-                          )}
-                        </div>
-                        )
-})}
+                            {items.li && (
+                              <ol>
+                                {items.li.map((listItem) => (
+                                  <li key={listItem.id}>{listItem.title}</li>
+                                ))}
+                              </ol>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -137,9 +157,11 @@ export default function BlogPost() {
           </div>
         </section>
       )}
-      <CalltoAction  handleOpenModal={handleOpenModal}
+      <CalltoAction
+        handleOpenModal={handleOpenModal}
         showModal={showModal}
-        handleCloseModal={handleCloseModal} />
+        handleCloseModal={handleCloseModal}
+      />
       <Footer />
     </>
   );

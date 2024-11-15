@@ -24,6 +24,7 @@ import { useState } from "react";
 import Span from "@/Componenets/typography/span/Span";
 import H2 from "@/Componenets/typography/h2/Heading2";
 import CalltoAction from "@/Componenets/home/CalltoAction";
+import Head from "next/head";
 export default function Services() {
   const [showModal, setShowModal] = useState(false);
 
@@ -62,6 +63,9 @@ export default function Services() {
   ];
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar />
       <Banner
         layout={true}

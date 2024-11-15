@@ -14,6 +14,7 @@ import Headingh4 from "@/Componenets/typography/h4/H4";
 import Headingh2 from "@/Componenets/typography/h2/Heading2";
 import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import CalltoAction from "@/Componenets/home/CalltoAction";
+import Head from "next/head";
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -64,6 +65,9 @@ const About = () => {
   ];
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar handleOpenModal={handleOpenModal} showModal={showModal}handleCloseModal={handleCloseModal} />
       <Banner
         heading="FOURTH INDUSTRIAL REVOLUTION INC"

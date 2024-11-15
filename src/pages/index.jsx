@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Navbar from "@/Componenets/home/Header";
 import Service from "@/Componenets/home/Services";
 import Expertise from "@/Componenets/home/Expertise";
@@ -42,45 +42,37 @@ import Button from "@/Componenets/typography/button/Button";
 import Mic from "@/Componenets/mic/Mic";
 import BlogBox from "@/Componenets/Blogcomponent/BlogBox";
 import CalltoAction from "@/Componenets/home/CalltoAction";
-import TeamBox from "./teamapi.json"
+import TeamBox from "./teamapi.json";
 import Head from "next/head";
+
 export default function Page() {
   const [isListening, setIsListening] = useState(false);
-  const [audio, setAudio] = useState(null); // Initialize audio as null
-  const [isAnimating, setIsAnimating] = useState(false); // State for animation
   const [isLoading, setIsLoading] = useState(false);
-  // Use useEffect to create audio instance on the client side
+  const [audio, setAudio] = useState(null);
+
   useEffect(() => {
     const audioInstance = new Audio("/assets/audio/heather-audio.wav");
     setAudio(audioInstance);
-
-    // Cleanup function to stop audio when component unmounts
     return () => {
       audioInstance.pause();
-      audioInstance.currentTime = 0; // Reset audio to start
+      audioInstance.currentTime = 0;
     };
   }, []);
 
   const handleMicClick = () => {
-    setIsAnimating(true); // Start animation
+    setIsLoading(true);
     setIsListening((prev) => {
       if (prev) {
         if (audio) {
-          audio.pause(); // Stop audio if it was playing
-          audio.currentTime = 0; // Reset audio to start
+          audio.pause();
+          audio.currentTime = 0;
+          setIsLoading(false);
         }
       } else {
-        audio.play(); // Play audio if it was stopped
+        audio.play();
       }
-      return !prev; // Toggle the listening state
+      return !prev;
     });
-    setIsLoading(true); // Start loading when mic is clicked
-    // Remove animation class after a short delay
-    setTimeout(() => {
-      setIsAnimating(false); 
-      setIsLoading(false); // Stop loading after some time
-      setIsListening(true); /// Reset animation state
-    }, 3000); // Match the duration of the CSS transition
   };
   const [showModal, setShowModal] = useState(false);
 
@@ -105,7 +97,7 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
-      layout:false,
+      layout: false,
     },
     {
       id: 2,
@@ -120,7 +112,7 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
-      layout:false,
+      layout: false,
     },
     {
       id: 3,
@@ -135,7 +127,7 @@ export default function Page() {
       firstimageclass: "img-fluid outline-icon",
       secondimageClass: "img-fluid bold-icon",
       contentclass: "service-content",
-      layout:false,
+      layout: false,
     },
   ];
   const Services = [
@@ -166,8 +158,7 @@ export default function Page() {
       heading: "AI Talk Assist",
       number: "02.",
       aos: "fade-right",
-      paragraph:
-        `"Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle."`,
+      paragraph: `"Experience the convenience of AI-driven calls. Let technology handle your communication needs effortlessly, saving you time and hassle."`,
       ticktitle: [
         "AI Talk Assist – AI-driven tool for personalized",
         "24/7 customer service.",
@@ -204,6 +195,9 @@ export default function Page() {
 
   return (
     <>
+      <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar
         showModal={showModal}
         handleOpenModal={handleOpenModal}
@@ -222,11 +216,11 @@ export default function Page() {
                       fontSize: "20px",
                       fontFamily: "'Play', sans-serif",
                     }}
-                    spanstyle={{padding: "0px 20px"}}
+                    spanstyle={{ padding: "0px 20px" }}
                   />
                 </div>
                 <Heading1
-                className="home-h1"
+                  className="home-h1"
                   spantitle="EMPOWER YOUR BUSINESS"
                   spanstyle={{ color: "#ffce00" }}
                   title="WITH AI-DRIVEN SUCCESS"
@@ -243,7 +237,12 @@ export default function Page() {
               </div>
             </div>
             <div className="home-img d-lg-flex d-none">
-              <Image src={Robot} className="img-fluid robot-img" alt="robot" priority />
+              <Image
+                src={Robot}
+                className="img-fluid robot-img"
+                alt="robot"
+                priority
+              />
               <div className="round-effect">
                 <Image
                   src={RoundBlue}
@@ -255,7 +254,12 @@ export default function Page() {
               </div>
               <ul className="home-effect">
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
+                  <Image
+                    src={Effect}
+                    className="img-fluid effect-img"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={DrivenSolution}
                     className="img-fluid outline-icon"
@@ -265,7 +269,12 @@ export default function Page() {
                   AI-Driven Solutions
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
+                  <Image
+                    src={Effect}
+                    className="img-fluid effect-img"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={Graph}
                     className="img-fluid outline-icon"
@@ -275,7 +284,12 @@ export default function Page() {
                   Business Growth Strategies
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
+                  <Image
+                    src={Effect}
+                    className="img-fluid effect-img"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={Innovative}
                     className="img-fluid outline-icon"
@@ -285,7 +299,12 @@ export default function Page() {
                   Innovative Tech Consulting
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
+                  <Image
+                    src={Effect}
+                    className="img-fluid effect-img"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={Text}
                     className="img-fluid outline-icon"
@@ -293,10 +312,14 @@ export default function Page() {
                     priority
                   />{" "}
                   Advanced Training Programs
-
                 </li>
                 <li>
-                  <Image src={Effect} className="img-fluid effect-img" alt="" priority />
+                  <Image
+                    src={Effect}
+                    className="img-fluid effect-img"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={AiAppointment}
                     className="img-fluid outline-icon"
@@ -312,7 +335,7 @@ export default function Page() {
       </section>
       <div className="service-section section-b-space expertise homeabout-sec">
         <div className="container">
-        <Headingh2
+          <Headingh2
             title="About Us"
             headingstyle={{
               fontSize: "40px",
@@ -355,20 +378,16 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="col-lg-6" style={{marginRight: "-195px"}}>
-            <Mic
-      isAnimating={isAnimating}
-      isListening={isListening}
-      isLoading={isLoading}
-      handleMicClick={handleMicClick}
-    />
+            <div className="col-lg-6" style={{ marginRight: "-195px" }}>
+              <Mic
+                isListening={isListening}
+                isLoading={isLoading}
+                handleMicClick={handleMicClick}
+              />
             </div>
           </div>
 
-
-          
-    
-        <div className="col-lg-12" >
+          <div className="col-lg-12">
             <div className="service_boxes_div">
               <MainBox ServiceBox={ServiceBox} />
             </div>
@@ -399,17 +418,15 @@ export default function Page() {
           title1="Innovation"
           spantitle="Insights"
         />
-<div className="container">
-
-        <div className="row news_container">
-          <BlogBox Blogapi={BlogApi} icon={faArrowRight} />
+        <div className="container">
+          <div className="row news_container">
+            <BlogBox Blogapi={BlogApi} icon={faArrowRight} />
+          </div>
         </div>
-</div>
       </section>
       <div>
-      <div>
-</div>
-    </div>
+        <div></div>
+      </div>
       <CalltoAction
         handleOpenModal={handleOpenModal}
         showModal={showModal}
@@ -420,12 +437,9 @@ export default function Page() {
   );
 }
 
-export function generateMetadata ({params}){
-  return{
-
+export function generateMetadata({ params }) {
+  return {
     title: "Fourth Industrial Revolution",
-    description: "Home page"
-  }
-
-  
+    description: "Home page",
+  };
 }

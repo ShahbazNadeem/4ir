@@ -9,6 +9,7 @@ import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import Headingh4 from "@/Componenets/typography/h4/H4";
 import H2 from "@/Componenets/typography/h2/Heading2";
 import Banner from "@/Componenets/about/Banner";
+import Head from "next/head";
 const Contact = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -21,6 +22,9 @@ const Contact = () => {
   };
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar
         handleOpenModal={handleOpenModal}
         showModal={showModal}

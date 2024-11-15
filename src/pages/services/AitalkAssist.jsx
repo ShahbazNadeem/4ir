@@ -35,17 +35,55 @@ import Heading5 from "@/Componenets/typography/h5/Heading5";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/images/4IRLogomain.png";
 import { useRouter } from "next/router";
-import { Button, Offcanvas, OffcanvasHeader, OffcanvasBody, Nav, NavItem, NavLink } from "reactstrap";
+import {
+  Button,
+  Offcanvas,
+  OffcanvasHeader,
+  OffcanvasBody,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
+import Head from "next/head";
+import Mic from "@/Componenets/mic/Mic";
 const AitalkAssist = () => {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
+  const [isListening, setIsListening] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    const audioInstance = new Audio("/assets/audio/heather-audio.wav");
+    setAudio(audioInstance);
+    return () => {
+      audioInstance.pause();
+      audioInstance.currentTime = 0;
+    };
+  }, []);
+  const handleMicClick = () => {
+    setIsLoading(true);
+    setIsListening((prev) => {
+      if (prev) {
+        if (audio) {
+          audio.pause();
+          audio.currentTime = 0;
+          setIsLoading(false);
+        }
+      } else {
+        audio.play();
+      }
+      return !prev;
+    });
+  };
+
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
-    // Toggle offcanvas visibility
-    const toggleOffcanvas = () => setIsOpen(!isOpen);
+  // Toggle offcanvas visibility
+  const toggleOffcanvas = () => setIsOpen(!isOpen);
   const handleOpenModal = () => {
     setShowModal(true);
   };
@@ -57,14 +95,14 @@ const AitalkAssist = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {  // Adjust this value as needed
+      if (window.scrollY > 500) {
+        // Adjust this value as needed
         setIsSticky(true);
       } else {
         setIsSticky(false);
       }
     };
 
-    
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll);
     }
@@ -76,41 +114,7 @@ const AitalkAssist = () => {
       }
     };
   }, []);
-  const [isListening, setIsListening] = useState(false);
-  const [audio, setAudio] = useState(null); // Initialize audio as null
-  const [isAnimating, setIsAnimating] = useState(false); // State for animation
 
-  // Use useEffect to create audio instance on the client side
-  useEffect(() => {
-    const audioInstance = new Audio("/assets/audio/heather-audio.wav");
-    setAudio(audioInstance);
-
-    // Cleanup function to stop audio when component unmounts
-    return () => {
-      audioInstance.pause();
-      audioInstance.currentTime = 0; // Reset audio to start
-    };
-  }, []);
-
-  const handleMicClick = () => {
-    setIsAnimating(true); // Start animation
-    setIsListening((prev) => {
-      if (prev) {
-        if (audio) {
-          audio.pause(); // Stop audio if it was playing
-          audio.currentTime = 0; // Reset audio to start
-        }
-      } else {
-        audio.play(); // Play audio if it was stopped
-      }
-      return !prev; // Toggle the listening state
-    });
-
-    // Remove animation class after a short delay
-    setTimeout(() => {
-      setIsAnimating(false); // Reset animation state
-    }, 200); // Match the duration of the CSS transition
-  };
   const Box = [
     {
       id: 1,
@@ -194,7 +198,7 @@ const AitalkAssist = () => {
   const testimonials = [
     {
       content:
-      " While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients." ,
+        " While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients.",
       name: "Toby Woods",
       position: "NorthStar Systems, LLC",
       image: tobyImg,
@@ -232,8 +236,8 @@ const AitalkAssist = () => {
         "How does AI Talk Assist handle customer interactions without feeling impersonal?",
       showtitle:
         "AI Talk Assist mimics natural human conversations, ensuring that customer interactions feel warm and personalized, enhancing user experience.",
-        targetId:"panelsStayOpen-headingOne",
-        ariaControls:"panelsStayOpen-collapseOne",
+      targetId: "panelsStayOpen-headingOne",
+      ariaControls: "panelsStayOpen-collapseOne",
     },
     {
       id: 2,
@@ -241,8 +245,8 @@ const AitalkAssist = () => {
       title: "Is AI Talk Assist difficult to set up?",
       showtitle:
         "No, it’s simple to integrate into your existing systems, with a smooth onboarding process to get your team up and running quickly.",
-        targetId:"panelsStayOpen-headingTwo",
-        ariaControls:"panelsStayOpen-collapseTwo",
+      targetId: "panelsStayOpen-headingTwo",
+      ariaControls: "panelsStayOpen-collapseTwo",
     },
     {
       id: 3,
@@ -250,8 +254,8 @@ const AitalkAssist = () => {
       title: "Can AI Talk Assist grow with my business?",
       showtitle:
         "Absolutely! AI Talk Assist is built to be secure, scalable, and adaptable as your business expands.",
-        targetId:"panelsStayOpen-headingThree",
-        ariaControls:"panelsStayOpen-collapseThree",
+      targetId: "panelsStayOpen-headingThree",
+      ariaControls: "panelsStayOpen-collapseThree",
     },
     {
       id: 4,
@@ -259,8 +263,8 @@ const AitalkAssist = () => {
       title: "How does AI Talk Assist qualify leads?",
       showtitle:
         "It automatically evaluates and prioritizes leads based on predefined criteria, ensuring your sales team focuses on high-potential customers.",
-        targetId:"panelsStayOpen-headingFour",
-        ariaControls:"panelsStayOpen-collapseFour",
+      targetId: "panelsStayOpen-headingFour",
+      ariaControls: "panelsStayOpen-collapseFour",
     },
     {
       id: 5,
@@ -268,8 +272,8 @@ const AitalkAssist = () => {
       title: "What happens to calls after business hours?",
       showtitle:
         "AI Talk Assist operates 24/7, handling inquiries and scheduling appointments even after business hours, ensuring constant accessibility for your customers.",
-        targetId:"panelsStayOpen-headingFive",
-        ariaControls:"panelsStayOpen-collapseFive",
+      targetId: "panelsStayOpen-headingFive",
+      ariaControls: "panelsStayOpen-collapseFive",
     },
   ];
   const circleData = [
@@ -279,7 +283,7 @@ const AitalkAssist = () => {
       label: "Personalized",
       targetId: "accordion-item",
     },
-    { id: 2,    toggleId: 1, label: "Easy", targetId: "accordion-item" },
+    { id: 2, toggleId: 1, label: "Easy", targetId: "accordion-item" },
     {
       id: 3,
       toggleId: 2,
@@ -300,10 +304,13 @@ const AitalkAssist = () => {
   ];
   return (
     <>
+      <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       {showModal && <Model close={handleCloseModal} />}
-         {/* Offcanvas Component */}
-    
-      <div id="home-header" >
+      {/* Offcanvas Component */}
+
+      <div id="home-header">
         <header className={isSticky ? "sticky1" : ""}>
           <button
             className="navbar-toggler d-xl-none d-inline navbar-menu-button"
@@ -317,11 +324,20 @@ const AitalkAssist = () => {
             </span>
           </button>
           <Link href="/" style={{ cursor: "pointer", width: "auto" }}>
-            <Image src={Logo} className="img-fluid" id="logo-img" alt="logo" priority />
+            <Image
+              src={Logo}
+              className="img-fluid"
+              id="logo-img"
+              alt="logo"
+              priority
+            />
           </Link>
           <nav className="header-nav-middle">
             <div className="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
-              <div className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+              <div
+                className="offcanvas offcanvas-collapse order-xl-2"
+                id="primaryMenu"
+              >
                 <div className="offcanvas-header navbar-shadow">
                   <Heading5 title="Back" className="mb-0" />
                   <button
@@ -334,23 +350,23 @@ const AitalkAssist = () => {
                 <div className="offcanvas-body">
                   <ul className="navbar-nav">
                     <li className={`nav-item`}>
-                    <Link
-                      className="nav-link"
-                      // style={{ paddingBottom: "10px" }}
-                      href="#feature-section"
-                    >
-                      Features
-                    </Link>
+                      <Link
+                        className="nav-link"
+                        // style={{ paddingBottom: "10px" }}
+                        href="#feature-section"
+                      >
+                        Features
+                      </Link>
                     </li>
                     <li className={`nav-item `}>
-                    <Link className="nav-link" href="#how-it-work">
-                      How It Works
-                    </Link>
+                      <Link className="nav-link" href="#how-it-work">
+                        How It Works
+                      </Link>
                     </li>
                     <li className={`nav-item dropdown `}>
-                    <Link className="nav-link" href="#faq-section">
-                      FAQ
-                    </Link>
+                      <Link className="nav-link" href="#faq-section">
+                        FAQ
+                      </Link>
                       <button
                         className="dropdown-toggle dropdown-arrow"
                         id="servicesDropdown"
@@ -361,11 +377,10 @@ const AitalkAssist = () => {
                       </button>
                     </li>
                     <li className={`nav-item`}>
-                    <Link className="nav-link" href="#testimonial-section">
-                      Testimonials
-                    </Link>
+                      <Link className="nav-link" href="#testimonial-section">
+                        Testimonials
+                      </Link>
                     </li>
-                 
                   </ul>
                 </div>
               </div>
@@ -382,17 +397,29 @@ const AitalkAssist = () => {
           />
         </header>
       </div>
-    
-      <section id="home" className="home-section aitalkassist" style={{  backgroundImage: "url(/assets/images/landing/ai_talk_assist/4IRHomebanner.png)",
-  backgroundPosition: "center" ,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover" }}>
+
+      <section
+        id="home"
+        className="home-section aitalkassist"
+        style={{
+          backgroundImage:
+            "url(/assets/images/landing/ai_talk_assist/4IRHomebanner.png)",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="container" style={{ marginTop: "10rem" }}>
           <div className="row">
             <div className="col-12">
               <div className="home-content">
                 <div className="bg-effect">
-                  <Image src={Homebg} className="img-fluid bg-gif" alt="" priority />
+                  <Image
+                    src={Homebg}
+                    className="img-fluid bg-gif"
+                    alt=""
+                    priority
+                  />
                   <Image
                     src={Home1}
                     className="img-fluid effect1 rotate-effect"
@@ -419,40 +446,31 @@ const AitalkAssist = () => {
                     technology handle your communication needs effortlessly,
                     saving you time and hassle."
                   />
-                  <Link
-                    className="start-link mic_text"
-                    href=""
+                  <div
                     style={{
-                      color: "white",
-                      textDecoration: "none",
-                      backgroundColor: "#8800ff",
-                      fontSize: "calc(18px + 4*(100vw - 320px) / 1600)",
-                      marginLeft: "532px"
+                      fontSize: "1rem",
+                      color: " #00BDFF",
+                      border: "1px solid #272424",
+                      backgroundColor: "#272424",
+                      display: "inline",
+                      borderRadius: "1rem",
+                      padding: "3px 12px",
                     }}
                   >
-                    Give it a try!
-                  </Link>
+                    {isLoading ? "..." : "Give it a try!"}
+                  </div>
                 </div>
               </div>
               <div className="home-laptop px-md-0 px-3">
                 <div className="laptop-sec position-relative">
                   <div className="mic-sec">
                     <div className="mic-div">
-                      <button type="button" className={`mic ${isAnimating ? "animating" : ""} ${
-                      isListening ? "listening" : ""
-                    }`}  onClick={handleMicClick}>
-                        <FontAwesomeIcon
-                          icon={faMicrophone}
-                          style={{ color: "#00BDFF" }}
-                        />
-
-                        <canvas
-                          className="visualizer"
-                          width="300"
-                          height="100"
-                          style={{ left: "100%" }}
-                        ></canvas>
-                      </button>
+                      <Mic
+                        isListening={isListening}
+                        isLoading={isLoading}
+                        handleMicClick={handleMicClick}
+                        layout={true}
+                      />
                       <Button1
                         style={{
                           textDecoration: "none",
@@ -510,7 +528,7 @@ const AitalkAssist = () => {
               spanstyle={{ color: "#ffce00" }}
               spantitle="Power of AI"
               title=" Supercharge Your Business Communications"
-              headingstyle={{width: "87%", marginLeft: "4.5rem"}}
+              headingstyle={{ width: "87%", marginLeft: "4.5rem" }}
             />
 
             <Para
@@ -522,23 +540,31 @@ const AitalkAssist = () => {
               provide a seamless customer experience—day or night."
             />
           </div>
-          <AboutBoxes addingclass={true} layout={true} shadow="none" Box={Box} showbutton={false} />
-          <Button1   style={{
+          <AboutBoxes
+            addingclass={true}
+            layout={true}
+            shadow="none"
+            Box={Box}
+            showbutton={false}
+          />
+          <Button1
+            style={{
               position: "relative",
               marginTop: "-1.5rem",
               padding: "13px 32px",
               left: "50%",
-  transform: "translateX(-50%)",
+              transform: "translateX(-50%)",
             }}
             click={handleOpenModal}
             title="Book a Demo"
-            className="btn btn-theme d-sm-inline-block d-none " />
+            className="btn btn-theme d-sm-inline-block d-none "
+          />
         </div>
       </section>
       <section
         className="ai-features-section section-b-space service-section"
         id="how-it-work"
-        style={{paddingTop: "178px"}}
+        style={{ paddingTop: "178px" }}
       >
         <div className="container">
           <div
@@ -550,7 +576,7 @@ const AitalkAssist = () => {
               title="AI Talk Assist:"
               secondtitle="Automated Calls,"
               title2="Human-Like Conversations"
-              headingstyle={{width: "auto", position: "relative", }}
+              headingstyle={{ width: "auto", position: "relative" }}
               breakpoint={false}
             />
             <Headingh3 title="Effortless Communication, Maximum Efficiency" />
@@ -588,46 +614,68 @@ const AitalkAssist = () => {
       </section>
       <div class="section-b-space">
         <div class="container">
-            <div class="heading">
-                <div class="title-basic">
-                    <h1 class="text-white">Book a <span style={{color: "#ffce00"}}>Demo</span></h1>
-                    <Para style={{marginBottom: "6rem",fontFamily: "'Outfit', sans-serif", fontSize: "20.6px", fontWeight: "500"}} paragraph="Ready to see
+          <div class="heading">
+            <div class="title-basic">
+              <h1 class="text-white">
+                Book a <span style={{ color: "#ffce00" }}>Demo</span>
+              </h1>
+              <Para
+                style={{
+                  marginBottom: "6rem",
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: "20.6px",
+                  fontWeight: "500",
+                }}
+                paragraph="Ready to see
                         AI Talk Assist in action? Schedule your FREE demo now and discover how it can transform your
                         customer interactions and boost
-                        productivity! Pick a time that works best for you below." />
-                </div>
+                        productivity! Pick a time that works best for you below."
+              />
             </div>
-            <div>
-      <iframe
-        className="calendly-inline-widget"
-        src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-        style={{
-          width: '100%',
-          height: '700px',
-          border: 'none',
-          padding: 0,
-          margin: 0,
-        }}
-        scrolling="no"
-      />
-    </div>
-
+          </div>
+          <div>
+            <iframe
+              className="calendly-inline-widget"
+              src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+              style={{
+                width: "100%",
+                height: "700px",
+                border: "none",
+                padding: 0,
+                margin: 0,
+              }}
+              scrolling="no"
+            />
+          </div>
         </div>
-    </div>
+      </div>
       <CalltoAction
         handleOpenModal={handleOpenModal}
         showModal={showModal}
         handleCloseModal={handleCloseModal}
       />
       <Footer />
-      <Offcanvas isOpen={isOpen} toggle={toggleOffcanvas} style={{width: "297px"}} className="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
-        <OffcanvasHeader toggle={toggleOffcanvas} className="navbar-shadow d-flex align-items-center" style={{backgroundColor: "rgb(20 29 43)"}}>
+      <Offcanvas
+        isOpen={isOpen}
+        toggle={toggleOffcanvas}
+        style={{ width: "297px" }}
+        className="offcanvas offcanvas-collapse order-xl-2"
+        id="primaryMenu"
+      >
+        <OffcanvasHeader
+          toggle={toggleOffcanvas}
+          className="navbar-shadow d-flex align-items-center"
+          style={{ backgroundColor: "rgb(20 29 43)" }}
+        >
           <Heading5 title="Back" className="mb-0 back" />
           <Button color="link" className="btn-close" onClick={toggleOffcanvas}>
-              <i class="ri-close-line"></i>
+            <i class="ri-close-line"></i>
           </Button>
         </OffcanvasHeader>
-        <OffcanvasBody className="offcanvas-body" style={{backgroundColor: "rgb(20 29 43)"}}>
+        <OffcanvasBody
+          className="offcanvas-body"
+          style={{ backgroundColor: "rgb(20 29 43)" }}
+        >
           <Nav vertical className="navbar-nav">
             <NavItem className={`nav-item1 `}>
               <NavLink className="nav-link1" href="#feature-section">
@@ -636,7 +684,7 @@ const AitalkAssist = () => {
             </NavItem>
             <NavItem className={`nav-item1 `}>
               <NavLink className="nav-link1" href="#how-it-work">
-           How It Works
+                How It Works
               </NavLink>
             </NavItem>
             <NavItem className={`nav-item1 `}>
@@ -644,8 +692,16 @@ const AitalkAssist = () => {
                 FAQ
               </NavLink>
             </NavItem>
-            <NavItem className={`nav-item1 ${router.pathname === '/contact' ? 'active' : ''}`}>
-              <NavLink className="nav-link1" tag={Link} href="#testimonial-section">
+            <NavItem
+              className={`nav-item1 ${
+                router.pathname === "/contact" ? "active" : ""
+              }`}
+            >
+              <NavLink
+                className="nav-link1"
+                tag={Link}
+                href="#testimonial-section"
+              >
                 Testimonials
               </NavLink>
             </NavItem>

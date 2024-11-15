@@ -12,6 +12,7 @@ import Para from "@/Componenets/typography/paragrapgh/paragraph";
 import CalltoAction from "@/Componenets/home/CalltoAction";
 import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import Footer from "@/Componenets/home/Footer";
+import Head from "next/head";
 const Teampost = () => {
   const [data, setData] = useState(null);
   const [showModal, setShowModal] = useState(false);
@@ -66,6 +67,9 @@ const Teampost = () => {
   
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       {showModal && <Model close={handleCloseModal} />}
       <Navbar
         showModal={showModal}

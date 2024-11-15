@@ -12,6 +12,7 @@ import Headingh3 from "@/Componenets/typography/h3/Headingh3";
 import FAQ from "@/Componenets/FAQ/Faq";
 import Image from "next/image";
 import Training from "@/images/services/trainingandeducation.png"
+import Head from "next/head";
 export default function TrainingEducation() {
   const [showModal, setShowModal] = useState(false);
 
@@ -147,6 +148,9 @@ export default function TrainingEducation() {
   ];
   return (
     <>
+    <Head>
+        <title>Fourth Industrial Revolution Inc.</title>
+      </Head>
       <Navbar
         showModal={showModal}
         handleOpenModal={handleOpenModal}
