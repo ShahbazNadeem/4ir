@@ -1,9 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export', // Allows for static export
+    // Allows for static export
+    output: 'export', 
+  
+    // Disable built-in image optimization
     images: {
-        unoptimized: true, // Disable built-in image optimization
+      unoptimized: true, 
     },
-};
-
-export default nextConfig;
+  
+    // Disable CSS minification to resolve your issue
+    webpack(config) {
+      config.optimization.minimize = false; // Disable CSS minification
+      return config;
+    },
+  };
+  
+  export default nextConfig;
+  

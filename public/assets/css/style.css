@@ -7875,10 +7875,6 @@ header .offcanvas-backdrop {
   width: 30px;
 }
 
-/* .testimonial-section .testimonial-box .content-sec .quote-img .fill-img {
-  display: none;
-} */
-
 .testimonial-section .testimonial-box .content-sec::before {
   content: "";
   position: absolute;
