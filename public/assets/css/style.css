@@ -3170,7 +3170,7 @@ padding: 25px 20px;
 
 header #logo-img {
     position: relative;
-    margin-top: -1.4rem;
+    margin-top: 0px !important;
 
 }
 
@@ -4775,6 +4775,7 @@ header .offcanvas-backdrop {
   .user-comment-box ul li:last-child .user-box .user-contain p {
     margin-bottom: 20px;
   }
+
 }
 
 .user-comment-box ul li.li-padding {

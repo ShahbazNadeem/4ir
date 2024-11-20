@@ -186,7 +186,7 @@ header #logo-img {
         margin-left: 10px !important;
     }
     .home-section .home-content .mic_text{
-        margin-left: 23rem !important;
+        /* margin-left: 23rem !important; */
     }
     .aboutbox-conatiner{
         margin-left: -4px !important;
@@ -194,7 +194,7 @@ header #logo-img {
 }
 @media screen and (max-width:1588px) {
     .home-section .home-content .mic_text{
-        margin-left: 30rem !important;
+        /* margin-left: 30rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
@@ -203,7 +203,7 @@ header #logo-img {
 }
 @media screen and (max-width:3280px) {
     .home-section .home-content .mic_text{
-        margin-left: 30rem !important;
+        /* margin-left: 30rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
@@ -218,6 +218,12 @@ header #logo-img {
         position: relative;
         left: 0% !important;
     }
+}
+@media screen and (max-width:540px) {
+    .home-section .home-content .mic_text{
+     text-align: center ;
+     /* margin-left: unset !important; */
+      }
 }
 .modal-content {
     height: 90vh;

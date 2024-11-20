@@ -132,7 +132,7 @@
     }
 
     .service-info {
-        width: 90vw;
+        max-width: 90vw;
         position: relative;
         margin: 0.2rem auto;
     }
