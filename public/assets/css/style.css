@@ -7875,9 +7875,9 @@ header .offcanvas-backdrop {
   width: 30px;
 }
 
-.testimonial-section .testimonial-box .content-sec .quote-img .fill-img {
+/* .testimonial-section .testimonial-box .content-sec .quote-img .fill-img {
   display: none;
-}
+} */
 
 .testimonial-section .testimonial-box .content-sec::before {
   content: "";
@@ -7984,10 +7984,10 @@ header .offcanvas-backdrop {
   .testimonial-section .swiper-slide-active .testimonial-box .content-sec .quote-img .fill-img {
     display: block;
   }
-
-  .testimonial-section .swiper-slide-active .testimonial-box .content-sec .quote-img .outline-img {
+/* 
+  /* .testimonial-section .swiper-slide-active .testimonial-box .content-sec .quote-img .outline-img {
     display: none;
-  }
+  } */ */
 
   .testimonial-section .swiper-slide-active .testimonial-box .small-circle {
     margin: 18px auto 0;

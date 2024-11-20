@@ -218,6 +218,20 @@
     }
 
 }
+@media (max-width: 1390px) {
+    .home-section .home-content {
+  position: relative !important;
+  left: unset !important;
+  margin-left: unset !important;
+    }
+    .boxs_container .box{
+        position: relative;
+        left: 15px;
+    }
+    .home-heading1 .home-contents{
+        margin-left: -84px !important;
+    }
+  }
 @media screen and (max-width:1024px) {
 
     .aitalkassist .home-content {

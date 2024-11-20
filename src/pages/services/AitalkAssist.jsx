@@ -448,14 +448,11 @@ const AitalkAssist = () => {
                   />
                   <div
                     style={{
-                      fontSize: "1rem",
-                      color: " #00BDFF",
-                      border: "1px solid #272424",
-                      backgroundColor: "#272424",
-                      display: "inline",
-                      borderRadius: "1rem",
-                      padding: "3px 12px",
+                      color: "white",
+                      border: "1px solid  rgb(136, 0, 255)",
+                      backgroundColor: " rgb(136, 0, 255)",  
                     }}
+                    className="start-link mic_text"
                   >
                     {isLoading ? "..." : "Give it a try!"}
                   </div>

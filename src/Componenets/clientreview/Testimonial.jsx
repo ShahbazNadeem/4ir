@@ -64,8 +64,13 @@ const Testimonial = ({ layout, testimonials }) => {
                 >
                   <div className={`content-sec ${isCenterSlide ? "center-slide-content" : ""}`}>
                     <div className="quote-img">
-                      <Image src={quoteOutline} className="img-fluid outline-img" alt="quote outline" priority />
-                      <Image src={quoteFill} className="img-fluid fill-img" alt="quote fill" priority />
+                      {isCenterSlide ? (
+
+                        <Image src={quoteFill} className="img-fluid fill-img" alt="quote fill" priority />
+                      ): (
+                        
+                        <Image src={quoteOutline} className="img-fluid outline-img" alt="quote outline" priority />
+                      )}
                     </div>
                     <p>{testimonial.content}</p>
                   </div>
