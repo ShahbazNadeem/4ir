@@ -88,6 +88,9 @@
         display: block;
         gap: 1rem;
     }
+    .offer_box img {
+      display: none;
+    }
     .offer_box1{
         display: flex;
         flex-direction: column-reverse !important ;

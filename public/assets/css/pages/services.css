@@ -307,8 +307,8 @@ body,section{
     }
 
     .services_section {
-        margin: 2rem auto;
-        left: -3%;
+        margin: -2rem auto;
+        left: 2%;
     }
     .ratio_40{
         padding-top: unset !important;
