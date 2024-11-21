@@ -270,7 +270,7 @@ header #logo-img {
    
     .aitalkassist .home-content {
         left: unset !important;
-        top: unset !important;
+        /* top: unset !important; */
         width: 100% !important;
     }
     .home-content .aitalk-heading {
@@ -299,13 +299,16 @@ header #logo-img {
     }
     .boxs_container .box{
         max-width: 80% !important;
-        left: 1% !important;
+        left: 9% !important;
     }
 }
 @media (max-width: 480px) {
     .boxs_container  .boxcustom {
       max-width: 80% !important;
-      left: -10% !important;
+      left: -3% !important;
+  }
+  .home-section .home-content .mic_text{
+    top: 109%;
   }
   }
 .modal-content {

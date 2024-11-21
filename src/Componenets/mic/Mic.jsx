@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
 
-const Mic = ({ isLoading, handleMicClick, layout }) => {
+const Mic = ({ isLoading, handleMicClick, layout , width }) => {
   return (
     <>
       <div className="mic-sec">
@@ -10,7 +10,7 @@ const Mic = ({ isLoading, handleMicClick, layout }) => {
           <button
             type="button"
             className={`mic ${isLoading ? "loading" : ""}`}
-            style={{ width: "100px", height: "auto" }}
+            style={{ width:  "50px" , height: "50px" }}
             onClick={handleMicClick}
           >
             {isLoading ? (
