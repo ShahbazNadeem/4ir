@@ -80,14 +80,14 @@ export default function BlogPost() {
           <div className="container" style={{ padding: "0px 90px" }}>
             <div className="blog-details" id="blog_detail_container">
               <div
-                className="blog-img bg-size"
+                className=".home-content1 .contact-heading"
                 style={{
                   backgroundImage: data.image
                     ? `url(${data.image})`
                     : `url(${data.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  height: "79vh",
+                  height: "49vh",
                   position: "relative",
                 }}
               ></div>

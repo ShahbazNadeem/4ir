@@ -57,8 +57,11 @@
 
 /* Responsive styles for tablets */
 @media (max-width: 1024px) {
+    #logo-img{
+        width:180px !important;
+    }
     .offer_box {
-        flex-direction: column ;
+        flex-direction: column !important;
         gap: 1rem;
         padding: 1.7rem;
         align-items: center;
@@ -77,6 +80,9 @@
 
     .offer_box .offer_content p {
         font-size: 1.1rem;
+    }
+    .home-sec{
+        padding-left: 52px !important;
     }
 }
 
@@ -116,6 +122,9 @@ width: 100% !important;
 display: flex;
 flex-direction: column;
 width: 100% !important;
+    }
+    .home-sec{
+        margin-left: -28px !important;
     }
 }
 
@@ -174,10 +183,16 @@ header #logo-img {
         margin-top: 0;
     }
 }
+.home-sec{
+    margin-left: -28px !important;
+}
 
 @media screen and (min-width:1024px) {
     .service-section .container {
         margin-top: -5rem;
+    }
+    #logo-img{
+        width:180px !important;
     }
     .aitalk-heading{
         margin-left: 10px !important;
@@ -198,6 +213,15 @@ header #logo-img {
         left: 0% !important;
     }
 }
+@media screen and (min-width:1400px) and (max-width:1700) {
+    .home-content1{
+        position:relative !important; 
+    }
+    .home-sec{
+         padding-left: 242px !important; 
+    }
+
+}
 @media screen and (max-width:3280px) {
     .home-section .home-content .mic_text{
         margin-left: 30rem !important;
@@ -206,6 +230,7 @@ header #logo-img {
         position: relative;
         left: 0% !important;
     }
+    
 }
 @media screen and (max-width:994px) {
     .home-section .home-content .mic_text{
@@ -214,6 +239,9 @@ header #logo-img {
     .aitalkassist .home-content{
         position: relative;
         left: 0% !important;
+    }
+    #logo-img{
+        width:150px !important;
     }
 }
 .modal-content {

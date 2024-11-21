@@ -74,10 +74,9 @@ const Contact = () => {
             </div>
           </div>
           <iframe
-            
             className="calendly-inline-widget"
             src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-            style={{minWidth: "100%", height: "700px" }}
+            style={{minWidth: "100%", height: "700px", }}
              loading="lazy"
               ></iframe>
         </div>

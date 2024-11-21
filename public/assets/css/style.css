@@ -338,6 +338,7 @@ li {
 }
 .ai-features-section{
   background: linear-gradient(180.02deg, rgba(var(--title-color), 0.05) 0.02%, rgba(var(--title-color), 0) 90.86%) !important;
+  padding-bottom:120px !important;
 }
 .breadcrumb-section .breadcrumb-content {
   display: -webkit-box;
@@ -5921,6 +5922,9 @@ header .offcanvas-backdrop {
 }
 
 @media (max-width: 675px) {
+  ai-features-section{
+    padding-bottom:120px !important;
+  }
   .main-wrapper .main-section .history-sec .history-main .history-time ul li:first-child {
     display: none;
   }
