@@ -10,7 +10,7 @@ const Mic = ({ isLoading, handleMicClick, layout }) => {
           <button
             type="button"
             className={`mic ${isLoading ? "loading" : ""}`}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "100px", height: "auto" }}
             onClick={handleMicClick}
           >
             {isLoading ? (
