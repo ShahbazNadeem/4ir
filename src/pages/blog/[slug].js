@@ -77,10 +77,10 @@ export default function BlogPost() {
 
       {data && (
         <section className="ratio_40">
-          <div className="container" style={{ padding: "0px 90px" }}>
+          <div className="container ratio_41" style={{ padding: "0px 90px" }}>
             <div className="blog-details" id="blog_detail_container">
               <div
-                className=".home-content1 .contact-heading"
+                className="home-content1 contact-heading"
                 style={{
                   backgroundImage: data.image
                     ? `url(${data.image})`

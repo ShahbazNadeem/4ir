@@ -3546,6 +3546,10 @@ header .offcanvas-backdrop {
   .user-comment-box ul li:last-child .user-box .user-contain p {
     margin-bottom: 20px;
   }
+  .ratio_41{
+    padding: 0px 69px !important;
+  }
+
 }
 .user-comment-box ul li.li-padding {
   padding-left: calc(28px + 52 * (100vw - 320px) / 1600);
