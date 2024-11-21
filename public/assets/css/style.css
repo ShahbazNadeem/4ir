@@ -1400,7 +1400,7 @@ header,
 }
 
 .title .number-pattern {
-  -webkit-text-fill-color: #0a0e17;
+  -webkit-text-fill-color: #02b0ed !important;
   -webkit-text-stroke: 1px rgba(var(--title-color), 0.2);
   font-size: 60px;
   font-weight: 800;
@@ -1665,7 +1665,7 @@ footer .footer-row .footer-main {
     padding-bottom: 0px !important;
   }
   .aitalkservice-sec .services_section .container{
-   margin-left: -53px !important;
+   margin-left: -65px !important;
   }
 }
 .calendly-inline-widget #root .lmtWIHO_gkbTeeyuvoJC.mOUYF5ZmuNL6I7t0mSFg{
@@ -3171,7 +3171,7 @@ padding: 25px 20px;
 
 header #logo-img {
     position: relative;
-    margin-top: -1.4rem;
+    margin-top: 0px !important;
 
 }
 
@@ -4776,6 +4776,7 @@ header .offcanvas-backdrop {
   .user-comment-box ul li:last-child .user-box .user-contain p {
     margin-bottom: 20px;
   }
+
 }
 
 .user-comment-box ul li.li-padding {

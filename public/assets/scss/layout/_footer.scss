@@ -164,7 +164,7 @@ footer {
           }
      }
      .footer-content {
-          padding-left: 33px;
+          padding-left: 0px;
           [dir="rtl"] & {
                padding-left: 0;
                padding-right: 33px;
@@ -172,6 +172,7 @@ footer {
           @media (max-width: 576px) {
                display: none;
                margin-top: calc(15px + (25 - 14) * ((100vw - 320px) / (1920 - 320)));
+               padding-left: 0px !important;
           }
           ul {
                li {

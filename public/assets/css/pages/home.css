@@ -118,7 +118,7 @@
 }
 
 .expertise_div {
-    margin-top: -6rem;
+    margin-top: 6rem;
 }
 
 .home-contents {
@@ -135,6 +135,7 @@
         align-items: center;
         left: 0;
     }
+    
 
     .service-box {
         display: block;
@@ -142,46 +143,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    section {
-        width: 100vw;
-        overflow-x: hidden;
-    }
 
-    .mic-sec {
-        margin-left: 0;
-    }
-
-    .mic {
-        padding: 5rem;
-    }
-
-    .service-section {
-        width: 100vw;
-    }
-
-    .service_boxes_div {
-        position: relative;
-        padding-left: 1.5rem;
-        flex-direction: column;
-        width: 90%;
-    }
-
-    .expertise_div {
-        margin-top: 0;
-    }
-
-    .home_links a {
-        font-size: 1rem;
-        padding: .4rem 1rem;
-    }
-
-
-    .home-section .home-content {
-        position: relative;
-        left: .7% !important;
-    }
-}
 
 
 @media screen and (max-width:900px) {
@@ -214,7 +176,6 @@
 
     .home-section .home-content {
         position: relative;
-        left: -12% !important;
     }
 
 }
@@ -232,6 +193,7 @@
         margin-left: -84px !important;
     }
   }
+
 @media screen and (max-width:1024px) {
 
     .aitalkassist .home-content {
@@ -399,6 +361,9 @@ header #logo-img {
     header #logo-img {
         margin-top: 0;
     }
+    .home-heading1 .home-contents{
+        margin-left: 0px !important;
+    }
 
 }
 
@@ -475,15 +440,93 @@ header #logo-img {
     width: 80vw;
     max-width: 90vw;
 }
+@media screen and (max-width:768px) {
+    .home-heading1 .home-contents {
+        margin-left: 0px !important;
+    }
+    .team-section .team-box {
+        min-height: 490px !important;
+    }
+    section {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .home-content{
+        margin-top: 0px !important;
+    }
+    .contact-heading{
+        margin: 0px !important;
+    }
+    .home-sec{
+        margin: 0px !important;
+    }
 
+    .mic-sec {
+        margin-left: 0;
+    }
+
+    .mic {
+        padding: 5rem;
+    }
+
+    .service-section {
+        width: 100vw;
+    }
+
+    .service_boxes_div {
+        position: relative;
+        padding-left: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    header.sticky{
+        padding-bottom: 2px !important;
+    }
+    .boxs_container {
+        margin-left: 0px !important;
+        /* max-width: 100px !important; */
+    }
+    .boxs_container .box{
+        max-width: 80% !important;
+        left: -20px !important;
+    }
+    .info-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        padding-right: 31px;
+    }
+    .services .services_section .container{
+        margin-left: -20px !important;
+    }
+
+    .expertise_div {
+        margin-top: 0;
+    }
+
+    .home_links a {
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+
+
+    .home-section .home-content {
+        position: relative;
+        left: .7% !important;
+    }
+    .service-section {
+        padding-top: 50px !important;
+    }
+}
 @media screen and (max-width:580px) {
     .modal-content {
         position: relative !important;
         left: 10% !important;
         overflow: scroll;
     }
+  
 }
-
 
 
 

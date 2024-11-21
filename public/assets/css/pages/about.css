@@ -62,8 +62,20 @@
 .info-btn:hover {
     color: #00BDFF;
 }
-
 @media screen and (max-width:600px) {
+    header #logo-img {
+        margin-top: 0;
+}
+.home-content .aitalk-heading p{
+    position: relative !important;
+    left: 16% !important;
+    margin: 0px !important;
+    padding: 0px 2px ;
+}
+    
+}
+
+@media screen and (max-width:768px) {
 
     body{
         overflow-x: hidden;
@@ -74,15 +86,24 @@
         overflow-x: hidden;
     }
     .card {
-        padding: 2rem;
-        position: relative;
-        left: 3%;
+        padding: 1rem;
     }
+    .nav-tabs {
+        padding: 0rem;
+    }
+    .card .card-header .nav-items p {
+        font-size: 16px !important;
+    }
+    .service-section .service-info p {
+        text-align: center;
+    }
+    
     .service-section{
         width: 100vw;
         padding-top: 30px !important;
         /* padding-bottom: 110px; */
     }
+
     .ai-features-section{
         padding-top: 0px !important;
         padding-bottom: 150px !important;
@@ -110,10 +131,6 @@
     .expertise-section .service-box .service-content h3{
         padding-left: 10px !important;
     }
-    .home-content .aitalk-heading{
-        position: relative;
-        left: -34%;
-    }
     .home-content .aitalk-heading .mic_text{
         position: relative;
         left: -34%;
@@ -123,7 +140,7 @@
     }
 
     .service-info {
-        width: 90vw;
+        max-width: 90vw;
         position: relative;
         margin: 0.2rem auto;
     }
@@ -183,12 +200,7 @@ header #logo-img {
     margin-top: -1.4rem;
 
 }
-@media screen and (max-width:600px) {
-    header #logo-img {
-        margin-top: 0;
-}
-    
-}
+
 
 
 

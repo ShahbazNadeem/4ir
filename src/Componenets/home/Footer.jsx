@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="footer-copyright">
-          <Headingh4 heading="@2024 All the Copyright Reserved." />
+          <Headingh4 heading="©2024 4IR All the Copyright Reserved." />
           <ul className="footer-links">
             <li><Link href="/html/privacy.html">Privacy Policy </Link></li>
             <li><Link href="/html/terms.html">Terms & Condition </Link></li>

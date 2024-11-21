@@ -298,17 +298,14 @@ body,section{
         margin-left: 49px;
     }
  
-.home-content1 .contact-heading{
-    /* margin-left: 60px; */
-}
     .box {
         display: block;
         margin: auto;
     }
 
     .services_section {
-        margin: 2rem auto;
-        left: -3%;
+        margin: -2rem auto;
+        left: 2%;
     }
     .ratio_40{
         padding-top: unset !important;

@@ -94,6 +94,9 @@
         display: block;
         gap: 1rem;
     }
+    .offer_box img {
+      display: none;
+    }
     .offer_box1{
         display: flex;
         flex-direction: column-reverse !important ;
@@ -198,7 +201,7 @@ header #logo-img {
         margin-left: 10px !important;
     }
     .home-section .home-content .mic_text{
-        margin-left: 23rem !important;
+        /* margin-left: 23rem !important; */
     }
     .aboutbox-conatiner{
         margin-left: -4px !important;
@@ -206,7 +209,7 @@ header #logo-img {
 }
 @media screen and (max-width:1588px) {
     .home-section .home-content .mic_text{
-        margin-left: 30rem !important;
+        /* margin-left: 30rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
@@ -224,7 +227,7 @@ header #logo-img {
 }
 @media screen and (max-width:3280px) {
     .home-section .home-content .mic_text{
-        margin-left: 30rem !important;
+        /* margin-left: 30rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
@@ -232,18 +235,73 @@ header #logo-img {
     }
     
 }
+@media screen and (max-width:540px) {
+    .home-content{
+      position: relative !important;
+      top: -4%;
+    }
+    .home-content .mic_text{
+      position: absolute !important;
+      left: 50% !important;
+  
+    }
+  }
+
 @media screen and (max-width:994px) {
     .home-section .home-content .mic_text{
-        margin-left: 13rem !important;
+        /* margin-left: 13rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
-        left: 0% !important;
+        left: 15% !important;
+        top: -6%;
+        width: auto !important;
+    }
+    .home-content .mic_text{
+        position: absolute !important;
+        left: 50% !important;
+    
+      }
+
+}
+
+@media screen and (max-width:768px) {
+   
+    .aitalkassist .home-content {
+        left: unset !important;
+        top: unset !important;
+        width: 100% !important;
+    }
+    .home-content .aitalk-heading {
+        position: relative;
+        left: unset !important;
+        margin-left: 0px !important;
+    }
+    .service-section .service-info p {
+        text-align: left !important;
     }
     #logo-img{
         width:150px !important;
     }
 }
+@media  screen and (max-width: 600px) {
+    .home-content .aitalk-heading h1{
+        position: relative !important;
+        left: 16% !important;
+        margin: 0px !important;
+        padding: 0px 2px ;
+    }
+    .home-content .aitalk-heading{
+        position: relative !important;
+        left: -17% !important;
+        margin: 0px !important;
+    }
+    .boxs_container .box{
+        max-width: 80% !important;
+        left: 1% !important;
+    }
+}
+
 .modal-content {
     height: 90vh;
     max-height: 90vh;
