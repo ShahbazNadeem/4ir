@@ -210,21 +210,70 @@ header #logo-img {
         left: 0% !important;
     }
 }
+@media screen and (max-width:540px) {
+    .home-content{
+      position: relative !important;
+      top: -4%;
+    }
+    .home-content .mic_text{
+      position: absolute !important;
+      left: 50% !important;
+  
+    }
+  }
+
 @media screen and (max-width:994px) {
     .home-section .home-content .mic_text{
-        margin-left: 13rem !important;
+        /* margin-left: 13rem !important; */
     }
     .aitalkassist .home-content{
         position: relative;
-        left: 0% !important;
+        left: 15% !important;
+        top: -6%;
+        width: auto !important;
+    }
+    .home-content .mic_text{
+        position: absolute !important;
+        left: 50% !important;
+    
+      }
+
+}
+
+@media screen and (max-width:768px) {
+   
+    .aitalkassist .home-content {
+        left: unset !important;
+        top: unset !important;
+        width: 100% !important;
+    }
+    .home-content .aitalk-heading {
+        position: relative;
+        left: unset !important;
+        margin-left: 0px !important;
+    }
+    .service-section .service-info p {
+        text-align: left !important;
     }
 }
-@media screen and (max-width:540px) {
-    .home-section .home-content .mic_text{
-     text-align: center ;
-     /* margin-left: unset !important; */
-      }
+@media  screen and (max-width: 600px) {
+    .home-content .aitalk-heading h1{
+        position: relative !important;
+        left: 16% !important;
+        margin: 0px !important;
+        padding: 0px 2px ;
+    }
+    .home-content .aitalk-heading{
+        position: relative !important;
+        left: -17% !important;
+        margin: 0px !important;
+    }
+    .boxs_container .box{
+        max-width: 80% !important;
+        left: 1% !important;
+    }
 }
+
 .modal-content {
     height: 90vh;
     max-height: 90vh;

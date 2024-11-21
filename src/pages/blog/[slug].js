@@ -121,7 +121,7 @@ export default function BlogPost() {
 
               <div className="current_blog_description">
                 <div className="row">
-                  <div className="col-lg-8 col-md-10 m-auto">
+                  <div className="col-lg-9 col-md-12 m-auto">
                     <div className="blog-main-content">
                       {data.blogcontent.map((items) => {
                         return (

@@ -650,7 +650,7 @@ nav.navbar {
 @media (max-width: 1400px) {
   .home-section .home-sec .home-content {
     width: 50%;
-    margin-left: 65px;
+    margin-left: -57px;
   }
 }
 @media (max-width: 1199px) {

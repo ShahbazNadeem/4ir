@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Para from "../typography/paragrapgh/paragraph";
-import Untitled from "@/images/Untitleddesign.svg"
+import Untitled from "@/images/img_1.png"
 export default function Expertise ({expertise, heading1, heading2, para}){
     return(
         <>
-        <div className="service-section section-b-space mt-2 expertise" style={{paddingTop: "178px", paddingBottom: "0px"}}>
+        <div className="service-section section-b-space mt-2 expertise home-expertise" style={{paddingTop: "50px", paddingBottom: "0px", maxHeight: "100%"}}>
         <div className="container">
             <div className="row g-5 expertise_div">
                 <div className="col-lg-6">
@@ -18,8 +18,8 @@ export default function Expertise ({expertise, heading1, heading2, para}){
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6">
-                    <Image src={Untitled} alt="expertise section" style={{width: "100%", paddingBottom: "200px"}} />
+                <div className="col-lg-6 d-flex justify-content-center align-items-center expertise_section_img">
+                    <Image src={Untitled} className="img-fluid" alt="expertise section"/>
                 </div>
 
 
