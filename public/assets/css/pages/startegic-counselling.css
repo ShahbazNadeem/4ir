@@ -275,7 +275,9 @@ header #logo-img {
       .home-content .aitalk-heading .mic_text{
         left: 0px !important;
       }
-
+      .ai-feature-box-wrapper {
+        margin: 0px !important;
+    }
     }
 
 @media screen and (max-width:768px) {
