@@ -129,6 +129,9 @@ width: 100% !important;
     .home-sec{
         margin-left: -28px !important;
     }
+    .boxs_container {
+        gap: 2rem !important;
+      }
 }
 
 
@@ -223,6 +226,9 @@ header #logo-img {
     .home-sec{
          padding-left: 242px !important; 
     }
+    .home-content .aitalk-heading .mic_text{
+        left: 0px !important;
+      }
 
 }
 @media screen and (max-width:3280px) {
@@ -263,7 +269,12 @@ header #logo-img {
         /* left: 50% !important; */
     
       }
-
+      .boxs_container {
+        gap: 2rem !important;
+      }
+      .home-content .aitalk-heading .mic_text{
+        left: 0px !important;
+      }
 
     }
 
@@ -300,7 +311,7 @@ header #logo-img {
     }
     .boxs_container .box{
         max-width: 100% !important;
-        margin: 0px !important;
+
     }
     .container {
         padding-left: 10px ;
