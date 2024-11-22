@@ -198,7 +198,7 @@
 
     .aitalkassist .home-content {
         position: relative;
-        width: 121%;
+        /* width: 121%; */
         left: 0% !important;
     }
     .aitalkassist .mic_text{

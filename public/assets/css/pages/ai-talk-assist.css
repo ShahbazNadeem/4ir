@@ -699,7 +699,7 @@ header,
 
     .boxs_container {
         grid-template-columns: 1fr;
-        margin: 0px 28px;
+        margin: 0px;
     }
 
 
@@ -708,10 +708,6 @@ header,
         margin: auto;
     }
 
-    .services_section {
-        margin: 2rem auto;
-        left: 0%;
-    }
 
     .service_row {
         margin-top: 0;

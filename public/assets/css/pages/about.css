@@ -68,9 +68,8 @@
 }
 .home-content .aitalk-heading p{
     position: relative !important;
-    left: 16% !important;
+    left: unset !important;
     margin: 0px !important;
-    padding: 0px 2px ;
 }
     
 }
