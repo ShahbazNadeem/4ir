@@ -6,7 +6,9 @@
       "@/images/*": ["./public/assets/images/*"],
       "@/css/*": ["./public/assets/css/*"],
       "@/Componenets/*": ["./src/Componenets/*"],
-      "@/typography/*": ["./src/Componenets/typography/*"]
+      "@/typography/*": ["./src/Componenets/typography/*"],
+      "@/LandingComponent/*": ["./src/Componenets/landing/*"],
+      "@/landingimage/*": ["./public/assets/landingimage/*"],
     }
   }
 }
