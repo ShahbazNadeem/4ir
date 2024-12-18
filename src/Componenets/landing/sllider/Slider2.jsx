@@ -1,18 +1,15 @@
 import React from 'react';
-
+import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-import { Pagination } from 'swiper/modules';
 
 const Slider2 = () => {
     const SliderDataLead = [
         {
             id: 1,
-            clientName: "Improve lead qualification:",
-            testimonial: "Prioritize leads based on their potential value.",
+            clientName: "Increase lead generation:",
+            testimonial: "Identify and capture more qualified leads.",
         },
         {
             id: 2,
@@ -25,20 +22,34 @@ const Slider2 = () => {
             clientName: "Improve lead qualification:",
             testimonial: "Prioritize leads based on their potential value.",
         },
+        {
+            id: 4,
+            clientName: "Enhance lead nurturing:",
+            testimonial: "Provide personalized follow-up and communication.",
+        },
+        {
+            id: 5,
+            clientName: "Boost sales and revenue:",
+            testimonial: "Convert more leads into customers.",
+        },
     ];
     return (
         <div>
             <Swiper
-                slidesPerView={"auto"}
+                slidesPerView={3}
                 centeredSlides={true}
                 spaceBetween={20}
                 pagination={{
                     clickable: true,
                 }}
+                loop={true}
+                autoplay={{
+                    delay: 500,
+                    disableOnInteraction: false,
+                }}
                 modules={[Pagination]}
                 className="mySwiper"
             >
-
                 {SliderDataLead?.map((item, index) => (
                     <SwiperSlide key={index}>
                         <div className='slider2-main-body'>

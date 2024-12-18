@@ -4,12 +4,11 @@ const YoutubeVideoWithThumbnail = ({ src }) => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
-    setIsPlaying(true); // Show the iframe and hide the thumbnail immediately
+    setIsPlaying(true); 
   };
 
   return (
-    <div className="youtube-video-container">
-      {/* Thumbnail */}
+    <div className="youtube-video-container"> 
       <div
         className={`youtube-thumbnail ${isPlaying ? "hidden" : ""}`}
         onClick={handlePlay}

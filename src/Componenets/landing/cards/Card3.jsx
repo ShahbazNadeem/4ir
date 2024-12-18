@@ -4,7 +4,6 @@ const Card3 = ({ items }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // Check the screen size and update isSmallScreen state accordingly
   useEffect(() => {
     const handleResize = () => {   
         setIsSmallScreen(window.innerWidth <= 576); // Show button only on screens 576px or less

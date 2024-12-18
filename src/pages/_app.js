@@ -33,8 +33,8 @@ export default function App({ Component, pageProps }) {
     } else if (isLeadGenerationRoute) {
       import("@/css/Global.css");
       import("@/LandingComponent/widgets.css");
-      import("./landing/leadgeneration/aivoiceCalling.css");
       import("../Componenets/landing/sllider/slider.css");
+      import("./landing/leadgeneration/aivoiceCalling.css");
     } else {
       // Fallback CSS for all other pages
       import("@/css/pages/about.css");

@@ -1,27 +1,23 @@
-.mySwiper {
-    padding: 70px 0px;
-}
-
 .swiper {
     width: 100%;
     height: 100%;
+    margin-right: 100px;
+    padding-bottom: 60px !important;
 }
 
 .swiper-slide {
     background: var(--accordian-body-color);
-    border: 2px solid var(--border);
-    border-radius: 15px;
-    padding: 20px;
-    width: 60%;
-}
-
-.swiper-slide-active {
     box-shadow: #00BDFF40 0px 8px 24px;
     border: 1px solid var(--primary) !important;
+    padding: 40px;
+    width: 30% !important;
+    border-radius: 25px !important;
+    height: 233px;
 }
 
 .slider2-main-body h5 {
-    font-size: 32px !important;
+    font-size: 20px !important;
+    line-height: 38px !important;
     color: var(--primary) !important;
 }
 
@@ -29,88 +25,85 @@
     line-height: 24px !important;
 }
 
-.swiper-slide-active p {
-    line-height: 34px !important;
-}
+@media screen and (min-width: 1440px) {}
 
+@media screen and (max-width: 1200px) {
+    .swiper-slide {
+        width: 30%;
+        padding: 30px;
+        height: 220px !important;
+    }
 
-/* @media screen and (max-width: 1200px) {
-    .slider-main-body h5 {
-        font-size: 27px !important;
+    .slider2-main-body h5 {
+        font-size: 20px !important;
         line-height: 32px !important;
     }
-    
-    .swiper-slide-active h5 {
-        line-height: 42px !important;
-    }
 
-    .swiper-slide-active {
-        padding: 30px 20px !important;
+    .swiper-slide-prev {
+        /* margin-right: 100px !important; */
     }
 }
+
+
 
 @media screen and (max-width: 992px) {
-    .swiper-slide{
-        width: 20% !important;
-    }
-    .swiper-slide-active {
-        width: 40% !important;
-        padding: 30px 20px !important;
-    }
-    .slider-main-body h5 {
-        font-size: 16px !important;
-        line-height: 32px !important;
-    }
-    
-    .swiper-slide-active h5 {
-        font-size: 27px !important;
-        line-height: 42px !important;
+    .swiper-slide {
+        width: 30%;
+        padding: 30px;
+        height: 190px !important;
     }
 
-} */
-/* @media screen and (max-width: 768px) {
-    .swiper-slide{
-        width: 20% !important;
-        padding: 10px 10px !important;
+    .slider2-main-body h5 {
+        font-size: 17px !important;
+        line-height: 19px !important;
     }
-    .swiper-slide-active {
-        width: 100% !important;
-        padding: 30px 20px !important;
+
+
+    .slider2-main-body p {
+        font-size: 13px !important;
+        line-height: 19px !important;
     }
-    .slider-main-body h5 {
-        font-size: 12px !important;
-        line-height: 22px !important;
+
+    .swiper-slide-prev {
+        /* margin-right: 70px !important; */
     }
-    .slider-main-body p {
-        font-size: 10px !important;
-        line-height: 20px !important;
-    }
-    
-    .swiper-slide-active h5 {
-        font-size: 27px !important;
-        line-height: 42px !important;
-    }
-    .swiper-slide-active p{
-        font-size: 18px !important;
-        line-height: 36px !important;
-    }
-    
 }
-@media screen and (max-width: 576px) {
 
-    .swiper-slide{
-        width: 50% !important;
-        padding: 10px 10px !important;
+@media screen and (max-width: 768px) {
+    .swiper-slide {
+        width: 20%;
+        padding: 17px;
+        border-radius: 10px !important;
+        height: 190px !important;
     }
-    .swiper-slide-active {
-        width: 50% !important;
-        padding: 30px 20px !important;
+    
+    .slider2-main-body h5 {
+        font-size: 15px !important;
+        line-height: 19px !important;
     }
-    .swiper-slide-active h5 {
-        font-size: 24px !important;
-        line-height: 42px !important;
+
+    .slider2-main-body p {
+        font-size: 13px !important;
+        line-height: 19px !important;
     }
-    .swiper-slide-active p{
-        line-height: 32px !important;
+
+}
+
+@media screen and (max-width: 576px) {
+    .swiper-slide {
+        padding: 15px;
+        height: 120px !important;
     }
-    } */
+
+    .slider2-main-body h5 {
+        font-size: 10px !important;
+        line-height: 12px !important;
+    }
+
+
+    .slider2-main-body p {
+        font-size: 6px !important;
+        line-height: 10px !important;
+    }
+
+}
