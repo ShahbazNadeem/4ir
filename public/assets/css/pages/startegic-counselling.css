@@ -97,6 +97,10 @@
     .offer_box img {
       display: none;
     }
+    .home-sec{
+        padding-left: unset !important;
+    }
+    
     .offer_box1{
         display: flex;
         flex-direction: column-reverse !important ;

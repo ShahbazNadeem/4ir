@@ -5436,6 +5436,15 @@ header .offcanvas-backdrop {
   .service-section .service-box {
     padding: 14px;
   }
+  .service-section{
+    padding-top: 50px !important;
+  }
+  .home-heading{
+    bottom: 3.5rem !important;
+  }
+  .home-expertise > .container{
+    margin-top: 0rem !important;
+  }
 }
 .service-section .service-box:after {
   content: "";

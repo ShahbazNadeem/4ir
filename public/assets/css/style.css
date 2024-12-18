@@ -1650,9 +1650,9 @@ footer .footer-row .footer-main {
   .about-section .container{
     margin-top: unset !important;
   }
-  .services .services_section .container{
+  /* .services .services_section .container{
     margin-left: -60px !important;
-  }
+  } */
   .aitalkservice-sec{
     padding-top: 0px !important;
     margin-top: 0px !important;
@@ -3120,7 +3120,7 @@ padding: 25px 20px;
     .service-info {
         width: 90vw;
         position: relative;
-        margin: 3rem auto;
+        margin: 0rem auto;
     }
 }
 
