@@ -534,7 +534,7 @@ li {
 .swiper-scrollbar-drag{
   background-color: #00BDFF !important;
 }
-.btn-solid {
+/* .btn-solid {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   color: rgba(var(--dark-title), 1);
   background-color: rgba(var(--theme-color), 1);
@@ -547,7 +547,7 @@ li {
   width: max-content;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
+} */
 
 #home-header {
   background-image: url(../images/new-home-bg.png);
@@ -594,10 +594,10 @@ header,
 }
 
 
-.btn-solid:hover {
+/* .btn-solid:hover {
   background-color: transparent;
   color: rgba(var(--theme-color), 1);
-}
+} */
 
 /*=====================
     2.4 Chatting Scss start
@@ -1650,9 +1650,9 @@ footer .footer-row .footer-main {
   .about-section .container{
     margin-top: unset !important;
   }
-  .services .services_section .container{
+  /* .services .services_section .container{
     margin-left: -60px !important;
-  }
+  } */
   .aitalkservice-sec{
     padding-top: 0px !important;
     margin-top: 0px !important;
@@ -3120,7 +3120,7 @@ padding: 25px 20px;
     .service-info {
         width: 90vw;
         position: relative;
-        margin: 3rem auto;
+        margin: 0rem auto;
     }
 }
 
@@ -3199,7 +3199,6 @@ header #logo-img {
 
 .service-info {
     position: relative;
-    top: -13%;
 }
 
 .barry_expertise_container {
@@ -8072,7 +8071,7 @@ header .offcanvas-backdrop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(136, 0, 255, .7), rgba(136, 0, 255, .9)), url('/assets/images/home/home-bg.gif');
+  background: linear-gradient(rgba(136, 0, 255, .7), rgba(136, 0, 255, .9)), url('/assets/images/home/home-bg.gif') !important;
   background-size: cover;
   /* Ensures the image covers the entire container */
   background-position: center;
