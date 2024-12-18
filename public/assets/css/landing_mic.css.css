@@ -1099,9 +1099,6 @@ li {
   .boxs_container .box{
     left: 0px !important;
   }
-  .boxs_container {
-    gap: 0rem !important;
-  }
 }
 .tab-section li {
   padding: calc(10px + 2 * (100vw - 320px) / 1600) calc(15px + 10 * (100vw - 320px) / 1600);

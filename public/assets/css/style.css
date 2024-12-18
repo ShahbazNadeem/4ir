@@ -4235,7 +4235,9 @@ header .offcanvas-backdrop {
   padding: calc(4px + 2 * (100vw - 320px) / 1600) calc(18px + 2 * (100vw - 320px) / 1600) calc(4px + 2 * (100vw - 320px) / 1600) calc(34px + 6 * (100vw - 320px) / 1600);
   border-radius: 25px;
 }
-
+/* .aitalkassist{
+  background-image: url("../images/landing/ai_talk_assist/4IRHomebanner.png") !important;
+} */
 [dir=rtl] .blog-box .blog-img label {
   right: unset;
   left: calc(14px + 6 * (100vw - 320px) / 1600);
@@ -7778,11 +7780,17 @@ header .offcanvas-backdrop {
 .content-heading h2{
   margin-left: 20px !important;
 }
+.about > .container{
+  margin-top: 0px !important;
+}
 }
 @media screen and (max-width:1000px) {
   .news_container {
     margin: auto;
-    display: block !important;
+    display: flex !important;
+  }
+  .news_container .blog-box{
+    margin-bottom: 15px !important;
   }
 
   .news_box {

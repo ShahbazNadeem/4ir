@@ -391,10 +391,15 @@ header .navbar-nav .nav-item:before {
     position: relative;
     z-index: 100;
 }
-
+.banner-img{
+    background-image: url("../../images/new-home-bg.png") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
 header,
 #home {
-    background-image: url(../../images/new-home-bg.png) !important;
+    background-image: url(../../images/new-home-bg.png) ;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;

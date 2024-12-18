@@ -5,7 +5,7 @@ import Para from "../typography/paragrapgh/paragraph";
 export default function Banner({ heading, title, paragraph,size,margin, layout ,fadeRight, fadeLeft ,contactClass,widthclass, marginLeft }) {
   return (
     <>
-      <section id="home"  className={`section-b-space home-section ${contactClass || ""}`}>
+      <section id="home"  className={`section-b-space banner-img home-section ${contactClass || ""}`}>
         <div class="container-fluid">
           <div
             class="home-sec"
