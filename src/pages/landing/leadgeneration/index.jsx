@@ -203,7 +203,25 @@ export default function AiVoiceCalling() {
       value: true,
       show: "show",
       heading:
-        "Our AI models can be trained on a variety of data sources, including your existing sales data, industry-specific data, and public datasets.",
+        "Our solution can be seamlessly integrated with your CRM and marketing automation tools. You can use it to:",
+        ulitems: [
+          {
+            liItems:
+              "Import and export leads",
+          },
+          {
+            liItems:
+              "Sync call logs and lead statuses",
+          },
+          {
+            liItems:
+              "Trigger automated follow-ups",
+          },
+          {
+            liItems:
+              "Generate custom reports",
+          },
+        ],
     },
     {
       id: 2,
@@ -213,7 +231,7 @@ export default function AiVoiceCalling() {
       datatargetid: "#collapseTwo",
       value: false,
       heading:
-        "Our AI models can be trained on a variety of data sources, including your existing sales data, industry-specific data, and public datasets.",
+        "Yes, you can customize the scripts and voice messages to match your brand voice and messaging. You can also set specific guidelines for the AI to follow.",
     },
     {
       id: 3,
@@ -223,7 +241,7 @@ export default function AiVoiceCalling() {
       datatargetid: "#collapseThree",
       value: false,
       heading:
-        "Our AI models can be trained on a variety of data sources, including your existing sales data, industry-specific data, and public datasets.",
+        "We prioritize data security and privacy. Our platform is built on robust security measures to protect your sensitive information.",
     },
     {
       id: 4,
@@ -714,7 +732,7 @@ return (
             <div className="">
               {Accordianapi?.map((items, index) => {
                 return (
-                  <Accordian items={items} key={index} content={false} />
+                  <Accordian items={items} key={index} content={true} />
                 );
               })}
             </div>

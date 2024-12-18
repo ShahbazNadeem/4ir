@@ -13,9 +13,9 @@ const Slider2 = () => {
         },
         {
             id: 2,
-            clientName: "Optimize marketing efforts:",
+            clientName: "Marketing efforts:",
             testimonial:
-                "Measure the effectiveness of marketing campaigns and adjust strategies accordingly.",
+                "Analyse the marketing strategy effectively.",
         },
         {
             id: 3,

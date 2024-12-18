@@ -7,7 +7,7 @@
 
 .banenr-wrapper {
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .primary {
@@ -937,6 +937,9 @@
     padding: 10px !important;
     font-size: 19px;
   }
+  .card-content h3{
+    font-size: 24px !important;
+  }
 
   .card3-body h5 {
     font-size: 25px !important;
@@ -1042,7 +1045,7 @@
 
   .aifuturecard .Salesaicards {
     width: 31vw !important;
-    padding: 0px 0px 0px 0px !important;
+    /* padding: 0px 0px 0px 0px !important; */
   }
 
   .aifuturecard .card3 h5 {
@@ -1110,6 +1113,9 @@
   }
   .youtube-video-video  {
     width: 80% !important;
+  }
+  .card-content h3{
+    font-size: 22px !important;
   }
 }
 
@@ -1208,6 +1214,10 @@
 
   .testimonial-heading {
     padding: 0 !important;
+  }
+
+  .card-content h3{
+    font-size: 20px !important;
   }
 
   .aiPoweredIndustries-card2 {
