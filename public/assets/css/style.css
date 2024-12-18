@@ -6508,7 +6508,7 @@ header .offcanvas-backdrop {
   }
   .home-section .home-content p{
     width: 100% !important;
-    margin-left: 60px !important;
+    /* margin-left: 60px !important; */
   }
   .container .blog-details .blog-img{
     width: 93vw !important;
