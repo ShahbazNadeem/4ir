@@ -4,7 +4,7 @@ import Untitled from "@/images/img_1.png"
 export default function Expertise ({expertise, heading1, heading2, para}){
     return(
         <>
-        <div className="service-section section-b-space mt-2 expertise home-expertise" style={{paddingTop: "50px", paddingBottom: "0px", maxHeight: "100%"}}>
+        <div className=" position-relative overflow-hidden section-b-space mt-2 py-5 expertise home-expertise" style={{ paddingBottom: "0px", maxHeight: "100%"}}>
         <div className="container">
             <div className="row g-5 expertise_div">
                 <div className="col-lg-6">

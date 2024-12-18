@@ -6424,7 +6424,7 @@ header .offcanvas-backdrop {
 }
 .info-section .info-box {
   text-align: center;
-  background-image: url(../images/info-bg.jpg);
+  /* background-image: url(../images/info-bg.jpg); */
   background-size: cover;
   border-radius: 8px;
   padding: 50px;

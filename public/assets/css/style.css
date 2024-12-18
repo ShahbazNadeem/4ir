@@ -3199,7 +3199,6 @@ header #logo-img {
 
 .service-info {
     position: relative;
-    top: -13%;
 }
 
 .barry_expertise_container {
@@ -8072,7 +8071,7 @@ header .offcanvas-backdrop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(136, 0, 255, .7), rgba(136, 0, 255, .9)), url('/assets/images/home/home-bg.gif');
+  background: linear-gradient(rgba(136, 0, 255, .7), rgba(136, 0, 255, .9)), url('/assets/images/home/home-bg.gif') !important;
   background-size: cover;
   /* Ensures the image covers the entire container */
   background-position: center;
