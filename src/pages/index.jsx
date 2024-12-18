@@ -333,38 +333,39 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="service-section section-b-space expertise homeabout-sec">
-        <div className="container">
-          <Headingh2
-            title="About Us"
-            headingstyle={{
-              fontSize: "40px",
-              position: "relative",
-              bottom: "5.5rem",
-              fontWeight: "400",
-            }}
-            className="text-white home-heading"
-          />
-          <div className="row g-5">
-            <div className="col-lg-6">
-              <div className="service-info">
-                <div>
-                  <div className="title">
-                    <Headingh2
-                      headingstyle={{ color: "#fff", width: "auto" }}
-                      spanstyle={{ color: "#ffce00" }}
-                      title=" Empowering Your Business"
-                      secondtitle=" In With AI Consulting And Product Solutions"
-                    />
-                    <Headingh3
-                      showimage={false}
-                      title="In the digital world, our AI Writer supports a variety of
+      <div className="service-section section-b-space expertise homeabout-sec" style={{
+        background: 'linear-gradient(180.02deg, rgba(245, 245, 245, 0.05) 0.02%,rgba(245, 245, 245, 0) 90.86%)'}}>
+      <div className="container">
+        <Headingh2
+          title="About Us"
+          headingstyle={{
+            fontSize: "40px",
+            position: "relative",
+            bottom: "5.5rem",
+            fontWeight: "400",
+          }}
+          className="text-white home-heading"
+        />
+        <div className="row g-5">
+          <div className="col-lg-6">
+            <div className="service-info">
+              <div>
+                <div className="title">
+                  <Headingh2
+                    headingstyle={{ color: "#fff", width: "auto" }}
+                    spanstyle={{ color: "#ffce00" }}
+                    title=" Empowering Your Business"
+                    secondtitle=" In With AI Consulting And Product Solutions"
+                  />
+                  <Headingh3
+                    showimage={false}
+                    title="In the digital world, our AI Writer supports a variety of
                       artists"
-                      style={{ color: "#00BDFF" }}
-                    />
-                  </div>
-                  <Para
-                    paragraph="At Fourth Industrial Revolution Inc., we are dedicated to
+                    style={{ color: "#00BDFF" }}
+                  />
+                </div>
+                <Para
+                  paragraph="At Fourth Industrial Revolution Inc., we are dedicated to
                     guiding businesses through the transformative power of
                     artificial intelligence. With a team of seasoned experts at
                     the helm, specializing in AI consulting and product
@@ -372,28 +373,28 @@ export default function Page() {
                     business into the future. Our mission is simple yet
                     ambitious: to empower organizations to thrive in the dynamic
                     landscape of the Fourth Industrial Revolution."
-                    style={{ textAlign: "justify" }}
-                  />
-                </div>
+                  style={{ textAlign: "justify" }}
+                />
               </div>
-            </div>
-
-            <div className="col-lg-6" style={{ marginRight: "-195px" }}>
-              <Mic
-                isListening={isListening}
-                isLoading={isLoading}
-                handleMicClick={handleMicClick}
-              />
             </div>
           </div>
 
-          <div className="col-lg-12">
-            <div className="service_boxes_div">
-              <MainBox ServiceBox={ServiceBox} />
-            </div>
+          <div className="col-lg-6" style={{ marginRight: "-195px" }}>
+            <Mic
+              isListening={isListening}
+              isLoading={isLoading}
+              handleMicClick={handleMicClick}
+            />
+          </div>
+        </div>
+
+        <div className="col-lg-12">
+          <div className="service_boxes_div">
+            <MainBox ServiceBox={ServiceBox} />
           </div>
         </div>
       </div>
+    </div >
       <Service Services={Services} />
       <Expertise
         expertise="Our Expertise"

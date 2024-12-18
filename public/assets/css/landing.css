@@ -132,40 +132,6 @@ li {
   display: inline-block;
 }
 
-.btn-solid {
-  background-color: rgba(var(--theme-color), 1);
-  font-size: calc(16px + 4 * (100vw - 320px) / 1600);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: calc(8px + 6 * (100vw - 320px) / 1600);
-  color: rgba(var(--dark-title), 1);
-  padding: calc(8px + 3 * (100vw - 320px) / 1600) calc(20px + 6 * (100vw - 320px) / 1600);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border: 1px solid rgba(var(--theme-color), 1);
-  border-radius: 8px;
-  font-weight: 500;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.btn-solid .iconsax svg [fill] {
-  fill: rgba(var(--dark-title), 1);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.btn-solid:hover {
-  background-color: transparent;
-  color: rgba(var(--white), 1);
-}
-.btn-solid:hover .iconsax svg [fill] {
-  fill: rgba(var(--white), 1);
-}
-
 /*=====================
    1.1 Reset Scss start
 ==========================*/

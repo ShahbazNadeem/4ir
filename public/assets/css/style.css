@@ -534,7 +534,7 @@ li {
 .swiper-scrollbar-drag{
   background-color: #00BDFF !important;
 }
-.btn-solid {
+/* .btn-solid {
   font-size: calc(18px + 2 * (100vw - 320px) / 1600);
   color: rgba(var(--dark-title), 1);
   background-color: rgba(var(--theme-color), 1);
@@ -547,7 +547,7 @@ li {
   width: max-content;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
+} */
 
 #home-header {
   background-image: url(../images/new-home-bg.png);
@@ -594,10 +594,10 @@ header,
 }
 
 
-.btn-solid:hover {
+/* .btn-solid:hover {
   background-color: transparent;
   color: rgba(var(--theme-color), 1);
-}
+} */
 
 /*=====================
     2.4 Chatting Scss start
