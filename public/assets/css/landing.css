@@ -513,7 +513,7 @@ nav.navbar {
 @media (max-width: 1500px) {
   .home-section .home-img {
     position: relative;
-    left: 6%;
+    left: 11%;
   }  
   .home-section .home-img .robot-img{
     width: 00px;

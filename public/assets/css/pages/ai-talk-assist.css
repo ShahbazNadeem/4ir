@@ -394,15 +394,15 @@ header .navbar-nav .nav-item:before {
 
 header,
 #home {
-    background-image: url(../../images//new-home-bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../../images/new-home-bg.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
     /* background-attachment: fixed; */
-    min-height: max-content;
-    width: 100%;
-    position: relative;
-    z-index: 1;
+    min-height: max-content !important;
+    width: 100% ;
+    position: relative ;
+    z-index: 1 ;
 }
 
 .ai-features-section {
