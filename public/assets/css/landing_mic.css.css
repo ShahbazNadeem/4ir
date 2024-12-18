@@ -4972,7 +4972,7 @@ header .offcanvas-backdrop {
 ==========================**/
 .home-section {
   text-align: center;
-  padding: 0 calc(15px + 85*(100vw - 320px) / 1600);
+  padding: 0 calc(15px + 85*(100vw - 320px) / 1600) !important;
   height: 100%;
   position: relative;
   background-image: url(../images/home/home-bg.png);
