@@ -204,7 +204,7 @@ export default function Page() {
         handleCloseModal={handleCloseModal}
       />
       {showModal && <Model close={handleCloseModal} />}
-      <section id="home" className="section-b-space gradiant-color banner-img home-section">
+      <section id="home" className="section-b-space banner-img home-section">
         <div className="container-fluid">
           <div className="home-sec home-heading1">
             <div className="home-content">
@@ -334,8 +334,7 @@ export default function Page() {
         </div>
       </section>
       {/* hello */}
-      <div className="service-section section-b-space expertise homeabout-sec" style={{
-        background: 'linear-gradient(180.02deg, rgba(245, 245, 245, 0.05) 0.02%,rgba(245, 245, 245, 0) 90.86%)'}}>
+      <div className="service-section section-b-space expertise homeabout-sec" >
       <div className="container">
         <Headingh2
           title="About Us"

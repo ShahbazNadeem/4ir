@@ -2387,9 +2387,6 @@ header .navbar-nav .nav-item {
   margin-bottom: 0;
   position: relative;
 }
-.gradiant-color{
-  background: linear-gradient(180.02deg, rgba(var(--title-color), 0.05) 0.02%, rgba(var(--title-color), 0) 90.86%) !important ;
-}
 header .navbar-nav .nav-item:before {
   content: "";
   width: 6px;
