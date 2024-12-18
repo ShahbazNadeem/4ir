@@ -107,7 +107,6 @@ const AitalkAssist = () => {
       window.addEventListener("scroll", handleScroll);
     }
 
-    // Cleanup listener on unmount
     return () => {
       if (typeof window !== "undefined") {
         window.removeEventListener("scroll", handleScroll);

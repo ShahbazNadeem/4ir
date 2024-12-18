@@ -485,7 +485,6 @@ header #logo-img {
     }
     .boxs_container .box{
         max-width: 80% !important;
-        left: -20px !important;
     }
     .info-box {
         display: flex;
