@@ -204,7 +204,7 @@ export default function Page() {
         handleCloseModal={handleCloseModal}
       />
       {showModal && <Model close={handleCloseModal} />}
-      <section id="home" className="section-b-space banner-img home-section">
+      <section id="home" className="section-b-space gradiant-color banner-img home-section">
         <div className="container-fluid">
           <div className="home-sec home-heading1">
             <div className="home-content">
