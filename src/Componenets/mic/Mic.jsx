@@ -55,6 +55,7 @@ const Mic = ({ isLoading, handleMicClick, layout }) => {
           .bar {
             width: 4px;
             height: 100px;
+            border-radius: 50px;
             background: #65bada;
             animation: bounce 1s infinite ease-in-out;
           }

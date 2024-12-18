@@ -314,8 +314,6 @@ const AitalkAssist = () => {
           <button
             className="navbar-toggler d-xl-none d-inline navbar-menu-button"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#primaryMenu"
             onClick={toggleOffcanvas}
           >
             <span className="navbar-toggler-icon">
