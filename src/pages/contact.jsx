@@ -35,11 +35,11 @@ const Contact = () => {
         title="BOOK A MEETING WITH 4IR"
         paragraph="  Book a time to explore how we can advance your business with
                   AI solutions."
-        contactClass="contact"
+        contactClass="contact contactus_pagecss1"
         marginLeft="-30px"
         widthclass="auto"
       />
-      <section class="section-b-space">
+      <section class="section-b-space contactus_pagecss2">
         <div class="container">
           <div class="service-info">
             <div>

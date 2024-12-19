@@ -1,7 +1,6 @@
 /* Footer Css */
 .Footer-wrapper {
   background-color: #08091a;
-  min-height: 95vh;
 }
 
 .maindiv {
@@ -328,9 +327,6 @@ font-size: 20px !important;
   border: 0;
 }
 @media screen and (min-width: 1400px) {
-  .Footer-wrapper {
-    min-height: 69vh;
-  }
   .read-more-btn{
     display: none;
   }
@@ -472,11 +468,6 @@ font-size: 20px !important;
   .footer-h5 {
     font-size: 20px !important;
   }
-
-  .Footer-wrapper {
-    min-height: 55vh !important;
-  }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -533,10 +524,6 @@ font-size: 20px !important;
 
   .footer-h5 {
     font-size: 18px !important;
-  }
-
-  .Footer-wrapper {
-    min-height: 65vh !important;
   }
 
   .footer-copyright {

@@ -93,10 +93,10 @@ body, html {
   margin-bottom: 50px;
 }
 .youtube-video-main{
-  margin: 80px 0px ;
+  margin: 60px 0px ;
 }
 .youtube-video-video {
-    width: 51%;
+    width: 70%;
     margin: 0px auto;
     height: auto;
     border: 1px solid var(--primary);
@@ -234,7 +234,7 @@ body, html {
 }
 
 .future-wrapper {
-  margin: 100px 0px;
+  margin: 20px 0px;
 }
 
 .aifuturecard {
@@ -262,6 +262,9 @@ body, html {
   width: 300px !important;
 }
 
+.aiPoweredIndustries{
+  padding:20px 0px;
+}
 .aiPoweredIndustries-content h2 {
   width: 70%;
   line-height: 65px !important;
