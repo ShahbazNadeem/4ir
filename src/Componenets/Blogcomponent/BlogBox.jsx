@@ -10,7 +10,7 @@ const BlogBox = ({Blogapi, icon}) => {
   
 return(
 
-            <div style={{display:"flex"}} className={items.columnClass}key={items.id}>
+            <div style={{display:"flex"}} className={`blog_pagecss ${items.columnClass}`} key={items.id}>
               <div className={items.firstChildclass}>
                 <div className={items.imageclass}>
                   {items.layout ? (
