@@ -1015,7 +1015,7 @@ line-height: 52px !important;
     margin-right: 30px !important;
   }
   .banner-logo-1 {
-    width :220px !important ;
+    width :200px !important ;
   }
 }
 
@@ -1117,7 +1117,7 @@ line-height: 52px !important;
   }
 
   .banner-logo-1 {
-    width :200px !important ;
+    width :180px !important ;
   }
 
   .banner-second-heading {
@@ -1240,7 +1240,7 @@ line-height: 52px !important;
 
 @media screen and (max-width: 576px) {
   .banner-logo-1 {
-    width :180px !important ;
+    width :160px !important ;
   }
 
 
