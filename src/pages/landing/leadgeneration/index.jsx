@@ -474,8 +474,8 @@ return (
                     aria-labelledby="v-pills-home-tab"
                   >
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">1</span>
+                      <div className="number text-white ">
+                        <span className=" number-span">1</span>
                       </div>
                       <div>
                         <h6>Initial Consultation: </h6>
@@ -486,8 +486,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">2</span>
+                      <div className="number text-white ">
+                        <span className=" number-span">2</span>
                       </div>
                       <div>
                         <h6>Platform Setup: </h6>
@@ -499,8 +499,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex timeline-right-content gap-3 mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">3</span>
+                      <div className="number text-white ">
+                        <span className="number-span">3</span>
                       </div>
                       <div>
                         <h6>Data Integration: </h6>
@@ -519,8 +519,8 @@ return (
                     aria-labelledby="v-pills-profile-tab"
                   >
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">1</span>
+                      <div className="number text-white">
+                        <span className=" number-span">1</span>
                       </div>
                       <div>
                         <h6>Strategic Planning: </h6>
@@ -530,19 +530,23 @@ return (
                       </div>
                     </div>
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">2</span>
+                      <div className="number text-white">
+                        <span className="number-span">2</span>
                       </div>
                       <div>
                         <h6>Campaign Execution: </h6>
                         <p>
                           Well implement a range of marketing tactics, including.
                         </p>
+                        <ul className="list-unstyle text-light">
+                          <li><span className="fw-bold">Social Media Marketing: </span><p>Creating engaging content and running targeted ads on platforms like Facebook, Instagram, and LinkedIn.</p></li>
+                          <li><span className="fw-bold">Pay-Per-Click (PPC) Advertising:</span><p> Running targeted ads on Google and other search engines.</p></li>
+                        </ul>
                       </div>
                     </div>
                     <div className="d-flex timeline-right-content gap-3 mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">3</span>
+                      <div className="number text-white ">
+                        <span className="number-span">3</span>
                       </div>
                       <div>
                         <h6>Performance Tracking: </h6>
@@ -559,8 +563,8 @@ return (
                     aria-labelledby="v-pills-messages-tab"
                   >
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">1</span>
+                      <div className="number text-white ">
+                        <span className="number-span">1</span>
                       </div>
                       <div>
                         <h6>Lead Capture:</h6>
@@ -570,8 +574,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">2</span>
+                      <div className="number text-white ">
+                        <span className="number-span">2</span>
                       </div>
                       <div>
                         <h6>Lead Qualification:
@@ -582,8 +586,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex timeline-right-content gap-3 mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">3</span>
+                      <div className="number text-white ">
+                        <span className="number-span">3</span>
                       </div>
                       <div>
                         <h6>Lead Nurturing:</h6>
@@ -600,8 +604,8 @@ return (
                     aria-labelledby="v-pills-settings-tab"
                   >
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">1</span>
+                      <div className="number text-white ">
+                        <span className="number-span">1</span>
                       </div>
                       <div>
                         <h6>Automated Follow-up:  </h6>
@@ -611,8 +615,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex gap-3 timeline-right-content mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">2</span>
+                      <div className="number text-white ">
+                        <span className="number-span">2</span>
                       </div>
                       <div>
                         <h6>Personalized Messages:</h6>
@@ -623,8 +627,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex timeline-right-content gap-3 mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">3</span>
+                      <div className="number text-white ">
+                        <span className="number-span">3</span>
                       </div>
                       <div>
                         <h6>Efficient Lead Qualification: </h6>
@@ -634,8 +638,8 @@ return (
                       </div>
                     </div>
                     <div className="d-flex timeline-right-content gap-3 mb-3">
-                      <div className="number text-white position-relative">
-                        <span className="position-absolute">4</span>
+                      <div className="number text-white ">
+                        <span className="number-span">4</span>
                       </div>
                       <div>
                         <h6>Enhanced Conversion Rates:</h6>

@@ -437,9 +437,6 @@ header #logo-img {
     .home-heading1 .home-contents {
         margin-left: 0px !important;
     }
-    .team-section .team-box {
-        min-height: 490px !important;
-    }
     section {
         width: 100vw;
         overflow-x: hidden;

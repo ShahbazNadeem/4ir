@@ -4664,6 +4664,11 @@ header .offcanvas-backdrop {
     width: 93%;
     margin: -8px auto 0;
   }
+  .team-section .team-box {
+    height: 510px !important;
+    width: 350px !important;
+
+  }
 }
 
 .blog-details .blog-title-box .main-title {
@@ -7485,14 +7490,14 @@ header .offcanvas-backdrop {
   padding: 34px;
   border-radius: 4px;
   position: relative;
-  height: 600px;
+  height: 550px;
   width: 400px;
   text-align: center;
 
 }
 
 .team-section .team-box img {
-  width: 120%;
+  width: 100%;
   position: relative;
   height: auto;
   /* left: 8%; */
@@ -7512,11 +7517,6 @@ header .offcanvas-backdrop {
 @media screen and (max-width:600px) {
   .feature_container {
     margin-top: 3rem;
-  }
-
-  .team-section .team-box {
-    width: 90vw;
-    margin: 0px -30px;
   }
 }
 
