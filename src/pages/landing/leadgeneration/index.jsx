@@ -264,7 +264,7 @@ return (
       {showModal && <Model close={handleCloseModal} />}
       <section className="banner">
         <div className="banenr-wrapper">
-          <div class="lines">
+        <div class="lines">
             <div class="line-container">
               <div class="animated-line"></div>
             </div>
