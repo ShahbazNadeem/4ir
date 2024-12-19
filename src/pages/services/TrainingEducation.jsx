@@ -166,7 +166,7 @@ Education and Skills Development"
       />
       <section class="service-section section-b-space mt-2 training" style={{paddingTop: "200px"}}>
         <div class="container">
-          <div class="row g-5 expertise_div">
+          <div class="row">
             <div class="col-lg-6">
               <div class="service-info">
                 <div>
@@ -212,11 +212,11 @@ Education and Skills Development"
           </div>
         </div>
       </section>
-      <section class="section-b-space barry_expertise_section">
+      <section class=" service-section barry_expertise_section" style={{backgroundColor: "none"}}>
         <div class="container">
           <div
             class="service-info"
-            style={{ position: "relative", margin: "6rem 0" }}
+            style={{ position: "relative", margin: "0rem 0" }}
           >
             <div>
               <div class="title">
@@ -294,7 +294,7 @@ Education and Skills Development"
           </div>
         </div>
       </section>
-      <section class="faq-section" id="faq-section">
+      <section class="faq-section service-section" id="faq-section">
         <div class="container">
         <div class="title">
                         <h4 style={{color: "#00BDFF"}}>Your Questions, Answered</h4>

@@ -273,10 +273,16 @@ li {
   .breadcrumb-section {
     padding-top: 150px;
   }
+  .home-heading {
+    margin-bottom: 90px !important;
+}
 }
 @media (max-width: 1199px) {
   .breadcrumb-section {
     padding-top: calc(80px + 30 * (100vw - 320px) / 1600);
+  }
+  .homeabout-sec{
+    padding: 80px 0px !important;
   }
 }
 @media (max-width: 1199px) {
@@ -611,6 +617,12 @@ li {
   }
   [dir=rtl] .msger-inputarea {
     right: 120px;
+  }
+  .homeabout-sec{
+    padding: 20px 0px !important;
+  }
+  .home-heading{
+    margin-bottom: 50px !important;
   }
 }
 @media (max-width: 767px) {
@@ -1369,6 +1381,9 @@ footer .footer-row {
     gap: calc(30px + 20 * (100vw - 320px) / 1600) 0;
     margin: 0 -15px;
   }
+  .training > .container > .row{
+    flex-direction: column !important;
+  }
 }
 footer .footer-row .footer-main {
   width: 40%;
@@ -1388,6 +1403,12 @@ footer .footer-row .footer-main {
   footer .footer-row .footer-main {
     width: 100%;
   }
+  .ai-features-section {
+    padding: 50px 0px 100px 0px !important;
+}
+.barry_expertise_section{
+  padding: 30px 0px 50px 0px !important;
+}
 }
 @media (max-width: 576px) {
   footer .footer-row .footer-main {

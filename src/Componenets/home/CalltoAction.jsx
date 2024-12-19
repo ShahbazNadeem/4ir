@@ -5,7 +5,7 @@ export default function CalltoAction({handleOpenModal, showModal, handleCloseMod
   return(
     <>
       {showModal && <Model close={handleCloseModal} />}
-      <section className="info-section section-b-space">
+      <section className="info-section  section-b-space" style={{    paddingBottom: "calc(40px + 60*(100vw - 320px) / 1600)"}}>
         <div className="container">
             <div className="info-box" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
                 <H2 className="text-white" title="Get Your Free Demo of AI TALK ASSIST Today!" />

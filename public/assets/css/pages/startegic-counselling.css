@@ -346,7 +346,7 @@ header #logo-img {
     margin: unset !important;
   }
     .feature_container{
-        margin: 0px !important;
+        margin-left: 0px !important;
     }
     .team-section .team-box{
         margin: 0px !important;

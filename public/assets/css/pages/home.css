@@ -186,9 +186,6 @@
         position: relative;
         left: 15px;
     }
-    .home-heading1 .home-contents{
-        margin-left: -84px !important;
-    }
   }
 
 @media screen and (max-width:1024px) {

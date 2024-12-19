@@ -392,7 +392,7 @@ nav.navbar {
     top: 70px;
   }
   .service-section{
-    padding-top: 178px !important;
+    padding-top: 0px !important;
     }
     .home-section .home-sec{
       justify-content: center !important;
@@ -518,6 +518,9 @@ nav.navbar {
   }
   .home-section .home-sec .home-effect li .outline-icon {
     width: 24px;
+  }
+  .home-heading{
+    margin-bottom: 30px !important;
   }
 }
 .home-section .home-sec .home-effect li:first-child {
