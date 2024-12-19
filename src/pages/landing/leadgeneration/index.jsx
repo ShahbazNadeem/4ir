@@ -297,7 +297,7 @@ return (
           <div className="container">
             <div className="banner-content">
               <div className="banner-logo d-flex flex-column align-items-center">
-                <figure className="text-center ">
+                <figure className="text-center banner-logo-1">
                   <SiteLogo width="100%" height="auto" />
                 </figure>
                 <div className="banner-heading-top">
