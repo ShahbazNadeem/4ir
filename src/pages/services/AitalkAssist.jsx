@@ -430,7 +430,7 @@ const AitalkAssist = () => {
                     priority
                   />
                 </div>
-                <div className="aitalk-heading" style={{ marginLeft: "90px" }}>
+                <div className="aitalk-heading">
                   <h1>
                     Transform Your Customer Experience with <br />
                     <div className="title-effect">

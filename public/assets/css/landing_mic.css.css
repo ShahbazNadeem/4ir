@@ -5390,7 +5390,10 @@ header .offcanvas-backdrop {
 }
 @media (max-width: 991px) {
   .service-section {
-    padding-top: calc(30px + 70 * (100vw - 320px) / 1600);
+    padding-top: calc(30px + 70 * (100vw - 320px) / 1600) ;
+  }
+  .servicebackground{
+    padding-top: calc(30px + 70 * (100vw - 320px) / 1600)  !important;
   }
 }
 .service-section:after {
