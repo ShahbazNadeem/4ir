@@ -749,7 +749,14 @@ body, html {
   overflow: hidden;
   min-width: fit-content;
 }
-
+.leads-upper-content h2{
+font-size: 3rem !important;
+line-height: 52px !important;
+}
+.testimonial-heading h2{
+  font-size: 3.1rem !important;
+  line-height: 57px !important;
+}
 @media screen and (min-width: 1400px) {
   .banner-logo-1{
     margin-top : 30px !important;
@@ -832,7 +839,8 @@ body, html {
   }
 
   .aiPoweredIndustries-content h2 {
-    font-size: 3.2rem !important;
+    font-size: 3.1rem !important;
+    line-height: 54px !important;
   }
 
   .banner-logo {
@@ -1089,7 +1097,7 @@ body, html {
   }
 
   .testimonial-heading {
-    padding: 20 !important;
+    padding: 20px !important;
   }
 
   .aiPoweredIndustries-card {
@@ -1193,6 +1201,7 @@ body, html {
 
   .testimonial-h2 {
     font-size: 26px !important;
+    line-height: 33px !important;
   }
 
   .testimonial-heading {

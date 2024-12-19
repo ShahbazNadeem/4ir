@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
     if (isLandingRoute) {
       import("@/css/Global.css");
       import("@/LandingComponent/widgets.css");
-      // import("./landing/ai-talk-assist/aitalkassist.css");
+      import("./landing/ai-talk-assist/aitalkassist.css");
     } else if (isLeadGenerationRoute) {
       import("@/css/Global.css");
       import("@/LandingComponent/widgets.css");
