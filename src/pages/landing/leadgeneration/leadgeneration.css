@@ -802,12 +802,6 @@ line-height: 52px !important;
     line-height: 80px !important;
   }
 
-  .swiper-wrapper {
-    justify-content: center;
-    width: 94%;
-    margin: 0 auto;
-  }
-
   .banner-heading-top1 .h2 {
     font-size: 40px !important;
     line-height: 60px !important;
@@ -1242,7 +1236,13 @@ line-height: 52px !important;
   .banner-logo-1 {
     width :160px !important ;
   }
-
+  .banner-second-heading p {
+    font-size: 1.2rem !important;
+  }
+  .testimonial-heading h2 {
+    font-size: 2.1rem !important;
+    line-height: 40px !important;
+  }
 
   .aifuturecard .card3 h5 {
     font-size: 18px !important;
