@@ -20,8 +20,9 @@ body, html {
 }
 
 .banner-logo img {
-  width: 250px;
-  padding-bottom: 37px;
+  width :100% !important;
+  height :auto !important;
+  margin-bottom: 37px !important;
 }
 
 .banner-heading-top {
@@ -747,6 +748,9 @@ body, html {
 }
 
 @media screen and (min-width: 1400px) {
+  .banner-logo-1{
+    margin-top : 30px !important;
+  }
   .banner-content {
     min-height: 100vh !important;
   }
@@ -817,7 +821,7 @@ body, html {
   }
 
   .banner-logo img {
-    max-width: calc(100% - 25%);
+    /* max-width: calc(100% - 25%); */
   }
 
   .aiPoweredIndustries-card2 {
@@ -999,6 +1003,9 @@ body, html {
   .timeline-left{
     margin-right: 30px !important;
   }
+  .banner-logo-1 {
+    width :220px !important ;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -1098,9 +1105,8 @@ body, html {
     width: 70% !important;
   }
 
-  .banner-logo img {
-    max-width: 90% !important;
-    padding-bottom: 10px;
+  .banner-logo-1 {
+    width :200px !important ;
   }
 
   .banner-second-heading {
@@ -1221,9 +1227,10 @@ body, html {
 }
 
 @media screen and (max-width: 576px) {
-  .banner-logo img {
-    max-width: 80% !important;
+  .banner-logo-1 {
+    width :180px !important ;
   }
+
 
   .aifuturecard .card3 h5 {
     font-size: 18px !important;

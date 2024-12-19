@@ -65,11 +65,11 @@
 }
 section,
 .section-t-space {
-  padding-top: calc(40px + 60 * (100vw - 320px) / 1600);
+  padding-top: calc(0px + 0 * (100vw - 320px) / 1600);
 }
 
 .section-b-space {
-  padding-bottom: calc(40px + 60 * (100vw - 320px) / 1600);
+  padding-bottom: calc(10px + 0 * (100vw - 320px) / 1600);
 }
 
 .section-mt-space {

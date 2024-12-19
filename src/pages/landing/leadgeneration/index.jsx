@@ -17,7 +17,7 @@ import clientRreview from "../../../../public/assets/landingimage/client-review.
 import Accordian from "../../../Componenets/landing/Accordian/Accordian";
 import Slider2 from "../../../Componenets/landing/sllider/Slider2";
 import CarolHuston from "@/images/landing/ai_talk_assist/CarolHuston.png"
-// import JimThiel from "@/images/landing/ai_talk_assist/JimThiel.png"
+import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
@@ -297,7 +297,7 @@ return (
           <div className="container">
             <div className="banner-content">
               <div className="banner-logo d-flex flex-column align-items-center">
-                <figure className="text-center ">
+                <figure className="text-center banner-logo-1">
                   <SiteLogo width="100%" height="auto" />
                 </figure>
                 <div className="banner-heading-top">
@@ -799,7 +799,7 @@ return (
                   <div className="d-flex justify-content-between pics-div">
                     <div className="d-flex justify-content-between clientcontent1">
                       <figure>
-                      {/* <Image src={JimThiel} alt="Jim img" width={40} /> */}
+                      <Image src={JimThiel} alt="Jim img" width={40} />
                       </figure>
                       <p>Jim -</p>
                         <p> 12 Aug</p>

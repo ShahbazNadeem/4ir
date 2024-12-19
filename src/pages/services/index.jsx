@@ -74,7 +74,7 @@ export default function Services() {
          widthclass="35%"
          marginLeft= "50px"
       />
-      <div className="service-section services section-b-space mt-2"style={{paddingTop: "178px", backgroundColor: "#0b1622"}}>
+      <div className="service-section services section-b-space service-1-overwirte" >
         <div className="container">
           <div className="row g-5">
             <div className="service-info">
@@ -88,7 +88,7 @@ export default function Services() {
                   />
                 </div>
                 <Para  className="mb-5" style={{ fontSize: "19.2px", fontFamily: "'Outfit', sans-serif" ,width: "80%" }}
-paragraph="Transform your business with cutting-edge AI technologies and strategic expertise. We offer a range of services designed to drive growth, streamline operations, and empower your team for success in the AI-driven future." />
+                  paragraph="Transform your business with cutting-edge AI technologies and strategic expertise. We offer a range of services designed to drive growth, streamline operations, and empower your team for success in the AI-driven future." />
 
                 <AboutBoxes layout={true}  Box={Box} icon={faArrowUp} showbutton={true} />
               </div>
