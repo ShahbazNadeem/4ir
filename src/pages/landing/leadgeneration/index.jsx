@@ -17,7 +17,7 @@ import clientRreview from "../../../../public/assets/landingimage/client-review.
 import Accordian from "../../../Componenets/landing/Accordian/Accordian";
 import Slider2 from "../../../Componenets/landing/sllider/Slider2";
 import CarolHuston from "@/images/landing/ai_talk_assist/CarolHuston.png"
-import JimThiel from "@/images/landing/ai_talk_assist/JimThiel.png"
+import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
