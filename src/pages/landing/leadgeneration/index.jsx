@@ -298,7 +298,7 @@ return (
             <div className="banner-content">
               <div className="banner-logo d-flex flex-column align-items-center">
                 <figure className="text-center banner-logo-1">
-                  <SiteLogo width="100%" height="auto" />
+                  <SiteLogo width="65%" height="auto" />
                 </figure>
                 <div className="banner-heading-top">
                   <Para title="Tired of Chasing Leads?" />
