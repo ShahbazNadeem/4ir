@@ -261,7 +261,7 @@ return (
       <title> Revolutionize Your Sales with AI-Powered Lead Generation & Voice Calling | 4IR</title>
     </Head>
     <Layout>
-      {showModal && <Model close={handleCloseModal} margin="100px" />}
+      {showModal && <Model close={handleCloseModal} />}
       <section className="banner">
         <div className="banenr-wrapper">
         <div class="lines">

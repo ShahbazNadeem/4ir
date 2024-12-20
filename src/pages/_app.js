@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
-import { useEffect } from "react";
-import LandingLayout from "./LandingLayout";
-import DefaultLayout from "./DefaultLayout";
+import { useEffect, useState, lazy } from "react";
+// import Logo from "../../public/assets/images/4IR-logo-main.png";
+// Lazy load layouts
+const LandingLayout = lazy(() => import("./LandingLayout"));
+const DefaultLayout = lazy(() => import("./DefaultLayout"));
 
 // Global dependencies
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,42 +16,87 @@ import "swiper/swiper-bundle.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+  const [loading, setLoading] = useState(true); // Add loading state
 
-  // Identify the route for conditional layout
+  // Determine layout based on route
   const isLandingRoute = router.pathname.startsWith("/landing");
   const Layout = isLandingRoute ? LandingLayout : DefaultLayout;
 
   useEffect(() => {
-
     const importCSS = async () => {
       require("bootstrap/js/index.esm");
-    if (isLandingRoute) {
-     await import ("@/css/Global.css");
-     await import("@/LandingComponent/widgets.css");
-      if (router.pathname.startsWith("/landing/ai-talk-assist")) {
-        await  import("./landing/ai-talk-assist/aitalkassist.css");
-      } else if (router.pathname.startsWith("/landing/leadgeneration")) {
-        await import("./landing/leadgeneration/leadgeneration.css");
-        await import("../Componenets/landing/sllider/slider.css");
+
+      if (isLandingRoute) {
+        await import("@/css/Global.css");
+        await import("@/LandingComponent/widgets.css");
+
+        if (router.pathname.startsWith("/landing/ai-talk-assist")) {
+          await import("./landing/ai-talk-assist/aitalkassist.css");
+        } else if (router.pathname.startsWith("/landing/leadgeneration")) {
+          await import("./landing/leadgeneration/leadgeneration.css");
+          await import("../Componenets/landing/sllider/slider.css");
+        }
+      } else {
+        // CSS for other pages
+        await import("@/css/pages/about.css");
+        await import("@/css/pages/ai-talk-assist.css");
+        await import("@/css/landing_mic.css.css");
+        await import("@/css/landing.css");
+        await import("@/css/pages/services.css");
+        await import("@/css/pages/startegic-counselling.css");
+        await import("@/css/style.css");
+        await import("@/css/pages/home.css");
       }
-    } else {
-      // Fallback for other pages
-      await import("@/css/pages/about.css");
-      await import("@/css/pages/ai-talk-assist.css");
-      await import("@/css/landing_mic.css.css");
-      await import("@/css/landing.css");
-      await import("@/css/pages/services.css");
-      await import("@/css/pages/startegic-counselling.css");
-      await import("@/css/style.css");
-      await import("@/css/pages/home.css");
-    }
-  }
-  importCSS();
-  }, [router.pathname]);
+
+      setLoading(false); // Set loading to false after imports
+    };
+
+    importCSS();
+  }, [isLandingRoute, router.pathname]);
 
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      {loading ? (
+        // Loader with a centered image
+        <div className="loader">
+          <img src='/assets/images/4IRLogomain.png' alt="Loading" className="loader-img" />
+          <style jsx>{`
+            .loader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+  background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+            }
+
+            .loader-img {
+              width: 150px; /* Adjust to your preferred size */
+              height: auto;
+              animation: fadeIn 1s ease-in-out infinite; /* Optional animation */
+            }
+
+            @keyframes fadeIn {
+              0%,
+              100% {
+                opacity: 0.5;
+              }
+              50% {
+                opacity: 1;
+              }
+            }
+          `}</style>
+        </div>
+      ) : (
+        // Render the actual layout and component
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
+    </>
   );
 }
