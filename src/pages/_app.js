@@ -57,17 +57,17 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {loading ? (
-        // Loader with a centered image
+        // Loader with a rotating image
         <div className="loader">
-          <img src='/assets/images/4IRLogomain.png' alt="Loading" className="loader-img" />
+          <img src='/assets/images/4IRonlyLogo.png' alt="Loading" className="loader-img" />
           <style jsx>{`
             .loader {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-  background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
+              display: flex ;
+              justify-content: center;
+              align-items: center;
+              width: 100vw;
+              height: 100vh;
+              background: linear-gradient(0deg, #0a0e17, #0a0e17), linear-gradient(179.9deg, #0a5b75 -47.93%, #02111a 98.07%);
               display: flex;
               justify-content: center;
               align-items: center;
@@ -77,16 +77,24 @@ export default function App({ Component, pageProps }) {
             .loader-img {
               width: 150px; /* Adjust to your preferred size */
               height: auto;
-              animation: fadeIn 1s ease-in-out infinite; /* Optional animation */
+              animation: rotate 2s linear infinite, fadeIn 1s ease-in-out infinite; /* Rotate image and fade it in */
             }
 
             @keyframes fadeIn {
-              0%,
-              100% {
+              0%, 100% {
                 opacity: 0.5;
               }
               50% {
                 opacity: 1;
+              }
+            }
+
+            @keyframes rotate {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
               }
             }
           `}</style>
