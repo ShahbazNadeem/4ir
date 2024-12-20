@@ -14,7 +14,6 @@ import "swiper/swiper-bundle.css";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  // Define layout based on route
   const isLandingRoute = router.pathname.startsWith("/landing/ai-talk-assist");
   const isLeadGenerationRoute = router.pathname.startsWith(
     "/landing/leadgeneration"
@@ -22,10 +21,7 @@ export default function App({ Component, pageProps }) {
   const Layout = isLandingRoute ? LandingLayout : DefaultLayout;
 
   useEffect(() => {
-    // Common bootstrap JS initialization
     require("bootstrap/js/index.esm");
-
-    // Conditional CSS imports
     if (isLandingRoute) {
       import("@/css/Global.css");
       import("@/LandingComponent/widgets.css");
@@ -35,9 +31,7 @@ export default function App({ Component, pageProps }) {
       import("@/LandingComponent/widgets.css");
       import("./landing/leadgeneration/leadgeneration.css");
       import("../Componenets/landing/sllider/slider.css");
-      // import("./landing/leadgeneration/aivoiceCalling.css");
     } else {
-      // Fallback CSS for all other pages
       import("@/css/pages/about.css");
       import("@/css/pages/ai-talk-assist.css");
       import("@/css/landing_mic.css.css");
@@ -46,9 +40,8 @@ export default function App({ Component, pageProps }) {
       import("@/css/pages/startegic-counselling.css");
       import("@/css/style.css");
       import("@/css/pages/home.css");
-      console.log("flase")
     }
-  }, [isLandingRoute, isLeadGenerationRoute]); // Update dependencies
+  }, [isLandingRoute, isLeadGenerationRoute]);
 
   return (
     <Layout>

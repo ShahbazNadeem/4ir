@@ -24,7 +24,7 @@ import Card3 from "../../../Componenets/landing/cards/Card3";
 import YoutubeVideo from "../../../Componenets/landing/YoutubeVideo";
 import SiteLogo from "../../../Componenets/landing/SiteLogo";
 import Head from "next/head";
-import Model from "@/LandingComponent/Model/Model";
+import Model from "../../../Componenets/landing/Model/Model";
 import { FaPlay } from "react-icons/fa";
 import TawkToIntegration from '../../../Componenets/landing/TawkToIntegration';
 
@@ -387,7 +387,7 @@ export default function Index() {
       </Head>
 
       <Layout>
-        {showModal && <Model close={handleOpenModal} />}
+        {showModal && <Model close={handleOpenModal} margin='100px' />}
         <TawkToIntegration />
         <section>
           <div className="main-wrapper">

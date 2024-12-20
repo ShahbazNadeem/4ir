@@ -1,9 +1,9 @@
-export default function Model({ close }) {
+export default function Model({ close, margin }) {
   return (
     <>
       <div
         className="modal"
-        style={{ display: "block", opacity: '1' }}
+        style={{ display: "block", opacity: '1', marginTop: margin }}
         aria-labelledby="demo-modalLabel"
         aria-hidden="true"
         data-aos="fade-down"
