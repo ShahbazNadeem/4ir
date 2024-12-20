@@ -2,8 +2,9 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import LandingLayout from "./LandingLayout";
 import DefaultLayout from "./DefaultLayout";
+
+// Global dependencies
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -14,34 +15,37 @@ import "swiper/swiper-bundle.css";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  const isLandingRoute = router.pathname.startsWith("/landing/ai-talk-assist");
-  const isLeadGenerationRoute = router.pathname.startsWith(
-    "/landing/leadgeneration"
-  );
+  // Identify the route for conditional layout
+  const isLandingRoute = router.pathname.startsWith("/landing");
   const Layout = isLandingRoute ? LandingLayout : DefaultLayout;
 
   useEffect(() => {
-    require("bootstrap/js/index.esm");
+
+    const importCSS = async () => {
+      require("bootstrap/js/index.esm");
     if (isLandingRoute) {
-      import("@/css/Global.css");
-      import("@/LandingComponent/widgets.css");
-      import("./landing/ai-talk-assist/aitalkassist.css");
-    } else if (isLeadGenerationRoute) {
-      import("@/css/Global.css");
-      import("@/LandingComponent/widgets.css");
-      import("./landing/leadgeneration/leadgeneration.css");
-      import("../Componenets/landing/sllider/slider.css");
+     await import ("@/css/Global.css");
+     await import("@/LandingComponent/widgets.css");
+      if (router.pathname.startsWith("/landing/ai-talk-assist")) {
+        await  import("./landing/ai-talk-assist/aitalkassist.css");
+      } else if (router.pathname.startsWith("/landing/leadgeneration")) {
+        await import("./landing/leadgeneration/leadgeneration.css");
+        await import("../Componenets/landing/sllider/slider.css");
+      }
     } else {
-      import("@/css/pages/about.css");
-      import("@/css/pages/ai-talk-assist.css");
-      import("@/css/landing_mic.css.css");
-      import("@/css/landing.css");
-      import("@/css/pages/services.css");
-      import("@/css/pages/startegic-counselling.css");
-      import("@/css/style.css");
-      import("@/css/pages/home.css");
+      // Fallback for other pages
+      await import("@/css/pages/about.css");
+      await import("@/css/pages/ai-talk-assist.css");
+      await import("@/css/landing_mic.css.css");
+      await import("@/css/landing.css");
+      await import("@/css/pages/services.css");
+      await import("@/css/pages/startegic-counselling.css");
+      await import("@/css/style.css");
+      await import("@/css/pages/home.css");
     }
-  }, [isLandingRoute, isLeadGenerationRoute]);
+  }
+  importCSS();
+  }, [router.pathname]);
 
   return (
     <Layout>
