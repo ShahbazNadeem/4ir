@@ -512,7 +512,7 @@ export default function Index() {
               <div className="row">
                 <div className="col-lg-12 col-md-12 col-sm-12">
                   <div className="section4heading text-center">
-                    <H1 title="Give It a Try" className="section4h1" />
+                    <H1 title="Give It a Listen" className="section4h1" />
                   </div>
                 </div>
               </div>
