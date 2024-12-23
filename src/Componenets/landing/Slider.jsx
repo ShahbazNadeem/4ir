@@ -30,8 +30,8 @@ const Slider = ({ SliderData }) => {
           centeredSlides: true, // Centered slide for tablet screens
         },
         992: {
-          slidesPerView: 3,
-          spaceBetween: 40,
+          slidesPerView: 1,
+          spaceBetween: 10,
           centeredSlides: true, // Center the active slide for medium screens
         },
         1200: {
@@ -41,17 +41,16 @@ const Slider = ({ SliderData }) => {
         },
       }}
     >
-      {SliderData?.map((item, key) => (
-        <SwiperSlide key={key} className="custom-slide">
+      {SliderData?.map((item, index) => {
+        return(
+        <SwiperSlide key={index} className="custom-slide">
           <div className={`testimonial-card`}>
             <div className="d-flex align-items-center">
-              {item.img && (
                 <img
-                  src="/assets/landingimage/testimonial.png"
+                  src={item.img}
                   className="rounded-5 p-1"
                   alt="Client"
                 />
-              )}
               <div className="ms-4 testimonial-client">
                 <h5>{item?.clientName}</h5>
                 <h6>{item?.country}</h6>
@@ -62,7 +61,9 @@ const Slider = ({ SliderData }) => {
             </div>
           </div>
         </SwiperSlide>
-      ))}
+
+        )
+})}
     </Swiper>
   );
 };

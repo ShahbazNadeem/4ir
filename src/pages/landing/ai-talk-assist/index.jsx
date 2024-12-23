@@ -27,7 +27,9 @@ import Head from "next/head";
 import Model from "../../../Componenets/landing/Model/Model";
 import { FaPlay } from "react-icons/fa";
 import TawkToIntegration from '../../../Componenets/landing/TawkToIntegration';
-
+import jimImg from "@/images/landing/ai_talk_assist/JimThiel .png";
+import tobyImg from "@/images/landing/ai_talk_assist/TobyWoods.png";
+import carolImg from "@/images/landing/ai_talk_assist/CarolHuston.png";
 export default function Index() {
   const SecondBox = [
     {
@@ -78,97 +80,103 @@ export default function Index() {
       accordianid: "headingOne",
       collapseid: "collapseOne",
       datatargetid: "#collapseOne",
-      title: "How will AI Talk Assist benefit my business?",
+      title: "How Can Our AI Voice Calling Assistant Benefit My Business?",
       value: true,
       show: "show",
       heading:
-        "We prioritize the security of your data and customer interactions. Our AI Voice Calling Assistant employs robust security measures:",
+        "Our AI Voice Calling Assistant offers a multitude of benefits to businesses of all sizes:",
       ulitems: [
         {
           liItems:
-            "Data Encryption: Sensitive customer data is encrypted to prevent unauthorized access.",
+            "Enhanced Efficiency: Automate routine tasks, such as lead generation, customer follow-ups, and appointment scheduling, freeing up your team to focus on strategic initiatives.",
         },
         {
           liItems:
-            "Secure Cloud Infrastructure: Our platform is hosted on highly secure cloud infrastructure.",
+            "Increased Productivity: Handle a higher volume of calls simultaneously, maximizing your team's efficiency.",
         },
         {
           liItems:
-            "Regular Security Audits: We conduct regular security audits to identify and address potential vulnerabilities.",
+            "Improved Customer Experience: Deliver consistent, personalized interactions, leading to higher customer satisfaction and loyalty.",
         },
         {
           liItems:
-            "Compliance with Regulations: We adhere to industry-specific regulations and data privacy standards.",
+            "Cost Reduction: Lower operational costs by reducing the need for human agents and minimizing human error.",
+        },
+        {
+          liItems:
+            "Data-Driven Insights: Gain valuable insights into customer behavior and preferences, enabling data-driven decision-making.",
+        },
+        {
+          liItems:
+            "Scalability: Easily scale your operations to meet fluctuating demand without additional staffing.",
         },
       ],
-      heading2:
-        "By prioritizing security, we ensure the protection of your business and customer data.",
     },
     {
       id: 2,
       accordianid: "headingTwo",
       collapseid: "collapseTwo",
-      title: "How does it work?",
+      title: "How Does Our AI Voice Calling Assistant Work?",
       datatargetid: "#collapseTwo",
       value: false,
       heading:
-        "We prioritize the security of your data and customer interactions. Our AI Voice Calling Assistant employs robust security measures:",
+        "Our AI Voice Calling Assistant leverages advanced AI and NLP technologies to simulate human-like conversations. Here's a simplified breakdown:",
       ulitems: [
         {
           liItems:
-            "Data Encryption: Sensitive customer data is encrypted to prevent unauthorized access.",
+            "Text-to-Speech Conversion: The AI converts written scripts into natural-sounding speech.",
         },
         {
           liItems:
-            "Secure Cloud Infrastructure: Our platform is hosted on highly secure cloud infrastructure.",
+            "Speech Recognition: The system accurately recognizes and interprets spoken language, understanding intent and context.",
         },
         {
           liItems:
-            "Regular Security Audits: We conduct regular security audits to identify and address potential vulnerabilities.",
+            "Natural Language Processing: The AI analyzes the conversation, identifies keywords, and generates appropriate responses.",
         },
         {
           liItems:
-            "Compliance with Regulations: We adhere to industry-specific regulations and data privacy standards.",
+            "Real-time Response: The system processes information and responds in real-time, maintaining a fluid conversation.",
         },
       ],
-      heading2:
-        "By prioritizing security, we ensure the protection of your business and customer data.",
-    },
+   },
     {
       id: 3,
       accordianid: "headingThree",
       collapseid: "collapseThree",
-      title: "Is it easy to use?",
+      title: "Is Our AI Voice Calling Assistant Easy to Use?",
       datatargetid: "#collapseThree",
       value: false,
       heading:
-        "We prioritize the security of your data and customer interactions. Our AI Voice Calling Assistant employs robust security measures:",
+        "Yes, our AI Voice Calling Assistant is designed to be user-friendly and easy to implement:",
       ulitems: [
         {
           liItems:
-            "Data Encryption: Sensitive customer data is encrypted to prevent unauthorized access.",
+            "Intuitive Interface: Our user-friendly interface allows you to easily train and manage your AI agents.",
         },
         {
           liItems:
-            "Secure Cloud Infrastructure: Our platform is hosted on highly secure cloud infrastructure.",
+            "Pre-built Templates: Utilize our pre-built templates to quickly create and deploy effective call scripts.",
         },
         {
           liItems:
-            "Regular Security Audits: We conduct regular security audits to identify and address potential vulnerabilities.",
+            "Customizable AI Agents: Tailor your AI agents to match your brand voice and messaging.",
         },
         {
           liItems:
-            "Compliance with Regulations: We adhere to industry-specific regulations and data privacy standards.",
+            "Real-time Monitoring: Track AI performance and identify areas for improvement.",
+        },
+        {
+          liItems:
+            "Expert Support: Our dedicated support team is available to assist you with any questions or issues.",
         },
       ],
-      heading2:
-        "By prioritizing security, we ensure the protection of your business and customer data.",
     },
     {
       id: 4,
       accordianid: "headingFour",
       collapseid: "collapseFour",
-      title: "Is it secure?",
+      title: "How Secure is Our AI Voice Calling Assistant?",
       datatargetid: "#collapseFour",
       value: false,
       heading:
@@ -182,18 +190,7 @@ export default function Index() {
           liItems:
             "Secure Cloud Infrastructure: Our platform is hosted on highly secure cloud infrastructure.",
         },
-        {
-          liItems:
-            "Regular Security Audits: We conduct regular security audits to identify and address potential vulnerabilities.",
-        },
-        {
-          liItems:
-            "Compliance with Regulations: We adhere to industry-specific regulations and data privacy standards.",
-        },
       ],
-      heading2:
-        "By prioritizing security, we ensure the protection of your business and customer data.",
-
     },
   ];
   const IndustriesApi1 = [
@@ -275,44 +272,37 @@ export default function Index() {
   const SliderData = [
     {
       id: 1,
-      clientName: "Sarah Afzal",
-      country: "USA",
-      img: "/images/testimonial.png",
+      clientName: "Jim Thiel",
+      country: "Mortage Advisor",
+      img: '/assets/images/landing/ai_talk_assist/JimThiel .png',
       testimonial:
-        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest AI advancements without needing constant updates. It’s a true game-changer for our long-term growth and success!",
+        "Best of the best that about sums up my experience.",
     },
     {
       id: 2,
-      clientName: "Sarah Afzal",
-      country: "USA",
-      img: "/images/testimonial.png",
+      clientName: "Toby Woods",
+      country: "NorthStar Systems, LLC",
+      img: '/assets/images/landing/ai_talk_assist/TobyWoods.png',
       testimonial:
-        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest AI advancements without needing constant updates. It’s a true game-changer for our long-term growth and success!",
+        "There commitment to helping clients incorporate AI and stay updated with the latest technologies is evident. Working with them has been both fun and rewarding, saving me time and money. I highly recommend Fourth Industrial Revolution to any buisness looking to enhance its digital presence and operational efficiency.",
     },
     {
       id: 3,
-      clientName: "Sarah Afzal",
-      country: "USA",
-      img: "/images/testimonial.png",
+      clientName: "Carol Huston",
+      country: "True Story Realty",
+      img: "/assets/images/landing/ai_talk_assist/CarolHuston.png",
       testimonial:
-        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest AI advancements without needing constant updates. It’s a true game-changer for our long-term growth and success!",
+        "While many people are intimidated by AI, Barry has a way of making it practical and approachable. He's taen the mystery -- and the fear--out of it, showing us how AI can be a powerful tool in our arsenal. Thanks to Barry, we now see AI as a game-changer that frees up our time so we can focus on what truly matters--our clients",
     },
     {
       id: 4,
-      clientName: "Sarah Afzal",
-      country: "USA",
-      img: "/images/testimonial.png",
+      clientName: "KaiB",
+      country: "True Story Realty",
+      img: "/assets/landingimage/Ellipse 204.png",
       testimonial:
-        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest AI advancements without needing constant updates. It’s a true game-changer for our long-term growth and success!",
+        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest",
     },
-    {
-      id: 5,
-      clientName: "Sarah Afzal",
-      country: "USA",
-      img: "/images/testimonial.png",
-      testimonial:
-        "4IR has completely transformed the way we approach our business operations. The platform's self-learning capabilities ensure we’re always using the latest AI advancements without needing constant updates. It’s a true game-changer for our long-term growth and success!",
-    },
+
   ];
   const WhyChooseAI = [
     {

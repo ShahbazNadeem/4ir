@@ -41,25 +41,25 @@ export default function AiVoiceCalling() {
       id: 2,
       img: "/assets/landingimage/vectors/icon-2.png",
       title: "Manual Outreach",
-      para: "Wasting time on low-quality leads.",
+      para: "Time-consuming and prone to human error.",
     },
     {
       id: 3,
       img: "/assets/landingimage/vectors/icon-3.png",
       title: "Delayed Follow-ups",
-      para: "Wasting time on low-quality leads.",
+      para: " Losing potential customers due to slow response times.",
     },
     {
       id: 4,
       img: "/assets/landingimage/vectors/icon-4.png",
       title: "Inconsistent Messaging",
-      para: "Wasting time on low-quality leads.",
+      para: "Delivering inconsistent brand messaging.",
     },
     {
       id: 5,
       img: "/assets/landingimage/vectors/icon-5.png",
       title: "Futile Lead Qualification",
-      para: "Wasting time on low-quality leads.",
+      para: "Struggling to keep up with increasing demand.",
     },
   ];
   const SeamslessApi = [
@@ -115,37 +115,37 @@ export default function AiVoiceCalling() {
       id: 1,
       title: "Real Estate",
       image: "/assets/landingimage/Real estate.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Generate leads for property listings, schedule showings, and follow up with potential buyers.",
     },
     {
       id: 2,
       title: "Automotive",
       image: "/assets/landingimage/automotive 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: " Identify potential car buyers, book test drives, and provide personalized product information.",
     },
     {
       id: 3,
       title: "Financial Services",
       image: "/assets/landingimage/financial 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Acquire new customers, schedule consultations, and provide financial advice",
     },
     {
       id: 4,
       title: "Insurance",
       image: "/assets/landingimage/insurance 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: " Generate leads for insurance policies, schedule appointments, and follow up with potential clients.",
     },
     {
       id: 5,
       title: "Healthcare Providers",
       image: "/assets/landingimage/first-aid-kit 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Schedule appointments, remind patients of upcoming appointments, and follow up on patient satisfaction.",
     },
     {
       id: 6,
       title: "Pharmaceutical",
       image: "/assets/landingimage/pharmacy 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Promote new drugs, schedule doctor visits, and provide product information to healthcare professionals.",
     },
   ];
   const aiPoweredIndustriescard2 = [
@@ -153,25 +153,25 @@ export default function AiVoiceCalling() {
       id: 1,
       title: "Collage and Universities",
       image: "/assets/landingimage/university 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: " Recruit new students, schedule campus tours, and follow up with prospective students.",
     },
     {
       id: 2,
       title: "Online Education Providers",
       image: "/assets/landingimage/gratitude 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Generate leads for online courses, schedule consultations, and provide course information.",
     },
     {
       id: 3,
       title: "Software Companies",
       image: "/assets/landingimage/computer-business 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Generate leads for software products, schedule demos, and follow up with potential customers.",
     },
     {
       id: 4,
       title: "Hardware Companies",
       image: "/assets/landingimage/configuration 1.png",
-      para: "Identify potential car buyers, book test drives, and provide personalized product information.",
+      para: "Generate leads for hardware products, schedule consultations, and provide product information.",
     },
   ];
   const SliderDataLead = [

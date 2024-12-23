@@ -74,10 +74,6 @@
   line-height: 23px !important;
 }
 
-.testimonial-card img {
-  background-color: var(--secondary);
-}
-
 .swiper-wrapper {
   align-items: center;
 }
@@ -276,7 +272,8 @@
   background-color: #00000021;
 }
 .swiper-slide-next .testimonial-card h6 {
-font-size: 20px !important;
+font-size: 19px !important;
+line-height: 20px !important;
 }
 
 
@@ -493,7 +490,9 @@ font-size: 20px !important;
     padding: 50px 25px;
     margin: 5px 5px;
   }
-
+.custom-slide{
+  width: 100% !important;
+}
   .section2 {
     padding: 50px 0px !important;
   }
