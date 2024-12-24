@@ -139,7 +139,7 @@ export default function Index() {
             "Real-time Response: The system processes information and responds in real-time, maintaining a fluid conversation.",
         },
       ],
-   },
+    },
     {
       id: 3,
       accordianid: "headingThree",
@@ -341,6 +341,7 @@ export default function Index() {
         "Focus on growing your business while we handle the technical setup for a smooth launch.",
     },
   ];
+  const [activeIndex, setActiveIndex] = useState(null);
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -377,7 +378,7 @@ export default function Index() {
       </Head>
 
       <Layout>
-        {showModal && <Model close={handleOpenModal} margin='100px' />}
+        {showModal && <Model close={handleOpenModal} margin='' />}
         <TawkToIntegration />
         <section>
           <div className="main-wrapper">
@@ -511,6 +512,7 @@ export default function Index() {
                 <div className="col-lg-12 col-md-12 col-sm-12">
                   <div className="section4-img d-flex justify-content-center">
                     <div
+                      className=""
                       onClick={() => {
                         handlePlayPause();
                         toggleAnimation();
@@ -519,7 +521,7 @@ export default function Index() {
                       {isAnimating ? (
 
                         <div
-                          className={`audio-button ${isAnimating ? "animating" : ""}`}
+                          className={`audio-button cursor-pointer ${isAnimating ? "animating" : ""}`}
                         >
                           <div className="wave-icon">
                             <div className="wave wave1"></div>
@@ -530,7 +532,7 @@ export default function Index() {
                           </div>
                         </div>
                       ) : (
-                        <div className="play-btn d-flex justify-content-center">
+                        <div className="play-btn d-flex justify-content-center ">
                           <FaPlay size={100} color="blue" className="ms-2" />
                         </div>
                       )}
@@ -843,10 +845,16 @@ export default function Index() {
                   <div className="frequently-question-content">
                     <H2 title="Frequently Asked Question" />
                     <Para title="Book a Demo if you have any more questions." />
-                    <div class="accordion" id="accordionExample">
-                      {Accordianapi?.map((items, index) => {
-                        return <Accordian items={items} key={index} content={true} />;
-                      })}
+                    <div className="accordion" id="accordionExample">
+                      {Accordianapi?.map((items, index) => (
+                        <Accordian
+                          items={items}
+                          key={index}
+                          content={true}
+                          activeIndex={activeIndex}
+                          setActiveIndex={setActiveIndex}
+                        />
+                      ))}
                     </div>
                   </div>
                 </div>

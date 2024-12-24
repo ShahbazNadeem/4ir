@@ -533,6 +533,7 @@ border: none;
   padding: 50px;
   border-radius: 50%;
   width: fit-content;
+  cursor: pointer;
 }
 
 .section4-img .play-btn svg {

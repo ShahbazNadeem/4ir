@@ -1,23 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import H5 from "../Typography/H5";
 import H6 from "../Typography/H6";
 import H3 from "../Typography/H3";
 import { FiPlus } from "react-icons/fi";
 import { TiMinus } from "react-icons/ti";
-// import "../widgets.css";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-const Accordian = ({ items, content, key }) => {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  // Ensure the first accordion item is active by default if items.value is true
-  useEffect(() => {
-    if (items.value) {
-      setActiveIndex(items.id);
-    }
-  }, [items]);
-
+const Accordian = ({ items, activeIndex, setActiveIndex, key }) => {
   const handleClick = () => {
     setActiveIndex(activeIndex === items.id ? null : items.id);
   };
@@ -34,17 +24,7 @@ const Accordian = ({ items, content, key }) => {
         >
           <div className="d-flex justify-content-between align-items-center">
             <H3 title={items.title} />
-            {content ? (
-              <>{activeIndex === items.id ? <TiMinus /> : <FiPlus />}</>
-            ) : (
-              <div className="arrow">
-                {activeIndex === items.id ? (
-                  <MdOutlineKeyboardArrowUp className="downarrow" size={25} />
-                ) : (
-                  <MdOutlineKeyboardArrowDown size={25} />
-                )}
-              </div>
-            )}
+            {activeIndex === items.id ? <TiMinus /> : <FiPlus />}
           </div>
         </button>
       </h2>
@@ -58,18 +38,14 @@ const Accordian = ({ items, content, key }) => {
       >
         <div className="accordion-body">
           <H5 title={items.heading} />
-          {content && (
-            <>
-              <ul style={{ color: "white" }}>
-                {items.ulitems?.map((ulitem, ulIndex) => (
-                  <li key={`${items.accordianid}-ulitem-${ulIndex}`}>
-                    {ulitem.liItems}
-                  </li>
-                ))}
-              </ul>
-              <H6 title={items.heading2} />
-            </>
-          )}
+          <ul style={{ color: "white" }}>
+            {items.ulitems?.map((ulitem, ulIndex) => (
+              <li key={`${items.accordianid}-ulitem-${ulIndex}`}>
+                {ulitem.liItems}
+              </li>
+            ))}
+          </ul>
+          <H6 title={items.heading2} />
         </div>
       </div>
     </div>
