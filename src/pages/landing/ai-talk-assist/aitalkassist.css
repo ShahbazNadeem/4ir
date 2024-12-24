@@ -541,7 +541,7 @@ border: none;
 }
 
 .accordion-item:first-child {
-  background: none !important;
+  /* background: none !important; */
 }
 .swiper-pagination-bullet{
   background-color: white !important;
@@ -1773,15 +1773,6 @@ font-size: 71px !important;
   .section2heading {
     margin-bottom: 10px !important;
   }
-  /* .youtube-video-container {
-    padding-top: 100%; 
-  } */
-
-  /* .play-button{
-    width: 50px;
-    height: 50px;
-  } */
-
   .section2heading h5 {
     font-size: 16px !important;
     line-height: 25px !important;
@@ -1796,12 +1787,6 @@ font-size: 71px !important;
     padding: 0px 3px !important;
 
   }
-  /* .section4-img .play-btn{
-    padding: -10px 30px !important;
-  }
-  .section4-img .play-btn svg{
-      width: 30px;
-  } */
   .card3 .card3-body {
     min-height: 144px !important;
 }

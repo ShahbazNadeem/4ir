@@ -1,5 +1,5 @@
 import Layout from "../../../Componenets/landing/layout";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Para from "../../../Componenets/landing/Typography/Para";
 import H6 from "../../../Componenets/landing/Typography/H6";
 import { LuArrowRight } from "react-icons/lu";
@@ -21,7 +21,6 @@ import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null);
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -255,6 +254,7 @@ export default function AiVoiceCalling() {
         "Our AI models can be trained on a variety of data sources, including your existing sales data, industry-specific data, and public datasets.",
     },
   ];
+  const [activeIndex, setActiveIndex] = useState(Accordianapi[0].id);
   
 return (
   <>

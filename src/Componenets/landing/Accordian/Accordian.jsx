@@ -4,10 +4,9 @@ import H6 from "../Typography/H6";
 import H3 from "../Typography/H3";
 import { FiPlus } from "react-icons/fi";
 import { TiMinus } from "react-icons/ti";
-import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const Accordian = ({ items, activeIndex, setActiveIndex, key }) => {
+  
   const handleClick = () => {
     setActiveIndex(activeIndex === items.id ? null : items.id);
   };

@@ -341,7 +341,7 @@ export default function Index() {
         "Focus on growing your business while we handle the technical setup for a smooth launch.",
     },
   ];
-  const [activeIndex, setActiveIndex] = useState(null);
+  // const [activeIndex, setActiveIndex] = useState(null);
   const [audio, setAudio] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -369,6 +369,7 @@ export default function Index() {
   const toggleAnimation = () => {
     setIsAnimating(!isAnimating);
   };
+  const [activeIndex, setActiveIndex] = useState(Accordianapi[0].id);
   return (
     <>
 

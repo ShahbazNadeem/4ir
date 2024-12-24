@@ -1,10 +1,28 @@
-import React from 'react'
+import React ,{useRef} from 'react'
 import SiteLogo from '../SiteLogo'
 import { FaLinkedin } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_3of8qbv', 'template_k21177h', form.current, {
+        publicKey: '_f0VkvxBETP7w2sgt',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <section>
       <div className='Footer-wrapper text-white'>
@@ -42,12 +60,12 @@ const Footer = () => {
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12 ">
                 <h5 className='footer-h5'>Subscribe for update</h5>
-                <form action="">
-                  <input type="text" className="form-control input" placeholder="Name" />
-                  <input type="number" className="form-control input" placeholder="Phone Number" />
-                  <input type="email" className="form-control input" placeholder="Email Address" />
+                <form action="" ref={form} onSubmit={sendEmail}>
+                  <input type="text" className="form-control input" placeholder="Name" name="user_name"/>
+                  <input type="number" className="form-control input" placeholder="Phone Number" name="user_number"/>
+                  <input type="email" className="form-control input" placeholder="Email Address" name="user_email"/>
 
-                  <button className='btn-1 footer-btn'>Subscribe</button>
+                  <button type="submit" value="Send" className='btn-1 footer-btn'>Subscribe</button>
                 </form>
               </div>
             </div>
