@@ -21,6 +21,7 @@ import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -736,7 +737,11 @@ return (
             <div className="">
               {Accordianapi?.map((items, index) => {
                 return (
-                  <Accordian items={items} key={index} content={true} />
+                  <Accordian items={items}
+                  key={index}
+                  content={true}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex} />
                 );
               })}
             </div>
