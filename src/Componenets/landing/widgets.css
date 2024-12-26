@@ -140,10 +140,8 @@
 
 .accordion-button:focus {
   box-shadow: unset !important;
-  /* Remove focus shadow on the button */
 }
 
-/* Use :focus-within to style the parent .accordion-item */
 .accordion-item:focus-within {
   border: 1px solid var(--primary) !important;
   border-radius: 10px;
@@ -774,4 +772,12 @@ line-height: 20px !important;
     width: 50px;
     height: 50px;
   }
+  .accordion-button h3 {
+    font-size:16px !important;
+    margin: 0px !important;
+    width: 90% !important;
+} 
+  .accordion-button svg {
+    width: 10% !important;
+} 
 }

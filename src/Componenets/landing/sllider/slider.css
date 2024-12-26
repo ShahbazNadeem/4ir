@@ -83,18 +83,20 @@
 
 @media screen and (max-width: 576px) {
     .swiper-slide {
-        padding: 15px;
-        height: 100px !important;
+        padding: 10px;
+        width:32% !important;
+        height: 120px !important;
+        margin-right:10px !important;
     }
 
     .slider2-main-body h5 {
-        font-size: 10px !important;
+        font-size: 12px !important;
         line-height: 12px !important;
     }
 
 
     .slider2-main-body p {
-        font-size: 6px !important;
+        font-size: 10px !important;
         line-height: 10px !important;
     }
 

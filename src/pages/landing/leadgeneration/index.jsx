@@ -19,6 +19,7 @@ import Slider2 from "../../../Componenets/landing/sllider/Slider2";
 import CarolHuston from "@/images/landing/ai_talk_assist/CarolHuston.png"
 import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
+import TawkToIntegration from '../../../Componenets/landing/TawkToIntegration';
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
 
@@ -263,6 +264,7 @@ return (
     </Head>
     <Layout>
       {showModal && <Model close={handleCloseModal} />}
+      <TawkToIntegration />
       <section className="banner">
         <div className="banenr-wrapper">
         <div class="lines">

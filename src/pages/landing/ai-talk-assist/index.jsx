@@ -380,7 +380,7 @@ export default function Index() {
 
       <Layout>
         {showModal && <Model close={handleOpenModal} margin='' />}
-        <TawkToIntegration />
+        <TawkToIntegration /> 
         <section>
           <div className="main-wrapper">
             <div className="container-fluid">

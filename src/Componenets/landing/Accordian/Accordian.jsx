@@ -23,7 +23,7 @@ const Accordian = ({ items, activeIndex, setActiveIndex, key }) => {
         >
           <div className="d-flex justify-content-between align-items-center">
             <H3 title={items.title} />
-            {activeIndex === items.id ? <TiMinus /> : <FiPlus />}
+            {activeIndex === items.id ? <TiMinus/> : <FiPlus />}
           </div>
         </button>
       </h2>
