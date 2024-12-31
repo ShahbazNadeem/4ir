@@ -1959,6 +1959,7 @@ font-size: 71px !important;
 
   .figure img {
     max-width: 30% !important;
+    height: auto !important;
   }
 
   .figure1 {
