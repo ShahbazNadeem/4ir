@@ -386,9 +386,9 @@ export default function Index() {
             <div className="container-fluid">
               <div class="main-banner">
                 <div className="row">
-                  <div className="col-lg-6 col-md-12 col-sm-12 colum1">
+                  <div className="col-lg-6 col-md-12 col-sm-12 colum1"> 
                     <div className="figure">
-                      <SiteLogo width={"66%"} height={"fit-content"} />
+                      <SiteLogo width={"66%"} height={"auto"} />
                     </div>
                     <H1
                       title="Supercharge Your Sales Teams With "
