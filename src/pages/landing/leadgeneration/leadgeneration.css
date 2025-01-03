@@ -756,6 +756,18 @@ line-height: 52px !important;
   font-size: 3.1rem !important;
   line-height: 57px !important;
 }
+.bookDemo-content h2,p{
+  text-align:center !important;
+}
+.bookDemo-content h2 span{
+  color :var(--primary) ;
+}
+.bookDemo-content iframe{
+  margin-top:20px
+}
+.question-heaing{
+  padding-top:50px;
+}
 @media screen and (min-width: 1400px) {
   .banner-logo-1{
     margin-top : 30px !important;
@@ -796,6 +808,7 @@ line-height: 52px !important;
   .Salesaicards{
     width: 430px !important;
   }
+  
 }
 
 @media screen and (max-width: 1399px) {

@@ -568,6 +568,16 @@ font-size: 10px !important;
 .testimonial-card img{
   max-width: 100px;
 }
+
+.bookDemo-content h2,p{
+  text-align:center !important;
+}
+.frequently-question-content{
+  padding-top:50px;
+}
+.frequently-question-content h2,p{
+  text-align:center !important;
+}
 @media screen and (min-width: 1400px) {
   .SecondSecBox-content {
     height: 130px !important;
@@ -684,6 +694,9 @@ font-size: 10px !important;
     font-size: 56px !important;
   }
 
+  .footer-h5 {
+    font-size: 1.7rem !important;
+  }
   h5 {
     font-size: 1.8rem !important;
     line-height: 2.6rem !important;

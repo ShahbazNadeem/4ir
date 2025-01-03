@@ -731,7 +731,24 @@ return (
       <section>
         <div className="question-wrapper">
           <div className="container">
-            <div className="question-heaing text-center">
+          <div className="row">
+
+              <div className="col-lg-12">
+              <div className="bookDemo-content">
+                    <H2 title="Book a" spanTitle="Demo" breakpoint={true} />
+                    <Para title="Ready to see AI Talk Assist in action? Schedule your FREE demo now and discover how it can transform your customer interactions and boost productivity! Pick a time that works best for you below." />
+                    <iframe
+                      className="calendly-inline-widget"
+                      src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+                      style={{ minWidth: "100%", height: "500px" }}
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+              </div>
+
+              <div className="col-lg-12">
+
+              <div className="question-heaing text-center">
               <H2 title="Frequently Asked Questions" />
               <p>Contact us via Support if you have any more questions.</p>
               <button className="btn-2" onClick={handleOpenModal}>Book a Consultation</button>
@@ -747,6 +764,10 @@ return (
                 );
               })}
             </div>
+              </div>
+
+          </div>
+            
           </div>
         </div>
       </section>

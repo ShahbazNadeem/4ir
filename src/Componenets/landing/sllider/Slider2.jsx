@@ -44,10 +44,10 @@ const Slider2 = () => {
                 }}
                 loop={true}
                 autoplay={{
-                    delay: 500,
+                    delay: 2000,
                     disableOnInteraction: false,
                 }}
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]} 
                 className="mySwiper"
             >
                 {SliderDataLead?.map((item, index) => (

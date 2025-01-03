@@ -842,7 +842,21 @@ export default function Index() {
           <div className="asked-question-wrapper">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6">
+                
+                <div className="col-lg-12">
+                  <div className="bookDemo-content">
+                    <H2 title="Book a" spanTitle="Demo" breakpoint={true} />
+                    <Para title="Ready to see AI Talk Assist in action? Schedule your FREE demo now and discover how it can transform your customer interactions and boost productivity! Pick a time that works best for you below." />
+                    <iframe
+                      className="calendly-inline-widget"
+                      src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
+                      style={{ minWidth: "100%", height: "500px" }}
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div className="col-lg-12">
                   <div className="frequently-question-content">
                     <H2 title="Frequently Asked Question" />
                     <Para title="Book a Demo if you have any more questions." />
@@ -857,18 +871,6 @@ export default function Index() {
                         />
                       ))}
                     </div>
-                  </div>
-                </div>
-                <div className="col-lg-6">
-                  <div className="bookDemo-content">
-                    <H2 title="Book a" spanTitle="Demo" breakpoint={true} />
-                    <Para title="Ready to see AI Talk Assist in action? Schedule your FREE demo now and discover how it can transform your customer interactions and boost productivity! Pick a time that works best for you below." />
-                    <iframe
-                      className="calendly-inline-widget"
-                      src="https://calendly.com/bkrevoy/60-minute-meeting-for-4ir-consulting?background_color=1a1a1a&text_color=ffffff"
-                      style={{ minWidth: "100%", height: "500px" }}
-                      loading="lazy"
-                    ></iframe>
                   </div>
                 </div>
               </div>
