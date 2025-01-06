@@ -427,16 +427,16 @@ export default function Index() {
             </div>
           </div>
         </section>
-        
+
         <section>
           <div className="second-wrapper">
             <div className="container">
               <div className="second-wrapper-content">
-                <p>Sales can be tough — especially when you're juggling a mountain of leads, customer expectations, and an ever-changing market. If you're feeling the pressure, you're not alone. Many businesses face challenges that slow down growth and drain resources.</p>
+                <p>Sales can be tough — especially when you are juggling a mountain of leads, customer expectations, and an ever-changing market. If you are feeling the pressure, you are not alone. Many businesses face challenges that slow down growth and drain resources.</p>
                 <div className="second-wrapper-cards">
                 {SecondBox?.map((item) => (
                       <div key={item.id} className="second-wrapper-innerCards">
-                        <Image src={Ellipse208} />
+                        <Image src={Ellipse208} alt="cardimg"/>
                         <h4>{item.title}</h4>
                       </div>
                  ))}
