@@ -28,6 +28,7 @@ import Model from "../../../Componenets/landing/Model/Model";
 import { FaPlay } from "react-icons/fa";
 import TawkToIntegration from '../../../Componenets/landing/TawkToIntegration';
 import jimImg from "@/images/landing/ai_talk_assist/JimThiel .png";
+import Ellipse208 from "@/images/Ellipse208.png";
 import tobyImg from "@/images/landing/ai_talk_assist/TobyWoods.png";
 import carolImg from "@/images/landing/ai_talk_assist/CarolHuston.png";
 export default function Index() {
@@ -427,7 +428,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="section2">
+        {/* <section className="section2">
           <div className="second2-wrapper">
             <div className="container">
               <div class="second-session">
@@ -452,8 +453,31 @@ export default function Index() {
               </div>
             </div>
           </div>
+        </section> */}
+        <section>
+          <div className="second-wrapper">
+            <div className="container">
+              <div className="second-wrapper-content">
+                <p>Sales can be tough — especially when you're juggling a mountain of leads, customer expectations, and an ever-changing market. If you're feeling the pressure, you're not alone. Many businesses face challenges that slow down growth and drain resources.</p>
+
+                <div className="second-wrapper-cards">
+
+                {SecondBox?.map((item) => (
+                      <div key={item.id} className="second-wrapper-innerCards">
+                        <Image src={Ellipse208} />
+                        <h4>{item.title}</h4>
+                      </div>
+                 ))}
+                </div>
+
+              </div>
+            </div>
+          </div>
         </section>
 
+
+
+        
         <section>
           <div className="section3-wrapper">
             <div className="container">
