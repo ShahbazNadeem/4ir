@@ -427,41 +427,13 @@ export default function Index() {
             </div>
           </div>
         </section>
-
-        {/* <section className="section2">
-          <div className="second2-wrapper">
-            <div className="container">
-              <div class="second-session">
-                <div className="row">
-                  <div className="section2heading d-flex justify-content-center">
-                    <H5
-                      title="Sales can be tough — especially when you're juggling a mountain of leads, customer expectations, and an ever-changing market. If you're feeling the pressure, you're not alone. Many businesses face challenges that slow down growth and drain resources."
-                      className="text-capitalize text-center section2h5"
-                    />
-                  </div>
-                </div>
-                <div className="row section2center">
-                  <SecondSecBox SecondBox={SecondBox} />
-                </div>
-                <div className="section2bottom">
-                  <H6
-                    title="Are these common sales challenges holding your business back?"
-                    className="section2h6"
-                  />
-                  <button className="btn-1" onClick={handleOpenModal}>Its Time To Make A Change</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
+        
         <section>
           <div className="second-wrapper">
             <div className="container">
               <div className="second-wrapper-content">
                 <p>Sales can be tough — especially when you're juggling a mountain of leads, customer expectations, and an ever-changing market. If you're feeling the pressure, you're not alone. Many businesses face challenges that slow down growth and drain resources.</p>
-
                 <div className="second-wrapper-cards">
-
                 {SecondBox?.map((item) => (
                       <div key={item.id} className="second-wrapper-innerCards">
                         <Image src={Ellipse208} />
