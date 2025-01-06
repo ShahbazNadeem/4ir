@@ -44,7 +44,9 @@ const Accordian = ({ items, activeIndex, setActiveIndex, key }) => {
               </li>
             ))}
           </ul>
+          {items.para1 && <p>{items.para1}</p>}
           <H6 title={items.heading2} />
+          {items.para2 && <p>{items.para2}</p>}
         </div>
       </div>
     </div>

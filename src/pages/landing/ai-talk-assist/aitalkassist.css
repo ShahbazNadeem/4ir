@@ -350,8 +350,9 @@ letter-spacing: 0.03em !important;
   height: auto;
 }
 
-.MapSectiondiv {
-  margin-top: 100px;
+.Map-main-div {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .section6para1 {
@@ -359,7 +360,7 @@ letter-spacing: 0.03em !important;
 }
 
 .section6lastRow {
-  background-image: url("/public/landingimages/Rectangle.png");
+  background-image: url("../../../../public/assets/images/RectangleBox.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
@@ -586,7 +587,16 @@ border: none;
 .section4-img .play-btn svg {
   color: var(--secondary) !important;
 }
-
+.section6-wrapper-accordian {
+  padding: 50px 0px ;
+}
+.section6-wrapper-accordian .accordion-button {
+  /* background: #3C175773 !important; */
+}
+.section6-wrapper-accordian p{
+ text-align:left !important;
+ margin-bottom:10px !important;
+}
 .accordion-item:first-child {
   /* background: none !important; */
 }
@@ -1828,9 +1838,6 @@ line-height: 20px !important;
     padding: 20px 20px !important;
     font-size: 14px;
   }
-  .MapSectiondiv img{
-    max-width: 80% !important;
-  }
   .section7h2 {
     margin-bottom: 30px;
   }
@@ -1964,10 +1971,6 @@ line-height: 20px !important;
 
   .main-body {
     margin-top: 60px !important;
-  }
-
-  .MapSectiondiv {
-    margin-top: 50px;
   }
 
   .frequently-question-content>h2 {
@@ -2265,9 +2268,6 @@ line-height: 20px !important;
 
   .section2bottom button {
     margin-top: 20px !important;
-  }
-  .MapSectiondiv img{
-    max-width: 100% !important;
   }
   .card3 {
     max-width: 48% !important;

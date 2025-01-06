@@ -15,6 +15,7 @@ import Accordian from "../../../Componenets/landing/Accordian/Accordian";
 import cardsStats from "../../../../public/assets/landingimage/cardsStats.png";
 import Productstats from "../../../../public/assets/landingimage/ProductStat.png";
 import MapSection from "../../../../public/assets/landingimage/vectors/MapSection.png";
+import usaMap from "@/images/usaMap.png"
 import H4 from "../../../Componenets/landing/Typography/H4";
 import { GiSevenPointedStar } from "react-icons/gi";
 import Image from "next/image";
@@ -117,9 +118,9 @@ export default function Index() {
       id: 2,
       accordianid: "headingTwo",
       collapseid: "collapseTwo",
-      title: "How Does Our AI Voice Calling Assistant Work?",
       datatargetid: "#collapseTwo",
       value: false,
+      title: "How Does Our AI Voice Calling Assistant Work?",
       heading:
         "Our AI Voice Calling Assistant leverages advanced AI and NLP technologies to simulate human-like conversations. Here's a simplified breakdown:",
       ulitems: [
@@ -145,9 +146,9 @@ export default function Index() {
       id: 3,
       accordianid: "headingThree",
       collapseid: "collapseThree",
-      title: "Is Our AI Voice Calling Assistant Easy to Use?",
       datatargetid: "#collapseThree",
       value: false,
+      title: "Is Our AI Voice Calling Assistant Easy to Use?",
       heading:
         "Yes, our AI Voice Calling Assistant is designed to be user-friendly and easy to implement:",
       ulitems: [
@@ -177,9 +178,9 @@ export default function Index() {
       id: 4,
       accordianid: "headingFour",
       collapseid: "collapseFour",
-      title: "How Secure is Our AI Voice Calling Assistant?",
       datatargetid: "#collapseFour",
       value: false,
+      title: "How Secure is Our AI Voice Calling Assistant?",
       heading:
         "We prioritize the security of your data and customer interactions. Our AI Voice Calling Assistant employs robust security measures:",
       ulitems: [
@@ -197,21 +198,30 @@ export default function Index() {
   const IndustriesApi1 = [
     {
       id: 1,
-      heading: "Real Estate",
-      title1: "Automated Property Tours:",
-      itle2: "Lead Qualification and Follow-Up: ",
+      accordianid: "headingFive",
+      collapseid: "collapseFive",
+      datatargetid: "#collapseFive",
+      value: true,
+      show: "show",
+      title: "Real Estate",
+      heading: "Automated Property Tours:",
+      heading2: "Lead Qualification and Follow-Up: ",
       para1:
         "AI can guide potential buyers through virtual property tours, answering questions and providing detailed information.",
       para2:
         "AI can efficiently qualify leads, schedule appointments, and follow up with interested parties.",
-      icon: "/assets/landingimage/vectors/Vector1.png",
+      // icon: "/assets/landingimage/vectors/Vector1.png",
       layout: true,
     },
     {
       id: 2,
-      heading: "Financial Services",
-      title1: "Customer Support and Inquiries:",
-      title2: "Fraud Detection and Prevention:",
+      accordianid: "headingSix",
+      collapseid: "collapseSic",
+      datatargetid: "#collapseSix",
+      value: false,
+      title: "Financial Services",
+      heading: "Customer Support and Inquiries:",
+      heading2: "Fraud Detection and Prevention:",
       para1:
         "AI can handle a wide range of customer inquiries, from account balances to loan applications.",
       para2:
@@ -221,9 +231,13 @@ export default function Index() {
     },
     {
       id: 3,
-      heading: "Healthcare",
-      title1: "Patient Appointment Scheduling:",
-      title2: "Telehealth Consultations:",
+      accordianid: "headingSeven",
+      collapseid: "collapseSeven",
+      datatargetid: "#collapseSeven",
+      value: false,
+      title: "Healthcare",
+      heading: "Patient Appointment Scheduling:",
+      heading2: "Telehealth Consultations:",
       para1:
         "AI can automate appointment scheduling, reminders, and confirmations.",
       para2:
@@ -231,13 +245,15 @@ export default function Index() {
       icon: "/assets/landingimage/vectors/vector3.png",
       layout: true,
     },
-  ];
-  const IndustriesApi2 = [
     {
       id: 4,
-      heading: "E-commerce",
-      title1: "Customer Service and Support:",
-      title2: "Sales and Upselling:",
+      accordianid: "headingEight",
+      collapseid: "collapseEight",
+      datatargetid: "#collapseEight",
+      value: false,
+      title: "E-commerce",
+      heading: "Customer Service and Support:",
+      heading2: "Sales and Upselling:",
       para1:
         "AI-powered chatbots can assist customers with product information, order tracking, and returns.",
       para2:
@@ -247,21 +263,29 @@ export default function Index() {
     },
     {
       id: 5,
-      heading: "Education",
-      title1: "Student Support and Advising:",
-      title2: "Online Tutoring:",
+      accordianid: "headingNine",
+      collapseid: "collapseNine",
+      datatargetid: "#collapseNine",
+      value: false,
+      title: "Education",
+      heading: "Student Support and Advising:",
+      heading2: "Online Tutoring:",
       para1:
         "AI can provide students with academic advice, answer questions, and offer guidance on course selection.",
       para2:
         "AI-powered tutoring systems can offer personalized learning experiences, adapting to each student's needs.",
       icon: "/assets/landingimage/vectors/Vector5.png",
-      layout: true,
+      // layout: true,
     },
     {
       id: 6,
-      heading: "Telecommunications",
-      title1: "Customer Onboarding and Support:",
-      title2: "Sales and Upselling:",
+      accordianid: "headingTen",
+      collapseid: "collapseTen",
+      datatargetid: "#collapseTen",
+      value: false,
+      title: "Telecommunications",
+      heading: "Customer Onboarding and Support:",
+      heading2: "Sales and Upselling:",
       para1:
         "AI can guide customers through the onboarding process, troubleshoot issues, and provide technical support.",
       para2:
@@ -270,6 +294,7 @@ export default function Index() {
       layout: true,
     },
   ];
+  
   const SliderData = [
     {
       id: 1,
@@ -371,6 +396,7 @@ export default function Index() {
     setIsAnimating(!isAnimating);
   };
   const [activeIndex, setActiveIndex] = useState(Accordianapi[0].id);
+  const [activeIndestryIndex, setActiveIndestryIndex] = useState(IndustriesApi1[0].id);
   return (
     <>
 
@@ -748,23 +774,29 @@ export default function Index() {
               </div>
 
               <div className="row">
-                <Card1 content={IndustriesApi1} layout={true} />
+              <div className="accordion section6-wrapper-accordian" id="accordionExample">
+                      {IndustriesApi1?.map((items, index) => (
+                        <Accordian
+                          items={items}
+                          key={index}
+                          content={true}
+                          activeIndex={activeIndestryIndex}
+                          setActiveIndex={setActiveIndestryIndex}
+                        />
+                      ))}
+                    </div>
               </div>
 
               <div className="row">
-                <div className="col-lg-12 MapSectiondiv">
+                <div className="col-lg-12 Map-main-div">
                   <figure>
                     <Image
-                      src={MapSection}
+                      src={usaMap}
                       alt="Map Section"
                       className="MapSection"
                     />
                   </figure>
                 </div>
-              </div>
-
-              <div className="row">
-                <Card1 content={IndustriesApi2} layout={true} />
               </div>
 
               <div className="row">
