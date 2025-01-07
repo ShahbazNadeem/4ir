@@ -675,7 +675,7 @@ return (
             />
             <div className="aifuture-card-main">
                     {FutureCardapi?.map((items, index) => {
-                         return <div className="aifuture-card ">
+                         return <div className="aifuture-card" key={index}>
                                     <figure>
                                       <Image src={items.img} alt="img" />
                                     </figure>
