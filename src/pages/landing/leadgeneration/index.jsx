@@ -8,7 +8,6 @@ import YoutubeVideo from "../../../Componenets/landing/YoutubeVideo";
 import H2 from "../../../Componenets/landing/Typography/H2";
 import Card2 from "../../../Componenets/landing/cards/Card2";
 import Card4 from "../../../Componenets/landing/cards/Card4";
-import Card3 from "../../../Componenets/landing/cards/Card3";
 import Model from "../../../Componenets/landing/Model/Model";
 import Head from "next/head";
 import AiPoweredCard from "../../../Componenets/landing/aiPoweredcard/aiPoweredCard";
@@ -19,6 +18,10 @@ import Slider2 from "../../../Componenets/landing/sllider/Slider2";
 import CarolHuston from "@/images/landing/ai_talk_assist/CarolHuston.png"
 import JimThiel from "@/images/landing/ai_talk_assist/JimThiel .png"
 import TobyWoods from "@/images/landing/ai_talk_assist/TobyWoods.png"
+import selective from "@/images/landing/selective.png"
+import code from "@/images/landing/code.png"
+import telephone from "@/images/landing/telephone.png"
+import solutions from "@/images/landing/solutions.png"
 import TawkToIntegration from '../../../Componenets/landing/TawkToIntegration';
 export default function AiVoiceCalling() {
   const [showModal, setShowModal] = useState(false);
@@ -90,25 +93,25 @@ export default function AiVoiceCalling() {
       id: 1,
       title: "AI-Powered Lead Generation",
       description: "Identify and qualify high-quality leads.",
-      className: "Salesaicards",
+      img:selective,
     },
     {
       id: 2,
       title: "Intelligent Scripting",
       description: "Generate dynamic scripts tailored to each lead",
-      className: "Salesaicards",
+      img:code,
     },
     {
       id: 3,
       title: "Automated Voice Calling",
       description: "Conduct personalized voice calls at scale.",
-      className: "Salesaicards",
+      img:telephone,
     },
     {
       id: 4,
       title: "Seamless Integration",
       description: "Easily integrate with your CRM and marketing tools.",
-      className: "Salesaicards",
+      img:solutions,
     },
   ];
   const aiPoweredIndustries = [
@@ -670,9 +673,15 @@ return (
               title="Don't get left behind. Embrace the power of AI to transform your sales process."
               className="text-center mb-4"
             />
-            <div className="aifuturecard">
-              {FutureCardapi?.map((items, index) => {
-                return <Card3 items={items} key={index} />;
+            <div className="aifuture-card-main">
+                    {FutureCardapi?.map((items, index) => {
+                         return <div className="aifuture-card ">
+                                    <figure>
+                                      <Image src={items.img} alt="img" />
+                                    </figure>
+                                     <h5>{items.title}</h5>
+                                     <p>{items.description}</p>
+                              </div>
               })}
             </div>
           </div>

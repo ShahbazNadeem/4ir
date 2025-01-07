@@ -236,26 +236,37 @@ body, html {
 .future-wrapper {
   margin: 20px 0px;
 }
-
-.aifuturecard {
+.aifuture-card-main{
   display: flex;
-  flex-direction: row;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.aifuture-card {
+  flex-basis:47%;
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 10px;
   justify-content: center;
+  padding:  30px ;
+  gap: 10px;
+  border-radius: 13px;
+  border: 1px solid #878787;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
-
-.aifuturecard .card3 {
-  margin-top: 0px !important;
-  min-height: 30vh;
-  border-radius: 10px !important;
-  padding: 20px !important;
-  background: #00000021;
+.aifuture-card:hover {
+  border: 1px solid #831DAC;
+  box-shadow: 0px 3.25px 62.34px 0px #8D1EB845;
 }
-
-.aifuturecard .card3:hover {
-  background: linear-gradient(180.11deg, #1B2C4A 0.09%, #0F64DF 210.44%);
-  transition: all.5s !important;
+.aifuture-card h5{
+font-size: 32px !important;
+line-height: 40px !important;
+font-weight: 700 !important;
+}
+.aifuture-card p{
+  text-align:left !important;
 }
 
 .Salesaicards {
@@ -775,11 +786,6 @@ line-height: 52px !important;
   .banner-content {
     min-height: 100vh !important;
   }
-
-  .aifuturecard .card3 {
-    min-height: 10vh;
-  }
-
   .img-card {
     padding: 15px 8px !important;
     width: 19% !important;
@@ -860,11 +866,6 @@ line-height: 52px !important;
     padding: 0px 200px !important;
     line-height: 30px !important;
     margin-bottom: 50px !important;
-  }
-
-  .aifuturecard .Salesaicards {
-    min-height: 12vh !important;
-    width: 29vw !important;
   }
 
   .card3-body h5 {
@@ -983,11 +984,6 @@ line-height: 52px !important;
     padding: 0px 180px !important;
   }
 
-  .aifuturecard .card3 {
-    min-height: 10vh !important;
-    width: 30vw !important;
-  }
-
   .Client-mainbox {
     padding: 20px 0px !important;
   }
@@ -1033,6 +1029,14 @@ line-height: 52px !important;
     font-size: 2.5rem !important;
     line-height: 52px !important;
 }
+.aifuture-card h5{
+  font-size: 26px !important;
+  line-height: 40px !important;
+}
+.aifuture-card img{
+  width:40px;
+  height:auto;
+}
 }
 
 @media screen and (max-width: 992px) {
@@ -1049,16 +1053,6 @@ line-height: 52px !important;
 
   .strugling-para2 {
     padding: 0px 60px !important;
-  }
-
-  .aifuturecard .Salesaicards {
-    width: 31vw !important;
-    /* padding: 0px 0px 0px 0px !important; */
-  }
-
-  .aifuturecard .card3 h5 {
-    font-size: 20px !important;
-    line-height: 30px !important;
   }
   .timeline-content {
     width: 100% !important;
@@ -1128,6 +1122,14 @@ line-height: 52px !important;
   .card-content h3{
     font-size: 22px !important;
   }
+  .aifuture-card h5{
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+  .aifuture-card img{
+    width:35px;
+    height:auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1189,10 +1191,6 @@ line-height: 52px !important;
 
   .strugling-para2 {
     padding: 0px 0px !important;
-  }
-
-  .aifuturecard {
-    gap: 10px;
   }
 
   .card4-body>h6 {
@@ -1269,6 +1267,13 @@ line-height: 52px !important;
     font-size: 1.7rem !important;
     line-height: 29px !important;
   }
+  .aifuture-card-main{
+    gap:20px
+  }
+  .aifuture-card{
+    padding:20px 10px;
+  }
+  
 }
 
 @media screen and (max-width: 576px) {
@@ -1284,10 +1289,6 @@ line-height: 52px !important;
   }
   .timeline-right-content h6{
     font-size: 17px !important;
-  }
-  .aifuturecard .card3 h5 {
-    font-size: 18px !important;
-    line-height: 24px !important;
   }
 
   .banner-second-heading h1 {
@@ -1317,16 +1318,6 @@ line-height: 52px !important;
 
   .strugling-content {
     margin-top: 20px;
-  }
-
-  .aifuturecard .card3 h5 {
-    font-size: 14px !important;
-    line-height: 20px !important;
-  }
-
-  .aifuturecard .card3 p {
-    font-size: 12px !important;
-    line-height: 20px !important;
   }
 
   .aiPoweredIndustries-content h2 {
@@ -1431,10 +1422,6 @@ line-height: 52px !important;
     height: 192px !important;
   }
 
-  .aifuturecard .Salesaicards {
-    width: 38vw !important;
-  }
-
   .strugling-lower-content {
     width: 100% !important;
   }
@@ -1493,10 +1480,6 @@ line-height: 52px !important;
     font-size: 1.5rem !important;
   }
 
-  .aifuturecard .Salesaicards {
-    padding: 40px 15px 27px 20px !important;
-  }
-
   .future-wrapper {
     margin: 0px 0px 50px 0px !important;
   }
@@ -1512,12 +1495,21 @@ line-height: 52px !important;
   .youtube-video-main{
     margin: 0px 0px !important;
   }
-  /* .accordion-button h3 {
-    font-size:16px !important;
-    margin: 0px !important;
-    width: 90% !important;
-} 
-  .accordion-button svg {
-    width: 10% !important;
-}  */
+  .aifuture-card-main{
+    gap: 10px;
+  }
+  .aifuture-card{
+    flex-basis:100%;
+    gap:16px;
+    padding:15px 10px;
+  }
+  .aifuture-card h5{
+    font-size: 16px !important;
+    line-height: 0px !important;
+    margin:0px !important;
+  }
+  .aifuture-card img{
+    width:35px;
+    height:auto;
+  }
 }
