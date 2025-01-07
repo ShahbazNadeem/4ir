@@ -519,14 +519,19 @@ font-weight: 700 !important;
 .timeline-content {
   width: 85%;
   margin: 0 auto;
+  position: relative;
 }
 
 .timeline-left {
   width: 40% !important;
+  position: absolute;
+  top: 0px; /* Adjust the top value as needed to position the div */
+  left: -30px;
 }
 
 .timeline-right {
   width: 60% !important;
+  margin-left : auto;
 }
 .timeline-right-content{
   width: 100%;
@@ -1073,6 +1078,7 @@ line-height: 52px !important;
 
   .timeline-right {
     width: 100% !important;
+    margin-top: 285px;
   }
 
   .nav-link {
@@ -1169,8 +1175,11 @@ line-height: 52px !important;
   .timeline-content {
     flex-direction: column !important;
   }
+  .timeline-left{
+    left:0px
+  }
   .timeline-right{
-    margin-top: 20px !important;
+    margin-top: 260px !important;
   }
   .timeline-right-content h6{
     font-size: 20px !important;
@@ -1287,6 +1296,10 @@ line-height: 52px !important;
     font-size: 1.1rem !important;
     line-height: 29px !important;
   }
+  .timeline-left{
+    left:0px
+  }
+    
   .timeline-right-content h6{
     font-size: 17px !important;
   }
